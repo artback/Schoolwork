@@ -1,0 +1,32 @@
+﻿SystemController:
+* changed return type of getFlights() from String[][] to List
+* changed return type of getFlights() from String[] to List
+
+EmailController:
+* add a EmailMock instance
+* makeRecipt return a string
+
+FlightController:*
+- Added functions for Database functions
+- Added deptTime to functions parameters
+* changed return type of dbGetFlights() from String[][] to List
+* changed return type of getFlights() from String[][] to List
+* changed return type of getFlightsInfo() from String[] to List
+* added function to remove fullbooked flight 
+
+—————Updated class diagram 13/05-2016—————————————
+
+EmailController:
+* add verify(String verifyHash) function
+
+SystemController
+* listeners is not a inner class anymore
+
+*bookflight function added parameter price
+- Added new membervariable userName, stores the name of the user
+
+AccountController
+- Remove getUser() function
+     Resoning: Redundant as the user is saved in SC during the entire session.
+*changed return type of login() from String to String[]
+

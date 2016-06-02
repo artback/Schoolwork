@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/IamSoGay/Downloads/bsk.git/app/src/main/res/values-en/feeds.xml -->
+    <eat-comment/>
+    <array name="bthstudentcalendarfeed">
+		<item>bthstudent.se</item>
+		<item>http://www.bthstudent.se/meta.php?p=ical&amp;t=cal&amp;l=eng</item>
+		<item>https://www.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_bsk</item>
+		<item>@color/orange</item>
+		<item>ISO-8859-1</item>
+	</array>
+    <array name="bthstudentnewsfeed">
+		<item>bthstudent.se</item>
+		<item>http://www.bthstudent.se/meta.php?p=rss&amp;t=news&amp;l=eng</item>
+		<item>https://www.bthstudent.se</item>
+		<item>rssnews</item>
+		<item>@drawable/ic_bsk</item>
+		<item>@color/orange</item>
+		<item>ISO-8859-1</item>
+	</array>
+    <array name="calendarfeeds">
+		<item>@array/bthstudentcalendarfeed</item>
+		<item>@array/kaurencalendarfeed</item>
+		<item>@array/rotundancalendarfeed</item>
+		<item>@array/sexistenzcalendarfeed</item>
+		<item>@array/siscalendarfeed</item>
+	</array>
+    <!-- From: file:/C:/Users/IamSoGay/Downloads/bsk.git/app/src/main/res/values-en/strings.xml -->
+    <eat-comment/>
+    <string-array name="calendarfeedtitles">
+		<item>Student union</item>
+		<item>Student pub .kauren</item>
+		<item>Student pub Rotundan</item>
+		<item>Sexistenz</item>
+		<item>SIS</item>
+	</string-array>
+    <!-- From: file:/C:/Users/IamSoGay/Downloads/bsk.git/app/src/main/res/values-en/feeds.xml -->
+    <eat-comment/>
+    <array name="kaurencalendarfeed">
+		<item>Student pub .kauren</item>
+		<item>http://karen.bthstudent.se/meta/ical/khn/en</item>
+		<item>http://karen.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_smoersex</item>
+		<item>@color/white</item>
+		<item>UTF-8</item>
+	</array>
+    <!-- From: file:/C:/Users/IamSoGay/Downloads/bsk.git/app/src/main/res/values-en/maps_points.xml -->
+    <eat-comment/>
+    <array name="location_bsk">
+		<item>@drawable/marker_bsk</item>
+		<item>56181937</item>
+		<item>15590090</item>
+		<item>Blekinge student union</item>
+		<item>Blekinge student union office\n\nOpening hours\n* Monday-Thursday: 10:00-14:00.\n* Friday: Closed</item>
+	</array>
+    <array name="location_kauren">
+		<item>@drawable/marker_kauren</item>
+		<item>56168346</item>
+		<item>14863255</item>
+		<item>.kauren</item>
+		<item>Student pub</item>
+	</array>
+    <array name="location_khn_a">
+		<item>@drawable/marker_a</item>
+		<item>56163721</item>
+		<item>14866589</item>
+		<item>A-building</item>
+		<item>- School of planning and media design\n- School of computer science and communication (logistics)\n- Library</item>
+	</array>
+    <array name="location_khn_b">
+		<item>@drawable/marker_b</item>
+		<item>56164483</item>
+		<item>14865961</item>
+		<item>B-building</item>
+		<item>- School of planning and media design</item>
+	</array>
+    <array name="location_khn_nordea_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56171169</item>
+	    <item>14864180</item>
+	    <item>ATM</item>
+	    <item>Nordea\nKungsgatan 44\n374 36 Karlshamn</item>
+	</array>
+    <array name="location_khn_sparbanken_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56170715</item>
+	    <item>14861798</item>
+	    <item>ATM</item>
+	    <item>Sparbanken\nDrottninggatan 55\n374 35 Karlshamn</item>
+	</array>
+    <array name="location_kna_a">
+		<item>@drawable/marker_a</item>
+		<item>56181928</item>
+		<item>15590630</item>
+		<item>A-building</item>
+		<item>Aka the barrel hot tub aka the cylinder aka the pipe\n\n- Information center\n- Reception\n- Service department (in the basement)</item>
+	</array>
+    <array name="location_kna_b">
+		<item>@drawable/marker_b</item>
+		<item>56180671</item>
+		<item>15590737</item>
+		<item>B-building</item>
+		<item>Currently vacated\n\n- BTH Innovation</item>
+	</array>
+    <array name="location_kna_c">
+		<item>@drawable/marker_c</item>
+		<item>56181248</item>
+		<item>15592287</item>
+		<item>C-building</item>
+		<item>- School of planning and media design\n- Centre for spatial development and planning</item>
+	</array>
+    <array name="location_kna_d">
+		<item>@drawable/marker_d</item>
+		<item>56181693</item>
+		<item>15592309</item>
+		<item>D-building</item>
+		<item>Formerly \"The link\"\n\n- Student center\n- Café bistro</item>
+	</array>
+    <array name="location_kna_e">
+		<item>@drawable/marker_e</item>
+		<item>56181851</item>
+		<item>15592775</item>
+		<item>E-building</item>
+		<item>Currently vacated</item>
+	</array>
+    <array name="location_kna_er_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56182237</item>
+	    <item>15605513</item>
+	    <item>ATM</item>
+	    <item>Swedbank\nLasarettsvägen\n371 41 Karlskrona</item>
+	</array>
+    <array name="location_kna_f">
+		<item>@drawable/marker_f</item>
+		<item>56182018</item>
+		<item>15592368</item>
+		<item>F-building</item>
+		<item>Currently vacated</item>
+	</array>
+    <array name="location_kna_g">
+		<item>@drawable/marker_g</item>
+		<item>56181908</item>
+		<item>15591273</item>
+		<item>G-building</item>
+		<item>- School of computer science and communication\n- School of engineering\n- Student health</item>
+	</array>
+    <array name="location_kna_h">
+		<item>@drawable/marker_h</item>
+		<item>56182376</item>
+		<item>15590651</item>
+		<item>H-building</item>
+		<item>- Library\n- School of health\n- School of computer science and communication</item>
+	</array>
+    <array name="location_kna_handelsbanken_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56162030</item>
+	    <item>15584964</item>
+	    <item>ATM</item>
+	    <item>Handelsbanken\nRonnebygatan 47\n371 33 Karlskrona</item>
+	</array>
+    <array name="location_kna_j">
+		<item>@drawable/marker_j</item>
+		<item>56182908</item>
+		<item>15590281</item>
+		<item>J-building</item>
+		<item>The "new building".\n\n- The multi-hall.\n- The Café J bistro.\n- Management of higher education\n- Management\n- School of computer science and communication\n- School of engineering\n- School of management</item>
+	</array>
+    <array name="location_kna_seb_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56161982</item>
+	    <item>15586112</item>
+	    <item>ATM</item>
+	    <item>SEB\nRonnebygatan 43\n371 33 Karlskrona</item>
+	</array>
+    <array name="location_kna_swedbank_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56161611</item>
+	    <item>15583655</item>
+	    <item>ATM</item>
+	    <item>Swedbank\nBorgmästaregatan 13\n371 31 Karlskrona</item>
+	</array>
+    <array name="location_rotundan">
+		<item>@drawable/marker_rotundan</item>
+		<item>56181770</item>
+		<item>15590002</item>
+		<item>Rotundan</item>
+		<item>Student pub</item>
+	</array>
+    <array name="location_softcenter">
+		<item>@drawable/marker_softcenter</item>
+		<item>56198910</item>
+		<item>15289450</item>
+		<item>Soft Center</item>
+		<item>- Old premises of campus Ronneby</item>
+	</array>
+    <array name="locations">
+		<item>@array/location_bsk</item>
+		<item>@array/location_rotundan</item>
+		<item>@array/location_kauren</item>
+		<item>@array/location_kna_a</item>
+		<item>@array/location_kna_b</item>
+		<item>@array/location_kna_c</item>
+		<item>@array/location_kna_d</item>
+		<item>@array/location_kna_e</item>
+		<item>@array/location_kna_f</item>
+		<item>@array/location_kna_g</item>
+		<item>@array/location_kna_h</item>
+		<item>@array/location_kna_j</item>
+		<item>@array/location_khn_a</item>
+		<item>@array/location_khn_b</item>
+		<item>@array/location_kauren</item>
+		<item>@array/location_softcenter</item>
+		<item>@array/location_kna_er_atm</item>
+		<item>@array/location_kna_seb_atm</item>
+		<item>@array/location_kna_handelsbanken_atm</item>
+		<item>@array/location_kna_swedbank_atm</item>
+		<item>@array/location_khn_nordea_atm</item>
+		<item>@array/location_khn_sparbanken_atm</item>
+	</array>
+    <!-- From: file:/C:/Users/IamSoGay/Downloads/bsk.git/app/src/main/res/values-en/feeds.xml -->
+    <eat-comment/>
+    <array name="newsfeeds">
+		<item>@array/bthstudentnewsfeed</item>
+		<item>@array/sexistenznewsfeed</item>
+		<item>@array/sisnewsfeed</item>
+		<item>@array/smoersexnewsfeed</item>
+	</array>
+    <!-- From: file:/C:/Users/IamSoGay/Downloads/bsk.git/app/src/main/res/values-en/strings.xml -->
+    <eat-comment/>
+    <string-array name="newsfeedtitles">
+		<item>Student union</item>
+		<item>Sexistenz</item>
+		<item>SIS</item>
+		<item>.smoersex</item>
+	</string-array>
+    <!-- From: file:/C:/Users/IamSoGay/Downloads/bsk.git/app/src/main/res/values-en/feeds.xml -->
+    <eat-comment/>
+    <array name="rotundancalendarfeed">
+		<item>Student pub Rotundan</item>
+		<item>http://karen.bthstudent.se/meta/ical/kna/en</item>
+		<item>http://karen.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_bsk</item>
+		<item>@color/blue</item>
+		<item>UTF-8</item>
+	</array>
+    <array name="sexistenzcalendarfeed">
+		<item>Sexistenz</item>
+		<item>http://sexistenz.bthstudent.se/calendar.rss</item>
+		<item>http://sexistenz.bthstudent.se</item>
+		<item>rsscal</item>
+		<item>@drawable/ic_sexistenz</item>
+		<item>@color/green</item>
+		<item>UTF-8</item>
+	</array>
+    <array name="sexistenznewsfeed">
+		<item>Sexistenz</item>
+		<item>http://sexistenz.bthstudent.se/events.rss</item>
+		<item>http://sexistenz.bthstudent.se</item>
+		<item>rssnews</item>
+		<item>@drawable/ic_sexistenz</item>
+		<item>@color/green</item>
+		<item>UTF-8</item>
+	</array>
+    <array name="siscalendarfeed">
+		<item>SIS</item>
+		<item>http://sis.bthstudent.se/?ical</item>
+		<item>http://sis.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_sis</item>
+		<item>@color/black</item>
+		<item>UTF-8</item>
+	</array>
+    <array name="sisnewsfeed">
+		<item>SIS</item>
+		<item>http://sis.bthstudent.se/feed/</item>
+		<item>http://sis.bthstudent.se</item>
+		<item>rssnews</item>
+		<item>@drawable/ic_sis</item>
+		<item>@color/black</item>
+		<item>UTF-8</item>
+	</array>
+    <array name="smoersexnewsfeed">
+		<item>.smoersex</item>
+		<item>http://smoersex.bthstudent.se/?feed=rss2</item>
+		<item>http://smoersex.bthstudent.se</item>
+		<item>rssnews</item>
+		<item>@drawable/ic_smoersex</item>
+		<item>@color/white</item>
+		<item>ISO-8859-1</item>
+	</array>
+    <!-- From: file:/C:/Users/IamSoGay/Downloads/bsk.git/app/src/main/res/values-en/strings.xml -->
+    <eat-comment/>
+    <string name="about">
+		Blekinge student union Android application\n\n
+
+		The purpose of the Android app is to provide an information channel to the operation of Blekinge student union. This in hope of raising awareness about the organisation foremost among students, but is freely available for anyone to use.\n\n
+
+		What you can do:\n
+		* View news (as well as the full stories behind them) and events from a number of sections that are part of Blekinge student union.\n
+		* Un/Subscribe different feeds.\n
+		* Un/Subscribe different schedules of courses you attend to (or others if you\'re just curious).\n
+		* Get in touch with the presiding body of the student union. (There are even tappable phone numbers, e-mail addresses and URL:s!)\n\n
+
+		Notice: This application fetches feeds and articles from several places around the internet. We recommend that you use as fast a connection as possible to the internet to minimize the download times.\n\n
+
+		Want to get involved in this project? Head over to
+		http://sis.bthstudent.se/skunkworks/android_bsk/
+	</string>
+    <string name="about_title">Blekinge student union app</string>
+    <string name="acronym">Acronym</string>
+    <string name="app_name">Blekinge student union</string>
+    <string name="app_name_dev">BSU-dev</string>
+    <string name="article_button_text">Open article (web)</string>
+    <string name="by">By</string>
+    <string name="calendar">Calendar</string>
+    <string name="cellphone">Cell phone number</string>
+    <string name="chairman">Chairman</string>
+    <string name="contacts">Contacts</string>
+    <string name="employment">Employment</string>
+    <string name="empty_schedule">You have to add a schedule first!</string>
+    <string name="end_before_start">End date can not be before start date!</string>
+    <string name="fetch_calendar">Fetching current events</string>
+    <string name="fetch_contacts">Fetching contact list</string>
+    <string name="fetch_news">Fetching latest news</string>
+    <string name="fetch_schedules">Fetching schedules list</string>
+    <string name="future">Future......</string>
+    <string name="homepage">Homepage</string>
+    <string name="institution">Institution</string>
+    <string name="location">Location</string>
+    <string name="mail">E-mail</string>
+    <string name="map">Map</string>
+    <string name="map_my_location">My location</string>
+    <string name="name">Name</string>
+    <string name="news">News</string>
+    <string name="no_data">No data to display. In order to add a schedule, tap the menu-button and then select \'Edit schedules\' and follow the instructions on that view. Also, read the help!</string>
+    <string name="no_location_support">Unfortunately we can\'t determine if the person is in his office at the moment, however our code monkeys are trying to figure out a future solution to this.</string>
+    <string name="not_specified">[None provided]</string>
+    <string name="phone">Phone number</string>
+    <string name="room">Room</string>
+    <string name="room_image_error">Something went horribly wrong when trying to load ANY image for what you requested. Be sure to notify the app-author of this problem. (Or try again later.)</string>
+    <string name="room_info_download_progress">Fetching premise info</string>
+    <string name="room_requested">Requested room:</string>
+    <string name="schedule_end">End date</string>
+    <string name="schedule_id">Course code (ie. FY1404) or\nschedule id (8 numbers)</string>
+    <string name="schedule_name">Name (to describe the schedule)</string>
+    <string name="schedule_save">Save</string>
+    <string name="schedule_start">Start date</string>
+    <string name="schedules">Schedules</string>
+    <string name="schedules_add_blank_id">The ID field must not be empty!</string>
+    <string name="schedules_add_blank_name">The Name-field must not be empty!</string>
+    <string name="schedules_add_only_integers">The ID field must only contain numbers! (Did you forget to press the Search-button?)</string>
+    <string name="schedules_add_schedule">Add schedule</string>
+    <string name="schedules_help">Help</string>
+    <string name="schedules_message">In order to use the schedule section of this app, you can choose between two methods. The first one assumes you know the course code of the schedule you would like to add. The other method assumes you don\'t know the course code or the id for the schedule and have to make a search for these values on http://schema.bth.se.\n\nMethod one (known course code):\n1: In the field \"Schedule id\", type the course code for the course you would like to add, then tap the button \"Search for course\".\n2: Wait until the text in the field where you wrote the course code changes to an 8-digit number (this can take longer or shorter time depending on what type of connection to the Internet is available through your device).\n3: Type a descriptive name for the schedule in the Name-field and set a time interval that you would like to monitor.\n4: Tap the button \"Save\".\n\nMethod two (unknown course code):\nIn order to be able to use this alternative you need to acquire the ID of the schedule, taken from http://schema.bth.se.\nYou need to know the course code or the course name that you would like to subscribe to, in order to find it on the schedule-page.\n\nDo the following:\n1: Browse to http://schema.bth.se\n2: Search for and look at the schedule for course you would like to subscribe to.\n3: In the address field in the browser, look for wv_obj1=[8 numbers]. This is the ID you need to enter in the ID-field of the app. Only numbers are allowed and they shall be eight to the number. You can enter whatever you want in the \"Name\"-field; we recommend that it describes the schedule in one way or another.</string>
+    <string name="schedules_ok">Schedule added</string>
+    <string name="schedules_search_button">Search for course</string>
+    <string name="schedules_search_course_code">Course code</string>
+    <string name="schedules_settings">Edit schedules</string>
+    <string name="schedules_settings_no_data">Add a schedule by pressing the menu button and select \'Add schedule\'.</string>
+    <string name="schedules_title">Schedule help</string>
+    <string name="settings">Settings</string>
+    <string name="settings_about">About the app</string>
+    <string name="settings_cal">Calendar feed subscriptions</string>
+    <string name="settings_news">News feed subscriptions</string>
+    <string name="settings_refresh">Force refresh</string>
+    <string name="vice_president">Vice president</string>
+    <string name="week">Week</string>
+</resources>
