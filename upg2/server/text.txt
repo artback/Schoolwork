@@ -1,0 +1,145 @@
+Zikavirus (från WIKIPEDIA 2016-02-15)
+
+Denna artikel behandlar ett pågående skeende. (2016-01)
+Informationen kan vara inaktuell och ändras snabbt.
+
+Systematik
+Familj	Flaviviridae
+Släkte	Flavivirus
+Art	Zikavirus
+Zikavirus (ZIKV) är ett virus i familjen Flavivirus. Viruset överförs av Aedes-myggor
+och kan hos människor orsaka en vanligen mild sjukdom som kallas zikafeber och som sedan 
+1950-talet tidvis har förekommit inom ett smalt bälte längs ekvatorn från Afrika till Asien. 
+I november 2015 upptäcktes en koppling mellan infektioner hos gravida och fosterskador. 
+Den 1 februari klassade världshälsoorganisationen (WHO) smittspridningen av zikaviruset 
+som ett internationellt nödläge.
+
+
+Historik
+Viruset isolerades första gången i april 1947 från en rhesusapa som forskare hade placerat 
+i en bur i Zikaskogen i Uganda.[1] Det första dokumenterade utbrottet bland människor skedde 
+år 2007 i Mikronesien.[2] Under 2014 spred sig viruset österut över Stilla havet till Franska 
+Polynesien och vidare till Påskön, för att senare under 2015 fortsätta till Sydamerika, 
+Centralamerika och Karibien. Utbrottet klassades som en pandemi.[3] I januari 2016 publicerades 
+rapporter om eventuella kopplingar mellan zikavirusinfektion och allvarliga komplikationer som 
+kan drabba foster. Viruset tros kunna orsaka mikrocefali hos nyfödda barn till mödrar som 
+smittats under graviditeten, men sambandet och eventuell risk är inte helt klarlagd och utredning 
+pågick fortfarande i mitten av januari.[4][5] Den 15 januari utfärdade USA:s nationella 
+folkhälsomyndighet Centers for Disease Control and Prevention (CDC) reserekommendationer gällande 
+de berörda länderna som innebär att gravida kvinnor bör överväga att skjuta upp resan.[6] 
+Liknande reserekommendationer har utfärdats av myndigheter i många andra länder.
+
+Den 1 februari klassade världshälsoorganisationen (WHO) smittspridningen av zikaviruset som ett 
+internationellt nödläge. WHO befarar att upp till fyra miljoner människor kan ha smittats vid 
+årets slut.[7] I den värst drabbade regionen i Brasilien har ungefär 1 procent av de nyfödda 
+barnen mikrocefali.[8]
+
+Smittspridning
+Zikavirusets utbredning på den amerikanska kontinenten i januari 2016.
+
+Aedes aegypti är en vektor för överföring av zikavirus.
+Virusets naturliga reservoar är ännu ej fastställd, men man har påvisat serologiska fynd 
+hos västafrikanska apor och gnagare. Zikaviruset överförs av dagaktiva myggor och har isolerats 
+från ett antal arter i släktet Aedes, bland dessa finns Aedes aegypti, Aedes africanus, 
+Aedes apicoargenteus, Aedes furcifer, Aedes hensilli, Aedes luteocephalus och Aedes vittatus.[9] 
+Zikavirus kan överföras mellan människor genom sexuell kontakt.[10] Det kan också passera 
+moderkakan hos gravida kvinnor och därmed påverka ett foster.
+
+Eftersom viruset endast kan spridas i de områden där det finns myggarter som kan bära det, 
+är förändringar av myggarternas utbredningsområden en viktig orsak till att regioner som 
+tidigare var fria från zikasmitta har drabbats. Den viktigaste vektorn, A. aegypti, sprids 
+till nya områden genom handel och resor.[11] A. aegypti finns nu på alla kontinenter inklusive 
+Nordamerika och även några mindre delar av Europa.[12] En myggpopulation som är 
+kapabel att bära viruset har påträffats i Washington, DC och genetiska bevis antyder att 
+den överlevt åtminstone fyra vintrar i området. Forskare drar slutsatsen att myggorna anpassat 
+sig för att kunna överleva i nordligt klimat.[13]
+
+Under 2015 uppmärksammades att zika spridit sig i Karibien och Sydamerika. De länder och 
+territorier som enligt Pan American Health Organisation (PAHO) har drabbats av "lokal 
+spridning av zikavirus" är Barbados, Bolivia, Brasilien, Colombia, Dominikanska republiken, 
+Ecuador, El Salvador, Franska Guyana, Guadeloupe, Guatemala, Guyana, Haiti, Honduras, 
+Martinique, Mexiko, Panama, Paraguay, Puerto Rico, Saint Martin, Surinam och Venezuela.[14][15]
+
+År 2015 detekterades zikavirusets RNA i fostervatten hos två foster, vilket tyder på att det 
+hade passerat moderkakan och kunde orsaka en mor-till-barn-infektion.[16]
+
+Zikafeber
+Huvudartikel: Zikafeber
+
+Utslag orsakade av zikavirus.
+Vanliga symptom på zikavirusinfektion inkluderar mild huvudvärk, utslag, feber, sjukdomskänsla, 
+ögoninflammation och ledvärk. Det första väldokumenterade sjukdomsfallet beskrevs 1964. Det 
+började med lätt huvudvärk och därefter utslag, feber och ryggsmärtor. Inom två dagar 
+började utslagen blekna. Inom tre dagar var febern borta och bara utslagen fanns kvar. 
+Hittills har zikafeber varit en relativt mild sjukdom. Endast en av fem personer utvecklar 
+symptom, medan de övriga är asymtomatiska.[9]
+
+Sjukdomen kan för närvarande inte behandlas eller förebyggas med läkemedel eller vaccin. 
+Symtomen kan behandlas med vila, vätska, och paracetamol, medan aspirin och andra icke-stereoida 
+antiinflammatoriska läkemedel endast ska användas när dengue har uteslutits för att minska risken för blödning.[17]
+
+Mikrocefali och andra komplikationer
+
+Illustration av mikrocefali.
+Under zikavirusutbrottet i Brasilien 2015 upptäcktes ett troligt samband mellan zikavirusinfektion 
+och mikrocefali hos nyfödda barn. År 2015 upptäcktes 2782 fall av mikrocefali jämfört med 147 under 2014 och 167 under 2013.[18]
+
+I november 2015 isolerades zikavirus från en nyfödd baby med mikrocefali och andra missbildningar i 
+den nordöstra delstaten Ceará i Brasilien. Medicintidskriften The Lancet rapporterade i januari 2016 
+att det brasilianska hälsoministeriet hade bekräftat 134 fall av mikrocefali som "tros vara associerade 
+med zikavirusinfektion" och att det finns ytterligare 2 165 fall i 549 län i 20 delstater som är under utredning.[19]
+
+I januari 2016 föddes en baby i Oahu, Hawaii, med mikrocefali vilket var det första fallet i USA där 
+hjärnskador sätts i samband med viruset. Barnet och modern testades positivt för en tidigare zikavirusinfektion. 
+Modern, som förmodligen smittats under en resa i Brasilien i maj 2015 under de tidiga stadierna av graviditeten, 
+hade rapporterat milda symptom. Hon återhämtade sig innan hemresan till Hawaii. Hennes graviditet hade 
+fortskridit normalt, och barnets tillstånd blev inte känt förrän vid födseln.[20]
+
+En hög förekomst av den autoimmuna sjukdomen Guillain-Barrés syndrom (GBS) konstaterades i Franska 
+Polynesien och har också påträffats i Brasilien.[21] Det finns dock inga laboratoriebekräftelser på 
+zikavirusinfektion hos patienter med GBS.[22]
+
+Ögonsjukdomar hos nyfödda har också varit knutna till zikavirusinfektion.[23] I en studie i Pernambuco i 
+Brasilien hade ca 40 procent av barn med zikarelaterad mikrocefali även ärrbildning i näthinnan med fläckar eller pigmentförändring.[22]
+
+Bekämpning och förebyggande åtgärder[redigera | redigera wikitext]
+
+Myggnät
+Flera länder, däribland Colombia, Ecuador, El Salvador och Jamaica, rådde kvinnor att undvika graviditet tills 
+mer blir känt om riskerna.[24][25] Planer tillkännagavs av myndigheterna i Rio de Janeiro i 
+Brasilien att försöka förhindra spridning av viruset under den kommande olympiaden i Rio sommaren 2016.
+
+WHO:s rekommendationer för zikavirusskydd omfattar huvudsakligen användande av myggmedel; kläder 
+(helst ljusa) som täcker en så stor del av kroppen som möjligt; barriärer som stängda dörrar och fönster, 
+och användning av myggnät. Det är också viktigt att förhindra att myggor förökar sig i vattensamlingar nära hemmet 
+genom att ta bort till exempel hinkar, blomkrukor eller däck, där myggor kan samlas och föröka sig.
+
+I Brasilien har myndigheterna godkänt utsläpp av genetiskt modifierade myggor av arten Aedes aegypti. 
+Ett brittiskt bioteknikföretag har tidigare publicerat ett testresultat för så kallade "självbegränsande" 
+myggor för att bekämpa denguefeber, chikungunya och zikavirus. De drog slutsatsen att myggpopulationerna har 
+minskat med över 90 % i testområdet.[26][27][28] De genetiskt modifierade hanmyggorna parar sig med honor i 
+naturen och sprider en "självbegränsande gen" som får den resulterande avkomman att dö innan vuxen ålder 
+och därmed minskar myggornas antal. [26][29]
+
+Reaktioner i Sverige
+Den svenska Folkhälsomyndigheten har informerat landets mödravårdscentraler, men reserekommendationerna 
+för gravida i Sverige har inte uppdaterats (gällde 19 januari 2016).[5][30] UD avrådde inte heller från 
+resor till de drabbade länderna (gällde 1 februari 2016).[31]
+
+En forskare vid Statens Veterinärmedicinska Anstalt (SVA) säger att man "inte helt kan utesluta" att 
+myggarten Aedes geniculatus, den silvertecknade trädhålsmyggan, skulle kunna sprida zikavirus. Myggan finns i Sverige 
+och har i laboratorietester visat sig kunna sprida närbesläktade virus som chikungunya och gula febern, men 
+ännu inte testats för zikavirus.[32] SVA samordnar ett projekt för att tillsammans med andra myndigheter 
+få mer kunskap om insektsburen smitta i Sverige.[33]
+
+Referenser (trunkerad lista)
+^ Haddow, AD; Schuh, AJ; Yasuda, CY; Kasper, MR; Heang, V; Huy, R; Guzman, H; Tesh, RB; Weaver, SC (2012).
+^ Chen, LH; Hamer, DH (2 February 2016).
+^ ”Zika Virus: A New Threat and a New Kind of Pandemic”. Läst 18 January 2016.
+^ ”Epidemiological update: Outbreaks of Zika virus and complications potentially linked to the Zika virus infection”. European Centre for Disease Prevention and Control. Läst 18 January 2016.
+^ [a b] ”Folkhälsomyndigheten”. Läst 21 January 2016.
+^ ”Zika Virus in the Caribbean - Alert - Level 2, Practice Enhanced Precautions - Travel Health Notices | Travelers' Health | CDC”. wwwnc.cdc.gov. Läst 2016-01-30.
+^ ”W.H.O. Declares Zika Virus an International Health Emergency”. The New York Times. 1 February 2016.
+^ ”Brazil Zika outbreak: More babies born with birth defects”. BBC. 2016.
+^ [a b] Hayes, E. B. (2009). ”Zika Virus Outside Africa”. Emerging Infectious Diseases "15" (9): sid. 1347–50. doi:10.3201/eid1509.090442. PMID 19788800. PMC: 2819875.
+
