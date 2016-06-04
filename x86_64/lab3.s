@@ -1,15 +1,10 @@
 .data
-headMsg:	.asciz	"Start av testprogram. Skriv in 5 tal!"
-endMsg:	.asciz	"Slut på testprogram"
-buf:	.space	64
-sum:	.quad	0	
-count:	.quad	0	
-temp:	.quad	0	
 inbuf: .space 64
 inPos: .quad 0
 outbuf: .space 64
 outPos: .quad  0
 	.text
+
 	.global	inImage
 	.global	getInt
 	.global getText	
@@ -100,7 +95,6 @@ getEND:
         movq %r9 , %rax
         addq  %r9, inPos
         incq %rdi
-        addb  $0,(%rdi) 
         jmp END
 
 getChar:
@@ -146,12 +140,20 @@ setOutPos:
     jle  SetOutPosMin
     cmpq $63, %rdi 
     jge SetOutPosMax
+    leaq outbuf,%r8
+    addq %rdi,%r8
+    movb $0,(%r8)
     movq %rdi, outPos
     jmp END
 SetOutPosMax:
-    movq $63, outPos
+    leaq outbuf,%r8
+    addq $63,%r8
+    movb $0,(%r8)
+    movq $63,outPos
     jmp END
 SetOutPosMin:
+    leaq outbuf,%r8
+    movb $0, (%r8)
     movq $0, outPos
     jmp END
 setInPos:
@@ -178,7 +180,7 @@ cmpq $0, %rdi
 jl  putneg
 jmp putLoop
 putneg:
-movb '-', (%r8)
+movb $'-', (%r8)
 incq %r9
 incq %r8
 putLoop:

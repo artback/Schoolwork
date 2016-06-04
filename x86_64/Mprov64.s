@@ -20,13 +20,14 @@ main:
 UP:	call	getInt
 	movq	%rax,temp
 	cmpq	$0,%rax
-	jge	PP1
+	jg	PP1
 	call	getOutPos
 	decq	%rax
 	movq	%rax,%rdi
 	call	setOutPos
 
-PP1:	movq	temp,%rdx
+PP1:	
+    movq	temp,%rdx
 	add	%rdx,sum
 	movq	%rdx,%rdi
 	call	putInt

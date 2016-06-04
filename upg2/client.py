@@ -1,7 +1,7 @@
 from socket import *
 
 s = socket(AF_INET, SOCK_STREAM)
-host = "127.0.0.1"
+host = "192.168.0.247"
 port = 1010
 s.connect((host, port))
 FileSize = input("choose fileSize S,M,L")
