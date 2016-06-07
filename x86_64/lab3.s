@@ -20,15 +20,14 @@ outPos: .quad  0
 
 inImage:
 movq $inbuf, %rdi
-movq $61 , %rsi
+movq $63 , %rsi
 movq stdin, %rdx 
 call fgets
 movq $0,inPos
-je END
+ret
 
 getInt:
-    cmpq $63, inPos
-    jge inImage
+    pushq getIntLOOP
 	movq	$0, %rax	#nollställ resultatregistret)
 	movq	$0, %r9	#nollställ teckenindikator (0 betyder positivt, 1 negativt)
     leaq    inbuf,%r8
@@ -36,6 +35,8 @@ getInt:
     movq    $0, %r10
     movq    $0, %r11
 getIntLOOP:
+    cmpq $63, inPos
+    jge inImage
 	cmpb	$' ',(%r8)
 	jne	SIGN
 	incq	%r8	#stega fram till nästa tecken
@@ -78,6 +79,7 @@ getText:
     leaq inbuf,%r8
     movq $0, %r9
     addq inPos,%r8
+    pushq getTextLOOP 
 getTextLOOP:
         cmpq $63, inPos
         jge inImage
@@ -96,7 +98,6 @@ getEND:
         addq  %r9, inPos
         incq %rdi
         jmp END
-
 getChar:
         cmpq $63, inPos
         jge inImage
