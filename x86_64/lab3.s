@@ -20,14 +20,13 @@ outPos: .quad  0
 
 inImage:
 movq $inbuf, %rdi
-movq $63 , %rsi
+movq $61 , %rsi
 movq stdin, %rdx 
 call fgets
 movq $0,inPos
 ret
 
 getInt:
-    pushq getIntLOOP
 	movq	$0, %rax	#nollställ resultatregistret)
 	movq	$0, %r9	#nollställ teckenindikator (0 betyder positivt, 1 negativt)
     leaq    inbuf,%r8
@@ -36,7 +35,7 @@ getInt:
     movq    $0, %r11
 getIntLOOP:
     cmpq $63, inPos
-    jge inImage
+    jge getIntRet
 	cmpb	$' ',(%r8)
 	jne	SIGN
 	incq	%r8	#stega fram till nästa tecken
@@ -56,7 +55,7 @@ SIGN2:
 	incq	%r10
 NUM:
     cmpq $63, inPos
-    jge inImage
+    jge getIntRet
 	cmpb	$'0', (%r8)
 	jl	NAN		#teckenkod mindre än '0'
 	cmpb	$'9', (%r8)
@@ -72,32 +71,36 @@ NAN:
     addq %r10, inPos
 	cmpq	$1, %r9
 	jne	END
-	negl	%eax
+	negq	%rax
     jmp END
-
+getIntRet:
+    pushq getIntLOOP
+    jmp inImage
 getText:
     leaq inbuf,%r8
     movq $0, %r9
     addq inPos,%r8
-    pushq getTextLOOP 
 getTextLOOP:
         cmpq $63, inPos
-        jge inImage
+        jge getTextRet
         cmpb $0 ,(%r8) 
         je getEND
         cmpq %r9 ,%rsi #sluta när r9 är n    
         je getEND
         incq    %r8    #öka inbuf med 1
         incq    %r9    #öka n  med 1
+        incq    inPos
         movb 0(%r8,%r9,1),%r11b
         movb %r11b,(%rdi)
         incq %rdi
 	    jmp	getTextLOOP
 getEND:
         movq %r9 , %rax
-        addq  %r9, inPos
         incq %rdi
         jmp END
+getTextRet:
+    pushq getTextLOOP
+    jmp inImage
 getChar:
         cmpq $63, inPos
         jge inImage
@@ -106,7 +109,6 @@ getChar:
         movb (%r8),%al
         incq inPos
         jmp END
-
 putText: 
             leaq outbuf,%r8
             movq $0, %r9
@@ -122,11 +124,10 @@ textLoop:
 	    movb	%r10b, (%r8) #hämta bokstavens teckenkod
         incq %r9
         incq %r8
+        incq outPos
         jmp textLoop 
 putEND:
-        incq %r8 
         addb  $0,(%r8) 
-        addq  %r9, outPos
         jmp END
 outImage:
     leaq outbuf, %rdi
@@ -173,18 +174,20 @@ SetInPosMin:
 
 putInt:
 leaq outbuf,%r8
-movq $0, %r9
 addq outPos,%r8
-cmpq $63, outPos
-jge outImage
 cmpq $0, %rdi 
 jl  putneg
 jmp putLoop
 putneg:
 movb $'-', (%r8)
-incq %r9
+negq %rdi
+negq %rdx
+incq outPos
 incq %r8
+
 putLoop:
+cmpq $63, outPos
+jge outImage
 movq $0, %rdx
 movq $10, %r11
 divq %r11
@@ -201,16 +204,13 @@ jl	nextnext		#teckenkod mindre än '0'
 cmpq	$'9', %rdx
 jg	nextnext		#teckenkod större än '9'
 movb %dl, (%r8)
-incq %r9
+incq outPos
 incq %r8
 jmp  next
 
 nextnext:
-addq %r9, outPos
 movb $0,(%r8)
 pushq %rdx
-incq %r8 
-addq  $0,(%r8) 
 ret
 
 putChar:
