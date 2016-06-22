@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+<head>
+ {% block head %}
+ <title>{{ blog.title }} - {{ blog.description }}</title>
+ {{ macros.opengraph_entries(blog.description, blog, profile, entries) }}
+ {% endblock %}
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta name="generator" content="{{ app_url }}" />
+ <link rel="stylesheet" href="{{ blog.blog_path }}style.css" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+ <link rel="alternate" href="{{ blog.blog_path }}index.rss" type="application/rss+xml" title="RSS" />
+ <script src="/static/api.js"></script>
+ <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+ {% block scripts %}<script src="http://static.blogg.se/themes/polaroid_gallery/js/jquery-funk.min.js"></script>{% endblock %}
+</head>
+
+<body>
+
+ <div id="wrapper">
+ <img id="img" src="http://i.imgur.com/kKtoAvt.jpg"> 
+
+
+ <nav id="menu">
+ <ul>
+ <li><a href="{{ blog.url }}" class="big">Hem</a></li>
+
+
+
+
+ 
+
+
+ <li class="categories">
+ <a class="big" href="#">Kategorier</a>
+
+ <ul>
+ {% for category in categories %}
+ <li><a href="{{ category.url }}">{{ category.name }}</a></li>
+ {% endfor %}
+ </ul>
+ </li>
+ 
+ <li class="archives">
+ <a class="big" href="#">Arkiv</a>
+
+ <ul>
+ {% for group in archive_months|groupby('year')|reverse %}
+ <li>
+ <a href="#">{{ group.grouper }}</a>
+
+ <ul>
+ {% set swe_months = ["", "januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december"] %}
+ {% for a in group.list|reverse %}
+ <li><a href="{{ a.link }}">{{ swe_months[a.month] }}</a></li>
+ {% endfor %}
+ </ul>
+ </li>
+ {% endfor %}
+ </ul>
+ </li>
+
+ {% if linklist %}
+ <li class="links">
+ <a class="big" href="#">Länkar</a>
+
+ <ul>
+ {% for link in linklist %}
+ <li><a href="{{ link.url }}" title="{{ link.description }}">{{ link.name }}</a></li>
+ {% endfor %}
+ <li><a href="{{ blog.blog_path }}index.rss" title="RSS" class="icon rss-ico">RSS</a></li>
+ </ul>
+ </li>
+ {% endif %}
+ </ul>
+ </nav>
+
+ </div>
+
+ {% block content %} 
+ <div id="content" class="special">
+	{% block entry_loop %}
+	{% for entry in entries %}
+ <article class="entry articlex {{ loop.cycle('i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii')}}">
+
+ <a class="footer-comment" href="{{ entry.url }}#comment">{{ entry.comment_count }}</a>
+
+ <a class="hover-link" href="{{ entry.url }}">
+ {% set swe_months = ["", "januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december"] %}
+ <time datetime="{{ entry.iso8601 }}">{{ entry.date_time.day }} {{ swe_months[entry.date_time.month] }} {{ entry.date_time.year }}</time>
+ </a>
+
+ <section class="entry-first-img post">{{ entry.body }}</section>
+
+
+ </article>
+ <!--### loop AD do not remove or move ###-->
+ {% endfor %}
+	{% endblock entry_loop %}
+ </div>
+ {% endblock %}
+ 
+ <img src="http://stats.blogg.se/?id={{ blog.site_id }}" width="0" height="0" alt="" />
+ {% block footer %}{% endblock %}
+
+ {% if page in ["index","archive","category"] and last_ts and page %}
+ <script>
+ if(typeof(bindContentLoader) == 'function') {
+	 bindContentLoader('{{ page }}',$('#content'),{{ last_ts }}, function(data) {fixImages();});
+	}
+ </script>
+ {% endif %}
+
+</body>
+</html>
