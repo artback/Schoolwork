@@ -1,0 +1,13 @@
+--sql 
+
+BEGIN TRANSCATION
+    CREATE TABLE person
+    (
+    name varchar(255),
+    ssn int,
+    adress varchar(255)
+    );
+
+
+
+
