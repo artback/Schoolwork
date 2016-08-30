@@ -8,7 +8,7 @@ BEGIN TRANSCATION
     );
     CREATE TABLE adress
     (
-    idadress integer primary key, 
+    idadress integer primary key 
     postalNumber integer,
     streetName varchar(255)
 
