@@ -2,11 +2,13 @@
 BEGIN TRANSCATION
     CREATE TABLE person
     (
+    idperson integer primary key, 
     name varchar(255),
     ssn integer
     );
     CREATE TABLE adress
     (
+    idadress integer primary key, 
     postalNumber integer,
     streetName varchar(255)
 
