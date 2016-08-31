@@ -2,12 +2,12 @@
 BEGIN TRANSCATION
     CREATE TABLE person
     (
-    ssn integer PRIMARY KEY,
-    name varchar(40),
+    ssn integer PRIMARY KEY ,
+    name varchar(40) NOT NULL ,
     );
     CREATE TABLE adress
     (
-    postalNumber integer,
+    postalNumber integer NOT NULL ,
     streetName varchar(255) primary key,
     houseowner integer FOREIGN KEY REFERENCES person(ssn),
     )
