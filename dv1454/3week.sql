@@ -9,7 +9,7 @@ BEGIN TRANSCATION
     (
     postalNumber integer,
     streetName varchar(255) primary key,
-    houseowner integer FOREIGN KEY ,
+    houseowner integer FOREIGN KEY REFERENCES ,
     )
 INSERT INTO person (name , ssn )
 VALUES ("jonathan",199512290100),("karl",199212121212),("sven",195401040000),("per",199909090101),("lisa",196710109999);
