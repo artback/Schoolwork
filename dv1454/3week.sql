@@ -3,7 +3,7 @@ BEGIN TRANSACTION
     CREATE TABLE person
     (
     name varchar(40) NOT NULL ,
-    ssn char(12) PRIMARY KEY ,
+    ssn char PRIMARY KEY ,
     );
     CREATE TABLE adress
     (
