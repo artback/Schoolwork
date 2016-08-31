@@ -2,21 +2,19 @@
 BEGIN TRANSCATION
     CREATE TABLE person
     (
-    idperson integer primary key, 
+    ssn integer primary key,
     name varchar(255),
-    ssn integer
     );
     CREATE TABLE adress
     (
-    idadress integer primary key 
     postalNumber integer,
-    streetName varchar(255)
+    streetName varchar(255) primary key
 
     )
 INSERT INTO person (name , ssn , adress)
-VALUES("jonathan","199512290100"),("karl","199212121212"),("sven","195401040000"),("per","199909090101",),("lisa","196710109999");
+VALUES("jonathan",199512290100),("karl",199212121212),("sven",195401040000),("per",199909090101,),("lisa",196710109999);
 INSERT INTO adress(postalNumber,streetName)
-VALUES("39480","Kungsgatan 5")("39480","Kungsgatan 3"),("39480","Kungsgatan 4"),("39480","Kungsgatan 4"),("39480","Kungsgatan 4");
+VALUES(39480,"Kungsgatan 5")(39480,"Kungsgatan 3"),(39480,"Kungsgatan 4"),(39480,"Kungsgatan 4"),(39480,"Kungsgatan 4");
 COMMIT TRANSCATION 
 
 
