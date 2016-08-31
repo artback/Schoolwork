@@ -1,5 +1,4 @@
 --sql
-CREATE DATABASE
 BEGIN TRANSCATION
     CREATE TABLE person
     (
