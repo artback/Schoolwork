@@ -2,8 +2,8 @@
 BEGIN TRANSACTION
     CREATE TABLE person
     (
-    ssn integer PRIMARY KEY ,
     name varchar(40) NOT NULL ,
+    ssn integer PRIMARY KEY ,
     );
     CREATE TABLE adress
     (
