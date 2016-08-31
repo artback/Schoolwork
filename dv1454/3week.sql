@@ -9,7 +9,7 @@ BEGIN TRANSCATION
     (
     postalNumber integer,
     streetName varchar(255) primary key
-    owner f
+    owner FOREIGN KEY
 
     )
 INSERT INTO person (name , ssn , adress)
