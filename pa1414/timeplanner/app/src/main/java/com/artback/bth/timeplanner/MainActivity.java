@@ -37,7 +37,9 @@ public class MainActivity extends Activity {
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
 
-        
+        locationAdapter = new (myDataset);
+        mRecyclerView.setAdapter(mAdapter);
+
     }
 
     @Override
