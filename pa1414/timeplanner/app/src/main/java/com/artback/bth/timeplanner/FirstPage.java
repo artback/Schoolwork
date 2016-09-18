@@ -15,7 +15,7 @@ public class FirstPage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_page);
-        RecyclerView recList = (RecyclerView) findViewById(R.id.cardList);
+        RecyclerView recList = (RecyclerView) findViewById(R.id.locationList);
         recList.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
