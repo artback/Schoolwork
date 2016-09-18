@@ -11,12 +11,4 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.artback.bth.timeplanner.FirstPage">
 
-   <android.support.v7.widget.RecyclerView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-       android:layout_alignParentTop="true"
-       android:layout_alignParentEnd="true" />
 </RelativeLayout>
