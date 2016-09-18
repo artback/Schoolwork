@@ -10,20 +10,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends Activity {
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
+    private RecyclerView locationView;
+    private RecyclerView.Adapter locationAdapter;
+    private RecyclerView.LayoutManager locationLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_page);
-        RecyclerView recList = (RecyclerView) findViewById(R.id.locationList);
-        recList.setHasFixedSize(true);
+        locationView = (RecyclerView) findViewById(R.id.locationList);
+        locationView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
-        recList.setLayoutManager(llm);
+        locationView.setLayoutManager(llm);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
