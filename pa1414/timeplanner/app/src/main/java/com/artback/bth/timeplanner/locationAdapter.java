@@ -6,10 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/**
- * Created by freak on 9/18/16.
- */
-public class locationAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
+public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {
         private String[] mDataset;
 
         // Provide a reference to the views for each data item
@@ -25,13 +22,13 @@ public class locationAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> 
         }
 
         // Provide a suitable constructor (depends on the kind of dataset)
-        public MyAdapter(String[] myDataset) {
+        public locationAdapter(String[] myDataset) {
             mDataset = myDataset;
         }
 
         // Create new views (invoked by the layout manager)
         @Override
-        public MyAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
+        public locationAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
                                                        int viewType) {
             // create a new view
             View v = LayoutInflater.from(parent.getContext())
