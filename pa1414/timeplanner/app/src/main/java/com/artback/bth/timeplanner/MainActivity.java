@@ -34,7 +34,9 @@ public class MainActivity extends Activity {
             }
         });
 
-        
+        locationLayoutManager= new LinearLayoutManager(this);
+        locationLayoutManager.setLayoutManager(mLayoutManager);
+
     }
 
     @Override
