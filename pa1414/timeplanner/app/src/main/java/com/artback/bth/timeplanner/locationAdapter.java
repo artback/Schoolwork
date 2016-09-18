@@ -1,5 +1,11 @@
 package com.artback.bth.timeplanner;
 
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
 /**
  * Created by freak on 9/18/16.
  */
