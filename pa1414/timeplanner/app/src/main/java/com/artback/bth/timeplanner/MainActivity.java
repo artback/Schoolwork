@@ -11,7 +11,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends Activity {
     private RecyclerView locationView;
-    private RecyclerView.Adapter locationAdapter;
+    private RecyclerView.Adapter locAdapter;
     private RecyclerView.LayoutManager locationLayoutManager;
 
     @Override
@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
 
-        locationAdapter = new locationAp(myDataset);
+        locAdapter = new locationAdapter(myDataset);
         mRecyclerView.setAdapter(mAdapter);
 
     }
