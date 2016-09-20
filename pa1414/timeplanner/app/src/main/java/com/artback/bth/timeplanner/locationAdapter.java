@@ -33,8 +33,9 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
             // create a new view
             View v = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.activity_first_page, parent, false);
+            TextView tv = new TextView();
             // set the view's size, margins, paddings and layout parameters
-            ViewHolder vh = new ViewHolder(v);
+            ViewHolder vh = new ViewHolder(tv);
             return vh;
         }
 
