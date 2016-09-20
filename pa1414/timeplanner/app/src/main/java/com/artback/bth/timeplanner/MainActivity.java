@@ -2,7 +2,6 @@ package com.artback.bth.timeplanner;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -18,7 +17,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_page);
+        setContentView(R.layout.main_page);
         locationView = (RecyclerView) findViewById(R.id.locationList);
         locationView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
