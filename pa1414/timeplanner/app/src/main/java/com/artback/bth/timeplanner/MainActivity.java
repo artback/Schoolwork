@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
 public class MainActivity extends Activity {
     private RecyclerView locationView;
     private RecyclerView.Adapter locAdapter;
@@ -28,14 +29,14 @@ public class MainActivity extends Activity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+            
             }
         });
 
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
-        Location[] myLocationset = new Location[];
-        locAdapter = new locationAdapter(myLocationset);
+        Location[] myLocationSet = new Location[];
+        locAdapter = new locationAdapter(myLocationSet);
         locationView.setAdapter(locAdapter);
 
     }
