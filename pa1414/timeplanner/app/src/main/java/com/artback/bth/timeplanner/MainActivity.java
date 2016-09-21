@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
 
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
-        String[] myLocationset = new String[];
+        Location[] myLocationset = new Location[];
         locAdapter = new locationAdapter(myLocationset);
         locationView.setAdapter(locAdapter);
 
