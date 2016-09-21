@@ -1,22 +1,20 @@
 package com.artback.bth.timeplanner;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.widget.LinearLayoutManager;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
-/**
- * Created by freak on 9/21/16.
- */
-public class AddLocationActivty {
+
+public class AddLocationActivty extends Activity{
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_location_page);
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        llm.setOrientation(LinearLayoutManager.VERTICAL);
-        locationView.setLayoutManager(llm);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -26,11 +24,6 @@ public class AddLocationActivty {
             }
         });
 
-        locationLayoutManager= new LinearLayoutManager(this);
-        locationView.setLayoutManager(locationLayoutManager);
-        Location[] myLocationSet = new Location[10];
-        locAdapter = new locationAdapter(myLocationSet);
-        locationView.setAdapter(locAdapter);
 
     }
 
