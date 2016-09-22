@@ -13,7 +13,6 @@ public class MainActivity extends Activity {
     private RecyclerView locationView;
     private RecyclerView.Adapter locAdapter;
     private RecyclerView.LayoutManager locationLayoutManager;
-    AddLocationActivty locationActivty = 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -29,6 +28,7 @@ public class MainActivity extends Activity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Context
             }
         });
 
