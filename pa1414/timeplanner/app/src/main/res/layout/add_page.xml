@@ -14,6 +14,7 @@
         android:theme="@style/AppTheme.AppBarOverlay">
 
     </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/add_location_page" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
