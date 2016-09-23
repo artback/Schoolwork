@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
     private RecyclerView locationView;
     private RecyclerView.Adapter locAdapter;
     private RecyclerView.LayoutManager locationLayoutManager;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
