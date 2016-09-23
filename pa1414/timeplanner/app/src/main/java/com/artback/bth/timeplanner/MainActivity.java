@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
         fabNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             
+
             }
         });
 
