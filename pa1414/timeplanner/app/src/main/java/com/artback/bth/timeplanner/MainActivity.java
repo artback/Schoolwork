@@ -26,11 +26,11 @@ public class MainActivity extends Activity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         locationView.setLayoutManager(llm);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fabNew = (FloatingActionButton) findViewById(R.id.fabNew);
+        fabNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+            Intent
 
             }
         });

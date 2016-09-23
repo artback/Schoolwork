@@ -17,7 +17,7 @@
     <include layout="@layout/add_location_page" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fabSave"
         android:layout_width="wrap_content"
         android:backgroundTint="@color/colorAccent"
         android:layout_height="wrap_content"

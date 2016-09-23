@@ -15,11 +15,11 @@ public class AddLocationActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_page);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fabSave = (FloatingActionButton) findViewById(R.id.fab);
+        fabSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                //funktion for att spara till sql
             }
         });
 
