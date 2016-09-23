@@ -19,7 +19,7 @@ public class AddLocationActivity extends Activity{
         fabSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //funktion for att spara till sql och visa MainActivty igen om korrekt angivet
+                //funktion for att spara till sql och visa MainActivty igen om korre
             }
         });
 
