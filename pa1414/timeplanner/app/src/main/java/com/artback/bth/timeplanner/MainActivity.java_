@@ -20,7 +20,6 @@ public class MainActivity extends ActionBarActivity {
 		fragmentManager.beginTransaction()
 				.replace(android.R.id.content, f, "home").commit();
 		fragmentManager.executePendingTransactions();
-
 		startService(new Intent(this, GeolocationService.class));
 	}
 }
