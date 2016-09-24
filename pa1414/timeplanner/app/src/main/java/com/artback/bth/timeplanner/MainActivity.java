@@ -10,6 +10,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
+
 
 public class MainActivity extends Activity {
     private RecyclerView locationView;
@@ -21,7 +24,7 @@ public class MainActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
-        locationView = (RecyclerView) findViewById(R.id.locationList);
+        locationView = (RecyclerView) findViewById(R.id.location_list);
         locationView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
