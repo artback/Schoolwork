@@ -15,7 +15,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/Location_list_page" />
+    <include layout="@layout/location_list_page" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabNew"
