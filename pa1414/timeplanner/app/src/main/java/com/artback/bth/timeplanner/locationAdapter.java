@@ -33,7 +33,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
             View v = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.main_page, parent, false);
             // set the view's size, margins, paddings and layout parameters
-            ViewHolder vh = new ViewHolder(tv);
+            ViewHolder vh = new ViewHolder(v);
             return vh;
         }
 
