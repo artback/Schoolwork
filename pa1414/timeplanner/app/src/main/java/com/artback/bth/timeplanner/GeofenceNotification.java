@@ -1,4 +1,4 @@
-package me.hoen.geofence_21;
+package com.artback.bth.timeplanner;
 
 import android.app.Notification;
 import android.app.NotificationManager;
