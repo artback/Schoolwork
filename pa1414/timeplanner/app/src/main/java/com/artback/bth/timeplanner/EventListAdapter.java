@@ -1,6 +1,7 @@
 package com.artback.bth.timeplanner;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -12,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.artback.bth.timeplanner.db.Event;
 
 public class EventListAdapter extends ArrayAdapter<Event> {
 	protected Activity activity;
