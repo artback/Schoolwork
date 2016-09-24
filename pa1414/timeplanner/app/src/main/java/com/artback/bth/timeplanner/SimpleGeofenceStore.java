@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import android.text.format.DateUtils;
 
+import com.artback.bth.timeplanner.SimpleGeofence;
 import com.google.android.gms.location.Geofence;
 
 public class SimpleGeofenceStore {
