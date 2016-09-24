@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
     private RecyclerView.Adapter locAdapter;
     private RecyclerView.LayoutManager locationLayoutManager;
     private GoogleApiClient mGoogleApiClient;
-
+    public static String TAG = "Debug";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

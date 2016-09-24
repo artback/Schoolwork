@@ -1,14 +1,13 @@
-package me.hoen.geofence_21;
+package com.artback.bth.timeplanner;
 
 import java.util.Date;
 import java.util.List;
 
-import me.hoen.geofence_21.db.EventDataSource;
+import .hoen.geofence_21.db.EventDataSource;
 import android.app.IntentService;
 import android.content.Intent;
 import android.text.format.DateFormat;
 import android.util.Log;
-
 import com.google.android.gms.location.Geofence;
 import com.google.android.gms.location.GeofencingEvent;
 
