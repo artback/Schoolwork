@@ -55,8 +55,12 @@ public class MainActivity extends Activity {
     }
 
     @Override
+    protected void onStart() {
+        mGoogleApiClient.connect();
+        super.onStart();
+    }
 
-    
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
