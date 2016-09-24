@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
                 .enableAutoManage(this /* FragmentActivity */,
                         this /* OnConnectionFailedListener */)
                 .addApi(Location.API)
-                .addScope(Drive.SCOPE_FILE)
+                .addScope(.SCOPE_FILE)
                 .build();
 
         setContentView(R.layout.main_page);
