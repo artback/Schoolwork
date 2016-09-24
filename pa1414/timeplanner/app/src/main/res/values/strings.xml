@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">TimePlanner</string>
     <string name="action_settings">Settings</string>
+    <string name="geofence_enter">Starting Timer at  %1$s</string>
+    <string name="geofence_dwell">Dwell %1$s</string>
+    <string name="geofence_exit">Stoping timer at %1$s</string>
+    <string name="events">Events</string>
+    <string name="map">Map</string>
+    <string name="transition">Transition</string>
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">App registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">Too many PendingIntents provided</string>
+    <string name="unknown_geofence_error">Unknown error</string>
+    <string name="geofences_added">Geofences added</string>
 </resources>
