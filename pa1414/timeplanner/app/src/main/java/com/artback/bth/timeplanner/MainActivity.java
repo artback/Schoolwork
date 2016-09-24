@@ -18,15 +18,12 @@ public class MainActivity extends Activity {
     private RecyclerView locationView;
     private RecyclerView.Adapter locAdapter;
     private RecyclerView.LayoutManager locationLayoutManager;
+    private GoogleApiClient mGoogleApiClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .enableAutoManage(this /* FragmentActivity */,
-                        this /* OnConnectionFailedListener */)
-                .addApi(Drive.API)
-                .addScope(Drive.SCOPE_FILE)
                 .build();
 
         setContentView(R.layout.main_page);
