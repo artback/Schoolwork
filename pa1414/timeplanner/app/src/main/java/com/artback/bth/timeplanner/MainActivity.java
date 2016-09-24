@@ -1,5 +1,6 @@
 package com.artback.bth.timeplanner;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,6 +19,7 @@ public class MainActivity extends Activity {
     private RecyclerView.LayoutManager locationLayoutManager;
     private GoogleApiClient mGoogleApiClient;
     public static String TAG = "Debug";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +55,8 @@ public class MainActivity extends Activity {
         locAdapter = new locationAdapter(myLocationSet);
         locationView.setAdapter(locAdapter);
 
+        //start geolocation
+        startService(new Intent(this, GeolocationService.class));
     }
 
     @Override
