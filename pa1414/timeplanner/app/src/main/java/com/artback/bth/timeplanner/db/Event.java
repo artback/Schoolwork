@@ -1,4 +1,4 @@
-package me.hoen.geofence_21.db;
+package com.artback.bth.timeplanner.db;
 
 import android.database.Cursor;
 

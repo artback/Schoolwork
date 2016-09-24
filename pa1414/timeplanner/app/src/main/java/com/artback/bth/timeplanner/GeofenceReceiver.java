@@ -3,7 +3,6 @@ package com.artback.bth.timeplanner;
 import java.util.Date;
 import java.util.List;
 
-import .hoen.geofence_21.db.EventDataSource;
 import android.app.IntentService;
 import android.content.Intent;
 import android.text.format.DateFormat;
@@ -35,7 +34,7 @@ public class GeofenceReceiver extends IntentService {
 				List<Geofence> triggerList = geoEvent.getTriggeringGeofences();
 
 				for (Geofence geofence : triggerList) {
-					SimpleGeofence sg = SimpleGeofenceStore.getInstance()
+					me.hoen.geofence_21.SimpleGeofence sg = SimpleGeofenceStore.getInstance()
 							.getSimpleGeofences().get(geofence.getRequestId());
 
 					String transitionName = "";

@@ -1,4 +1,4 @@
-package me.hoen.geofence_21.db;
+package com.artback.bth.timeplanner.db;
 
 import java.util.ArrayList;
 
@@ -7,6 +7,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+
 
 public class EventDataSource {
 	private String[] allColumns = { SqliteHelper.COLUMN_ID,
