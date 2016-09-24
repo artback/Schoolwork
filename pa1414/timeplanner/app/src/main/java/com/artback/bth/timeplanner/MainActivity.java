@@ -11,7 +11,6 @@ import android.view.MenuItem;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
 
 
 public class MainActivity extends Activity {
