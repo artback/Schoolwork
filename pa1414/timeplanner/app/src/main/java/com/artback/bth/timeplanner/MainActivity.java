@@ -11,9 +11,10 @@ import android.view.MenuItem;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
 
 
-public class MainActivity extends Activity implements OnConnectionFailedListener
+public class MainActivity extends Activity implements OnConnectionFailedListener{
     private RecyclerView locationView;
     private RecyclerView.Adapter locAdapter;
     private RecyclerView.LayoutManager locationLayoutManager;
