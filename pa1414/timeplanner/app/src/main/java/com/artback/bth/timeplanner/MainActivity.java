@@ -23,7 +23,12 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mGoogleApiClient = new GoogleApiClient.Builder(this).build();
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .enableAutoManage(this /* FragmentActivity */,
+                        this /* OnConnectionFailedListener */)
+                .addApi(Location.API)
+                .addScope(Drive.SCOPE_FILE)
+                .build();
 
         setContentView(R.layout.main_page);
         locationView = (RecyclerView) findViewById(R.id.location_list);
