@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
     private RecyclerView.LayoutManager locationLayoutManager;
     private GoogleApiClient mGoogleApiClient;
     public static String TAG = "Debug";
-
+    static public boolean geofencesAlreadyRegistered = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

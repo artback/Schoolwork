@@ -3,14 +3,17 @@ package com.artback.bth.timeplanner;
 import java.util.HashMap;
 import java.util.Map;
 
+import android.Manifest;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -73,6 +76,16 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 		mPendingIntent = requestPendingIntent();
 
+		if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+			// TODO: Consider calling
+			//    ActivityCompat#requestPermissions
+			// here to request the missing permissions, and then overriding
+			//   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+			//                                          int[] grantResults)
+			// to handle the case where the user grants the permission. See the documentation
+			// for ActivityCompat#requestPermissions for more details.
+			return;
+		}
 		LocationServices.GeofencingApi.addGeofences(mGoogleApiClient,
 				geofencingRequest, mPendingIntent).setResultCallback(this);
 
@@ -103,6 +116,16 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 	}
 
 	protected void startLocationUpdates() {
+		if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+			// TODO: Consider calling
+			//    ActivityCompat#requestPermissions
+			// here to request the missing permissions, and then overriding
+			//   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+			//                                          int[] grantResults)
+			// to handle the case where the user grants the permission. See the documentation
+			// for ActivityCompat#requestPermissions for more details.
+			return;
+		}
 		LocationServices.FusedLocationApi.requestLocationUpdates(
 				mGoogleApiClient, mLocationRequest, this);
 	}
