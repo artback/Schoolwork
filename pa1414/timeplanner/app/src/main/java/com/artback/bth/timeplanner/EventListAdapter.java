@@ -1,11 +1,9 @@
-package me.hoen.geofence_21;
+package com.artback.bth.timeplanner;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
-import me.hoen.geofence_21.db.Event;
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
