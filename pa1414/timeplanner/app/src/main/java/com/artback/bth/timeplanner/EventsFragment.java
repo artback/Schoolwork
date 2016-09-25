@@ -67,7 +67,7 @@ public class EventsFragment extends Fragment {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-		case R.id.go_to_map:
+		case id.go_to_map:
 			Fragment f = new MapFragment();
 			FragmentManager fragmentManager = getFragmentManager();
 
