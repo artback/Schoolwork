@@ -12,6 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.artback.bth.timeplanner.db.Event;
+import com.artback.bth.timeplanner.db.EventDataSource;
+
 import java.util.ArrayList;
 
 public class EventsFragment extends Fragment {
