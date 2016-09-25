@@ -33,14 +33,6 @@ public class MainActivity extends Activity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         locationView.setLayoutManager(llm);
 
-        if (mGoogleApiClient == null) {
-            mGoogleApiClient = new GoogleApiClient.Builder(this)
-                    .addConnectionCallbacks(this)
-                    .addOnConnectionFailedListener(this)
-                    .addApi(LocationServices.API)
-                    .build();
-        }
-
         FloatingActionButton fabNew = (FloatingActionButton) findViewById(R.id.fabNew);
         fabNew.setOnClickListener(new View.OnClickListener() {
             @Override
