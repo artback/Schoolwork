@@ -6,8 +6,6 @@ import android.content.Context;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-import com.google.android.gms.location.Geofence;
-
 public class GeofenceNotification {
 	public static final int NOTIFICATION_ID = 20;
 
@@ -23,26 +21,26 @@ public class GeofenceNotification {
 				.getSystemService(Context.NOTIFICATION_SERVICE);
 	}
 
-	protected void buildNotificaction(Location  loc,
+	protected void buildNotificaction(Geofence loc,
 			int transitionType) {
 
 		String notificationText = "";
 		Object[] notificationTextParams = new Object[] { loc.getId() };
 
 		switch (transitionType) {
-		case Geofence.GEOFENCE_TRANSITION_DWELL:
+		case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_DWELL:
 			notificationText = String.format(
 					context.getString(R.string.geofence_dwell),
 					notificationTextParams);
 			break;
 
-		case Geofence.GEOFENCE_TRANSITION_ENTER:
+		case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER:
 			notificationText = String.format(
 					context.getString(R.string.geofence_enter),
 					notificationTextParams);
 			break;
 
-		case Geofence.GEOFENCE_TRANSITION_EXIT:
+		case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT:
 			notificationText = String.format(
 					context.getString(R.string.geofence_exit),
 					notificationTextParams);
@@ -62,7 +60,7 @@ public class GeofenceNotification {
 		notification.defaults |= Notification.DEFAULT_VIBRATE;
 	}
 
-	public void displayNotification(Location loc,
+	public void displayNotification(Geofence loc,
 			int transitionType) {
 		buildNotificaction(loc , transitionType);
 

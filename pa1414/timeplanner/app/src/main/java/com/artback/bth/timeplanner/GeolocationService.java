@@ -61,12 +61,12 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 		Log.d(MainActivity.TAG, "Registering Geofences");
 
-		HashMap<String, Location> geofences = LocationStore
+		HashMap<String, Geofence> geofences = LocationStore
 				.getInstance().getSimpleGeofences();
 
 		GeofencingRequest.Builder geofencingRequestBuilder = new GeofencingRequest.Builder();
-		for (Map.Entry<String, Location> item : geofences.entrySet()) {
-			Location loc = item.getValue();
+		for (Map.Entry<String, Geofence> item : geofences.entrySet()) {
+			Geofence loc = item.getValue();
 
 			geofencingRequestBuilder.addGeofence(loc.toGeofence());
 		}
@@ -105,7 +105,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 		}
 	}
 
-	public void broadcastLocationFound(Location location) {
+	public void broadcastLocationFound(Geofence location) {
 		Intent intent = new Intent("com.artback.bth.timeplanner.geolocation.service");
 		intent.putExtra("latitude", location.getLatitude());
 		intent.putExtra("longitude", location.getLongitude());
@@ -141,7 +141,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 	}
 
 	@Override
-	public void onLocationChanged(Location location) {
+	public void onLocationChanged(Geofence location) {
 		Log.d(MainActivity.TAG,
 				"new location : " + location.getLatitude() + ", "
 						+ location.getLongitude() + ". "

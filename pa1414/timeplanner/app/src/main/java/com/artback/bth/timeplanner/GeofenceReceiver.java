@@ -9,7 +9,6 @@ import android.text.format.DateFormat;
 import android.util.Log;
 
 import com.artback.bth.timeplanner.db.EventDataSource;
-import com.google.android.gms.location.Geofence;
 import com.google.android.gms.location.GeofencingEvent;
 
 public class GeofenceReceiver extends IntentService {
@@ -30,26 +29,26 @@ public class GeofenceReceiver extends IntentService {
 
 			int transitionType = geoEvent.getGeofenceTransition();
 
-			if (transitionType == Geofence.GEOFENCE_TRANSITION_ENTER
-					|| transitionType == Geofence.GEOFENCE_TRANSITION_DWELL
-					|| transitionType == Geofence.GEOFENCE_TRANSITION_EXIT) {
-				List<Geofence> triggerList = geoEvent.getTriggeringGeofences();
+			if (transitionType == com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER
+					|| transitionType == com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_DWELL
+					|| transitionType == com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT) {
+				List<com.google.android.gms.location.Geofence> triggerList = geoEvent.getTriggeringGeofences();
 
-				for (Geofence geofence : triggerList) {
-					Location loc = LocationStore.getInstance()
+				for (com.google.android.gms.location.Geofence geofence : triggerList) {
+					Geofence loc = LocationStore.getInstance()
 							.getSimpleGeofences().get(geofence.getRequestId());
 
 					String transitionName = "";
 					switch (transitionType) {
-					case Geofence.GEOFENCE_TRANSITION_DWELL:
+					case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_DWELL:
 						transitionName = "dwell";
 						break;
 
-					case Geofence.GEOFENCE_TRANSITION_ENTER:
+					case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER:
 						transitionName = "enter";
 						break;
 
-					case Geofence.GEOFENCE_TRANSITION_EXIT:
+					case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT:
 						transitionName = "exit";
 						break;
 					}

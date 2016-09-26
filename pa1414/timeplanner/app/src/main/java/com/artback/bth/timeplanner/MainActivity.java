@@ -10,7 +10,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationServices;
 
 
 public class MainActivity extends Activity {
@@ -43,8 +42,8 @@ public class MainActivity extends Activity {
 
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
-        Location[] myLocationSet = new Location[10];
-        locAdapter = new locationAdapter(myLocationSet);
+        Geofence[] myGeofenceSet = new Geofence[10];
+        locAdapter = new locationAdapter(myGeofenceSet);
         locationView.setAdapter(locAdapter);
 
         //start geolocation
