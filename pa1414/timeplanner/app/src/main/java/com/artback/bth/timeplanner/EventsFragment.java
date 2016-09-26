@@ -68,7 +68,7 @@ public class EventsFragment extends Fragment {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.go_to_map:
-			Fragment f = new MapFragment();
+			Fragment f = new Fragment();
 			FragmentManager fragmentManager = getFragmentManager();
 
 			fragmentManager.beginTransaction().replace(android.R.id.content, f)

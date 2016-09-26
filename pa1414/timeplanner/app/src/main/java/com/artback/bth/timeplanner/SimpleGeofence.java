@@ -2,7 +2,7 @@ package com.artback.bth.timeplanner;
 
 import com.google.android.gms.location.Geofence;
 
-public class SimpleGeofence {
+public class Location {
 	private final String id;
 	private final double latitude;
 	private final double longitude;
