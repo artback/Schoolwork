@@ -107,7 +107,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 	}
 
 	public void broadcastLocationFound(Location location) {
-		Intent intent = new Intent("me.hoen.geofence_21.geolocation.service");
+		Intent intent = new Intent("com.artback.bth.timeplanner.geolocation.service");
 		intent.putExtra("latitude", location.getLatitude());
 		intent.putExtra("longitude", location.getLongitude());
 		intent.putExtra("done", 1);
