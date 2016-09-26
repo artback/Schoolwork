@@ -11,7 +11,7 @@ public class Location {
 	private int transitionType;
 	private int loiteringDelay = 60000;
 
-	public SimpleGeofence(String geofenceId, double latitude, double longitude,
+	public Location(String geofenceId, double latitude, double longitude,
 			float radius, long expiration, int transition) {
 		this.id = geofenceId;
 		this.latitude = latitude;
