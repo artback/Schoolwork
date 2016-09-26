@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.location.Location;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v4.app.ActivityCompat;
@@ -61,12 +62,12 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 		Log.d(MainActivity.TAG, "Registering Geofences");
 
-		HashMap<String, Geofence> geofences = LocationStore
+		HashMap<String, GeofenceLocation> geofences = LocationStore
 				.getInstance().getSimpleGeofences();
 
 		GeofencingRequest.Builder geofencingRequestBuilder = new GeofencingRequest.Builder();
-		for (Map.Entry<String, Geofence> item : geofences.entrySet()) {
-			Geofence loc = item.getValue();
+		for (Map.Entry<String, GeofenceLocation> item : geofences.entrySet()) {
+			GeofenceLocation loc = item.getValue();
 
 			geofencingRequestBuilder.addGeofence(loc.toGeofence());
 		}
@@ -105,7 +106,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 		}
 	}
 
-	public void broadcastLocationFound(Geofence location) {
+	public void broadcastLocationFound(Location location) {
 		Intent intent = new Intent("com.artback.bth.timeplanner.geolocation.service");
 		intent.putExtra("latitude", location.getLatitude());
 		intent.putExtra("longitude", location.getLongitude());
@@ -141,7 +142,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 	}
 
 	@Override
-	public void onLocationChanged(Geofence location) {
+	public void onLocationChanged(Location location) {
 		Log.d(MainActivity.TAG,
 				"new location : " + location.getLatitude() + ", "
 						+ location.getLongitude() + ". "

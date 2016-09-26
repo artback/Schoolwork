@@ -21,7 +21,7 @@ public class GeofenceNotification {
 				.getSystemService(Context.NOTIFICATION_SERVICE);
 	}
 
-	protected void buildNotificaction(Geofence loc,
+	protected void buildNotificaction(GeofenceLocation loc,
 			int transitionType) {
 
 		String notificationText = "";
@@ -60,7 +60,7 @@ public class GeofenceNotification {
 		notification.defaults |= Notification.DEFAULT_VIBRATE;
 	}
 
-	public void displayNotification(Geofence loc,
+	public void displayNotification(GeofenceLocation loc,
 			int transitionType) {
 		buildNotificaction(loc , transitionType);
 

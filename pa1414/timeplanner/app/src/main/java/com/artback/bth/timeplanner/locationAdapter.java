@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {
-        private Geofence[] mDataset;
+        private GeofenceLocation[] mDataset;
 
         // Provide a reference to the views for each data item
         // Complex data items may need more than one view per item, and
@@ -21,7 +21,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         }
 
         // Provide a suitable constructor (depends on the kind of dataset)
-        public locationAdapter(Geofence[] myDataset) {
+        public locationAdapter(GeofenceLocation[] myDataset) {
             mDataset = myDataset;
         }
 

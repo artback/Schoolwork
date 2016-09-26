@@ -2,7 +2,7 @@ package com.artback.bth.timeplanner;
 
 import com.google.android.gms.location.Geofence;
 
-public class Geofence {
+public class GeofenceLocation {
 	private final String id;
 	private final double latitude;
 	private final double longitude;
@@ -11,8 +11,8 @@ public class Geofence {
 	private int transitionType;
 	private int loiteringDelay = 60000;
 
-	public Geofence(String geofenceId, double latitude, double longitude,
-					float radius, long expiration, int transition) {
+	public GeofenceLocation(String geofenceId, double latitude, double longitude,
+							float radius, long expiration, int transition) {
 		this.id = geofenceId;
 		this.latitude = latitude;
 		this.longitude = longitude;
