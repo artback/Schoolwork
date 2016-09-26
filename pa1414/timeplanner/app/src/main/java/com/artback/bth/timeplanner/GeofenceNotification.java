@@ -23,11 +23,11 @@ public class GeofenceNotification {
 				.getSystemService(Context.NOTIFICATION_SERVICE);
 	}
 
-	protected void buildNotificaction(SimpleGeofence simpleGeofence,
+	protected void buildNotificaction(Location  loc,
 			int transitionType) {
 
 		String notificationText = "";
-		Object[] notificationTextParams = new Object[] { simpleGeofence.getId() };
+		Object[] notificationTextParams = new Object[] { loc.getId() };
 
 		switch (transitionType) {
 		case Geofence.GEOFENCE_TRANSITION_DWELL:
@@ -62,9 +62,9 @@ public class GeofenceNotification {
 		notification.defaults |= Notification.DEFAULT_VIBRATE;
 	}
 
-	public void displayNotification(SimpleGeofence simpleGeofence,
+	public void displayNotification(Location loc,
 			int transitionType) {
-		buildNotificaction(simpleGeofence, transitionType);
+		buildNotificaction(loc , transitionType);
 
 		notificationManager.notify(NOTIFICATION_ID, notification);
 	}
