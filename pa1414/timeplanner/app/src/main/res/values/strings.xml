@@ -12,4 +12,11 @@
     <string name="geofence_too_many_pending_intents">Too many PendingIntents provided</string>
     <string name="unknown_geofence_error">Unknown error</string>
     <string name="geofences_added">Geofences added</string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THU</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+    <string name="sunday">SUN</string>
 </resources>
