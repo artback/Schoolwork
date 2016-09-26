@@ -62,7 +62,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 		Log.d(MainActivity.TAG, "Registering Geofences");
 
-		HashMap<String, GeofenceLocation> geofences = LocationStore
+		HashMap<String, GeofenceLocation> geofences = GeofenceLocationStore
 				.getInstance().getSimpleGeofences();
 
 		GeofencingRequest.Builder geofencingRequestBuilder = new GeofencingRequest.Builder();

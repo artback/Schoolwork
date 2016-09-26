@@ -4,18 +4,18 @@ import java.util.HashMap;
 
 import android.text.format.DateUtils;
 
-public class LocationStore {
+public class GeofenceLocationStore {
 	private static final long GEOFENCE_EXPIRATION_IN_HOURS = 12;
 	public static final long GEOFENCE_EXPIRATION_IN_MILLISECONDS = GEOFENCE_EXPIRATION_IN_HOURS
 			* DateUtils.HOUR_IN_MILLIS;
 	protected HashMap<String, GeofenceLocation> geofences = new HashMap<String, GeofenceLocation>();
-	private static LocationStore instance = new LocationStore();
+	private static GeofenceLocationStore instance = new GeofenceLocationStore();
 
-	public static LocationStore getInstance() {
+	public static GeofenceLocationStore getInstance() {
 		return instance;
 	}
 
-	private LocationStore() {
+	private GeofenceLocationStore() {
 		geofences.put("The Shire", new GeofenceLocation("The Shire", 51.663398, -0.209118,
 				100, GEOFENCE_EXPIRATION_IN_MILLISECONDS,
 				com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER
