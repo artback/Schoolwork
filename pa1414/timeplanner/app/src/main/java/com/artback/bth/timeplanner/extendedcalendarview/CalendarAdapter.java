@@ -18,6 +18,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.artback.bth.timeplanner.R;
+
 public class CalendarAdapter extends BaseAdapter{
 	
 	static final int FIRST_DAY_OF_WEEK =0;
