@@ -130,9 +130,8 @@ public class MapFragment extends Fragment {
 		myPositionMarker.setPosition(latLng);
 		map.moveCamera(CameraUpdateFactory.newLatLng(latLng));
 	}
-
-	@Override
-	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+	 @Override
+	 public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 		super.onCreateOptionsMenu(menu, inflater);
 
 		inflater.inflate(R.menu.menu_map, menu);
