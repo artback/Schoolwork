@@ -28,8 +28,8 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         }
 
         // Provide a suitable constructor (depends on the kind of dataset)
-        public locationAdapter(GeofenceLocation[] myDataset) {
-            mDataset = myDataset;
+        public locationAdapter(List<GeofenceLocation> GeofenceLocations) {
+            mGeofenceLocations = GeofenceLocations;
         }
 
         // Create new views (invoked by the layout manager)
