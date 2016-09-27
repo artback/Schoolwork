@@ -11,7 +11,7 @@
 
 
     <TextView
-        android:id="@+id/time"
+        android:id="@+id/time_text"
         android:text="12H"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/location"
+        android:id="@+id/location_text"
         tools:text="BTH "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
