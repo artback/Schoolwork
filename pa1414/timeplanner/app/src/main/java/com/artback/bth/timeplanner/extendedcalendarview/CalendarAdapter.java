@@ -18,6 +18,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.artback.bth.timeplanner.R;
+
 
 public class CalendarAdapter extends BaseAdapter{
 	
@@ -99,7 +101,8 @@ public class CalendarAdapter extends BaseAdapter{
 			FrameLayout today = (FrameLayout)v.findViewById(R.id.today_frame);
 			Calendar cal = Calendar.getInstance(TimeZone.getDefault(), Locale.getDefault());
 			Day d = dayList.get(position);
-			if(d.getYear() == cal.get(Calendar.YEAR) && d.getMonth() == cal.get(Calendar.MONTH) && d.getDay() == cal.get(Calendar.DAY_OF_MONTH)){
+			if(d.getYear() == cal.get(Calendar.YEAR) && d.getMonth() == cal.get(Calendar.MONTH) &&
+					d.getDay() == cal.get(Calendar.DAY_OF_MONTH)){
 				today.setVisibility(View.VISIBLE);
 			}else{
 				today.setVisibility(View.GONE);
