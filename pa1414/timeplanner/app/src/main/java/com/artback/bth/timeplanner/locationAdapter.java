@@ -18,6 +18,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         public static class ViewHolder extends RecyclerView.ViewHolder {
             // each data item is just a string in this case
             public View mView;
+            
             public ViewHolder(View v) {
                 super(v);
                 mView = v;
