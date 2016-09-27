@@ -20,7 +20,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/locationview"
+        android:id="@+id/location"
         tools:text="BTH "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
