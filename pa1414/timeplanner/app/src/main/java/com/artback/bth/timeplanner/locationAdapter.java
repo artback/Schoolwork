@@ -8,8 +8,6 @@ import android.widget.TextView;
 
 public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {
         private GeofenceLocation[] mDataset;
-        public TextView locationTextView;
-        public TextView timeTextView;
 
 
         // Provide a reference to the views for each data item
@@ -17,10 +15,10 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         // you provide access to all the views for a data item in a view holder
         public static class ViewHolder extends RecyclerView.ViewHolder {
             // each data item is just a string in this case
-            public View mView;
+            public TextView locationTextView;
+            public TextView timeTextView;
             public ViewHolder(View v) {
                 super(v);
-                mView = v;
             }
         }
 
