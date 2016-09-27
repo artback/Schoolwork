@@ -9,21 +9,17 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.google.android.gms.common.api.GoogleApiClient;
 
 
 public class MainActivity extends Activity {
     private RecyclerView locationView;
     private RecyclerView.Adapter locAdapter;
     private RecyclerView.LayoutManager locationLayoutManager;
-    private GoogleApiClient mGoogleApiClient;
     public static String TAG = "Debug";
     static public boolean geofencesAlreadyRegistered = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .build();
 
         setContentView(R.layout.main_page);
         locationView = (RecyclerView) findViewById(R.id.location_list);
@@ -52,7 +48,6 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onStart() {
-        mGoogleApiClient.connect();
         super.onStart();
     }
 
