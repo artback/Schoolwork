@@ -19,6 +19,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
             public TextView timeTextView;
             public ViewHolder(View v) {
                 super(v);
+                
             }
         }
 
