@@ -11,7 +11,7 @@
 
 
     <TextView
-        android:id="@+id/timeview"
+        android:id="@+id/time"
         android:text="12H"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
