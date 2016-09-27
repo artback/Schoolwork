@@ -8,7 +8,7 @@ import android.view.View;
  */
 
 public class LocationView extends View {
-    public LocationView(Context context) {
+    public LocationView(Context context,) {
         super(context);
     }
 }
