@@ -1,5 +1,6 @@
 package com.artback.bth.timeplanner;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import java.util.List;
 
 public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {
         private List<GeofenceLocation> mGeofenceLocations;
+        private Context mContext;
 
 
         // Provide a reference to the views for each data item
@@ -28,8 +30,9 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         }
 
         // Provide a suitable constructor (depends on the kind of dataset)
-        public locationAdapter(ConteList<GeofenceLocation> GeofenceLocations) {
+        public locationAdapter(Context context ,List<GeofenceLocation> GeofenceLocations) {
             mGeofenceLocations = GeofenceLocations;
+            mContext = context;
         }
 
         // Create new views (invoked by the layout manager)
