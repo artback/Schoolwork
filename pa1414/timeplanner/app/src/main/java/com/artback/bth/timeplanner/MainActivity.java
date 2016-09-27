@@ -21,11 +21,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
         setContentView(R.layout.main_page);
-
-
 
         locationView = (RecyclerView) findViewById(R.id.location_list);
         locationView.setHasFixedSize(true);
@@ -33,20 +29,17 @@ public class MainActivity extends Activity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         locationView.setLayoutManager(llm);
 
-
-
-
         FloatingActionButton fabNew = (FloatingActionButton) findViewById(R.id.fabNew);
         fabNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+            setContentView(R.layout.add_location_page);
             }
         });
 
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
-        GeofenceLocation[] myGeofenceSet = new GeofenceLocation[10];
+        List<>
         locAdapter = new locationAdapter(myGeofenceSet);
         locationView.setAdapter(locAdapter);
 
