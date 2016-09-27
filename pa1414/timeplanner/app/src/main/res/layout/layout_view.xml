@@ -21,8 +21,8 @@
     <TextView
         android:id="@+id/locationview"
         android:layout_width="192dp"
-        android:textColor="@android:color/white"
-        tools:text="locationview"
+        tools:text="BTH "
         android:layout_height="61dp"
-        android:textSize="18sp" />
+        android:typeface="sans"
+        android:textSize="24sp" />
 </FrameLayout>
