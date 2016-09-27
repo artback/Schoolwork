@@ -15,7 +15,7 @@ public class AddLocationActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_page);
 
-        FloatingActionButton fabSave = (FloatingActionButton) findViewById(R.id.fabSave);
+        FloatingActionButton fabSave = (FloatingActionButton) findViewById();
         fabSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
