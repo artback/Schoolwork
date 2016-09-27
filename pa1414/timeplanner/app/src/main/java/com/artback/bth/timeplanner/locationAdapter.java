@@ -28,7 +28,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         }
 
         // Provide a suitable constructor (depends on the kind of dataset)
-        public locationAdapter(List<GeofenceLocation> GeofenceLocations) {
+        public locationAdapter(ConteList<GeofenceLocation> GeofenceLocations) {
             mGeofenceLocations = GeofenceLocations;
         }
 
