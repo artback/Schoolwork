@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main_page);
 
 
-         
+        //
         locationView = (RecyclerView) findViewById(R.id.location_list);
         locationView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
