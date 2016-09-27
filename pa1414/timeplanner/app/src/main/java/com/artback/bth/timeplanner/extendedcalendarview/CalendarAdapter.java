@@ -18,7 +18,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.artback.bth.timeplanner.R;
 
 public class CalendarAdapter extends BaseAdapter{
 	
@@ -54,7 +53,7 @@ public class CalendarAdapter extends BaseAdapter{
 	
 	public int getPrevMonth(){
 		if(cal.get(Calendar.MONTH) == cal.getActualMinimum(Calendar.MONTH)){
-			cal.set(Calendar.YEAR, cal.get(Calendar.YEAR-1));
+			cal.set(Calendar.YEAR, cal.get(Calendar.YEAR));
 		}else{
 			
 		}
