@@ -22,13 +22,19 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
 
-         
+
         setContentView(R.layout.main_page);
+
+
+         
         locationView = (RecyclerView) findViewById(R.id.location_list);
         locationView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         locationView.setLayoutManager(llm);
+
+
+
 
         FloatingActionButton fabNew = (FloatingActionButton) findViewById(R.id.fabNew);
         fabNew.setOnClickListener(new View.OnClickListener() {
