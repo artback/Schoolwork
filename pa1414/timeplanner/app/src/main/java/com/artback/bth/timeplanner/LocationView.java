@@ -9,7 +9,7 @@ import android.view.View;
  */
 
 public class LocationView extends View {
-    public LocationView(Context context, AttributeSet ) {
+    public LocationView(Context context, AttributeSet attrs) {
         super(context);
     }
 }
