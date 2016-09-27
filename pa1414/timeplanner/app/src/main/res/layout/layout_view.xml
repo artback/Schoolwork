@@ -10,12 +10,19 @@
 
 
     <TextView
-        android:id="@+id/text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
+        android:text="12H"
+        android:layout_width="211dp"
+        android:layout_height="58dp"
+        android:layout_gravity="end"
+        android:textAlignment="textEnd"
+        android:id="@+id/timeview"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/locationview"
+        android:layout_width="192dp"
         android:textColor="@android:color/white"
-        android:padding="@dimen/spacing_large"
-        tools:text="Hero text"
-        />
+        tools:text="locationview"
+        android:layout_height="61dp"
+        android:textSize="18sp" />
 </FrameLayout>
