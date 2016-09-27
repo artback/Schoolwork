@@ -1,5 +1,4 @@
 package com.artback.bth.timeplanner.extendedcalendarview;
-
 import java.util.HashMap;
 import java.util.List;
 
