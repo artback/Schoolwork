@@ -3,7 +3,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="200dp"
     android:layout_margin="@dimen/spacing_xsmall"
     android:foreground="?android:attr/selectableItemBackground"
     tools:layout_gravity="center">
@@ -13,7 +13,7 @@
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_gravity="top"
         android:textColor="@android:color/white"
         android:gravity="center"
         android:padding="@dimen/spacing_large"
