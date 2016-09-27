@@ -55,7 +55,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         GeofenceLocation location = mGeofenceLocations.get(position);
         TextView textView = holder.locationTextView;
         textView.setText(location.getId());
-        
+        textView.setText();
         //holder.mView.setText(mDataset[position].getName());
     }
     // Return the size of your dataset (invoked by the layout manager)
