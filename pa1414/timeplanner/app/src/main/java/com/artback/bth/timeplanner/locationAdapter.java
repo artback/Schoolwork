@@ -6,8 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {
-        private GeofenceLocation[] mDataset;
+        private List<GeofenceLocation> mGeofenceLocation;
 
 
         // Provide a reference to the views for each data item
