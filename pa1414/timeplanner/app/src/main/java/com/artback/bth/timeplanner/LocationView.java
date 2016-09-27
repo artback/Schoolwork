@@ -9,5 +9,5 @@ public class LocationView extends View {
     public LocationView(Context context, AttributeSet attrs) {
         super(context,attrs);
     }
-    
+
 }

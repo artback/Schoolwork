@@ -21,6 +21,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+         
         setContentView(R.layout.main_page);
         locationView = (RecyclerView) findViewById(R.id.location_list);
         locationView.setHasFixedSize(true);
