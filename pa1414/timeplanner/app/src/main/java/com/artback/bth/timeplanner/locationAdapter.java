@@ -61,7 +61,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return mGeofenceLocations.size();
     }
 }
 
