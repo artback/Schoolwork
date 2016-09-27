@@ -52,7 +52,8 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
     public void onBindViewHolder(ViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        GeofenceLocation location = mGeofenceLocations.
+        GeofenceLocation location = mGeofenceLocations.get(position);
+        
         //holder.mView.setText(mDataset[position].getName());
     }
     // Return the size of your dataset (invoked by the layout manager)
