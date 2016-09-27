@@ -8,7 +8,9 @@ import android.widget.TextView;
 
 public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {
         private GeofenceLocation[] mDataset;
-        public TextView 
+        public TextView locationTextView;
+        public TextView timeTextView;
+
 
         // Provide a reference to the views for each data item
         // Complex data items may need more than one view per item, and
