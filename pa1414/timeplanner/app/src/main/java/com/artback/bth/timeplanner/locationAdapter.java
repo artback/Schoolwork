@@ -19,7 +19,9 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
             public TextView timeTextView;
             public ViewHolder(View v) {
                 super(v);
-                
+
+                locationTextView = (TextView) itemView.findViewById(R.id.location_text);
+                timeTextView = (TextView) itemView.findViewById(R.id.time_text);
             }
         }
 
