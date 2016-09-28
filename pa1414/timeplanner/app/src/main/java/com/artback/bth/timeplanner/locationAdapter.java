@@ -11,6 +11,7 @@ import java.util.List;
 
 public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {
         private List<GeofenceLocation> mGeofenceLocations;
+        private List<>
 
         // Provide a reference to the views for each data item
         // Complex data items may need more than one view per item, and
