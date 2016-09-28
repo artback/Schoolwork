@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class MainActivity extends Activity {
@@ -40,7 +41,7 @@ public class MainActivity extends Activity {
 
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
-        ArrayList<GeofenceLocation> myGeofenceSet = new ArrayList<GeofenceLocation>();
+        List<GeofenceLocation> myGeofenceSet = new ArrayList<GeofenceLocation>();
         locAdapter = new locationAdapter(myGeofenceSet);
         locationView.setAdapter(locAdapter);
 

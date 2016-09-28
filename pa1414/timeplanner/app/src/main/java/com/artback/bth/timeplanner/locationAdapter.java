@@ -11,7 +11,6 @@ import java.util.List;
 
 public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {
         private List<GeofenceLocation> mGeofenceLocations;
-        private Context mContext;
 
         // Provide a reference to the views for each data item
         // Complex data items may need more than one view per item, and
@@ -29,9 +28,8 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         }
 
         // Provide a suitable constructor (depends on the kind of dataset)
-        public locationAdapter(Context context ,List<GeofenceLocation> GeofenceLocations) {
+        public locationAdapter(List<GeofenceLocation> GeofenceLocations) {
             mGeofenceLocations = GeofenceLocations;
-            mContext = context;
         }
 
         // Create new views (invoked by the layout manager)
@@ -53,6 +51,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         // - replace the contents of the view with that element
         GeofenceLocation location = mGeofenceLocations.get(position);
         TextView textView = holder.locationTextView;
+        TextView textView1 = holder.timeTextView;
         textView.setText(location.getId());
         textView.setText();
         //holder.mView.setText(mDataset[position].getName());
