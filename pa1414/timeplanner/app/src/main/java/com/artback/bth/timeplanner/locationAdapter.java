@@ -13,7 +13,6 @@ import java.util.List;
 
 public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {
         private List<GeofenceLocation> mGeofenceLocations;
-        private List<Cal>
 
         // Provide a reference to the views for each data item
         // Complex data items may need more than one view per item, and
@@ -56,7 +55,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         TextView textView = holder.locationTextView;
         TextView textView1 = holder.timeTextView;
         textView.setText(location.getId());
-        textView.setText();
+        textView.setText('re');
         //holder.mView.setText(mDataset[position].getName());
     }
     // Return the size of your dataset (invoked by the layout manager)
