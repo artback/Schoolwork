@@ -145,7 +145,7 @@ public class Event {
 		values.put(CalendarProvider.END, cal.getTimeInMillis());
 		values.put(CalendarProvider.END_DAY, endDayJulian);
 
-		Uri uri = context.getContentResolver().update(CalendarProvider.CONTENT_URI, values,"WHERE",);
+		Uri uri = context.getContentResolver().update(CalendarProvider.CONTENT_URI, values,);
 	}
 
 
