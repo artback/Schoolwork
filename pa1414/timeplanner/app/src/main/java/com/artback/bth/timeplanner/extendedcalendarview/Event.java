@@ -128,9 +128,8 @@ public class Event {
 		values.put(CalendarProvider.DESCRIPTION, "Some Description");
 		values.put(CalendarProvider.LOCATION, Location );
 				values.put(CalendarProvider.EVENT, "Event name");
-		cal.set(startDayMonth, startDayDay, startTimeHour, startTimeMin);
 		values.put(CalendarProvider.START, cal.getTimeInMillis());
-		values.put(CalendarProvider.START_DAY, julianDay);
+		values.put(CalendarProvider.START_DAY, Cal.ge);
 		TimeZone tz = TimeZone.getDefault();
 
 		Uri uri = getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
@@ -142,7 +141,7 @@ public class Event {
 		int endDayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
 		values.put(CalendarProvider.END, cal.getTimeInMillis());
 		values.put(CalendarProvider.END_DAY, endDayJulian);
-		
+
 		Uri uri = getContentResolver().update(CalendarProvider.CONTENT_URI, values,"WHERE",);
 	}
 
