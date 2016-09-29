@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.text.format.DateFormat;
 import android.util.Log;
 
-import com.artback.bth.timeplanner.db.EventDataSource;
 import com.google.android.gms.location.GeofencingEvent;
 
 public class GeofenceReceiver extends IntentService {
@@ -54,7 +53,7 @@ public class GeofenceReceiver extends IntentService {
 					}
 					String date = DateFormat.format("yyyy-MM-dd hh:mm:ss",
 							new Date()).toString();
-
+					
 					GeofenceNotification geofenceNotification = new GeofenceNotification(
 							this);
 					geofenceNotification
