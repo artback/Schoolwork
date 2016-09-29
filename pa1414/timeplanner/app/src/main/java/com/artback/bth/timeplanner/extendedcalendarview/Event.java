@@ -127,7 +127,6 @@ public class Event {
 		values.put(CalendarProvider.DESCRIPTION, "Some Description");
 		values.put(CalendarProvider.LOCATION, Location );
 				values.put(CalendarProvider.EVENT, "Event name");
-
 						Calendar cal = Calendar.getInstance();
 		cal.set(startDayMonth, startDayDay, startTimeHour, startTimeMin);
 		values.put(CalendarProvider.START, cal.getTimeInMillis());
