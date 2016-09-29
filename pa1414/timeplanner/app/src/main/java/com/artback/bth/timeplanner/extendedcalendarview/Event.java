@@ -129,7 +129,7 @@ public class Event {
 		values.put(CalendarProvider.LOCATION, Location );
 				values.put(CalendarProvider.EVENT, "Event name");
 		values.put(CalendarProvider.START, cal.getTimeInMillis());
-		values.put(CalendarProvider.START_DAY, Cal.ge);
+		values.put(CalendarProvider.START_DAY, Cal.);
 		TimeZone tz = TimeZone.getDefault();
 
 		Uri uri = getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
