@@ -12,6 +12,8 @@ import android.icu.util.Calendar;
 import android.net.Uri;
 import android.text.format.Time;
 
+import static java.security.AccessController.getContext;
+
 public class Event {
 	
 	private int color;
@@ -146,5 +148,7 @@ public class Event {
 		values.put(CalendarProvider.END_DAY, endDayJulian);
 		Uri uri = getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
 	}
+
+
 
 }
