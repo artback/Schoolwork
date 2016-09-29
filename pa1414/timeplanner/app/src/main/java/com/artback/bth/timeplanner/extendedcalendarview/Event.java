@@ -121,11 +121,11 @@ public class Event {
 		
 		return date;
 	}
-	static public void startNewEvent(){
+	static public void startNewEvent(String Location ){
 		ContentValues values = new ContentValues();
 		values.put(CalendarProvider.COLOR, Event.COLOR_RED);
 		values.put(CalendarProvider.DESCRIPTION, "Some Description");
-		values.put(CalendarProvider.LOCATION, "Some location");
+		values.put(CalendarProvider.LOCATION, Location );
 				values.put(CalendarProvider.EVENT, "Event name");
 
 						Calendar cal = Calendar.getInstance();
