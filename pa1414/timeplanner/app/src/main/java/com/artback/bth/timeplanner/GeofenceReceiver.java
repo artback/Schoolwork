@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.text.format.DateFormat;
 import android.util.Log;
 
+import com.artback.bth.timeplanner.extendedcalendarview.Event;
 import com.google.android.gms.location.GeofencingEvent;
 
 public class GeofenceReceiver extends IntentService {
@@ -41,6 +42,7 @@ public class GeofenceReceiver extends IntentService {
 					switch (transitionType) {
 					case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_DWELL:
 						transitionName = "dwell";
+						Event.startNewEvent();
 						break;
 
 					case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER:
