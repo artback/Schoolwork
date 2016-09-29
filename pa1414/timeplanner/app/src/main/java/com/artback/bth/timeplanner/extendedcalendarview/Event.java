@@ -144,7 +144,7 @@ public class Event {
 		int endDayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
 		values.put(CalendarProvider.END, cal.getTimeInMillis());
 		values.put(CalendarProvider.END_DAY, endDayJulian);
-		String selection = 
+		String selection = ' WHERE =null;
 
 		Uri uri = context.getContentResolver().update(CalendarProvider.CONTENT_URI, values,);
 	}
