@@ -3,9 +3,14 @@ package com.artback.bth.timeplanner.extendedcalendarview;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
+import java.util.TimeZone;
+import java.util.concurrent.TimeUnit;
 
 import android.content.ContentValues;
 import android.graphics.Bitmap;
+import android.icu.util.Calendar;
+import android.net.Uri;
+import android.text.format.Time;
 
 public class Event {
 	
