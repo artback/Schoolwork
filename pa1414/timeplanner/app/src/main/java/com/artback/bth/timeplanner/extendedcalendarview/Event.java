@@ -145,8 +145,8 @@ public class Event {
 		values.put(CalendarProvider.END, cal.getTimeInMillis());
 		values.put(CalendarProvider.END_DAY, endDayJulian);
 		String selection = "END IS NULL";
-		String[] selectionArgs
-		Uri uri = context.getContentResolver().update(CalendarProvider.CONTENT_URI, values,selection,);
+		String[] selectionArgs =null;
+		context.getContentResolver().update(CalendarProvider.CONTENT_URI, values,selection,selectionArgs);
 	}
 
 

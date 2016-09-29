@@ -42,7 +42,7 @@ public class GeofenceReceiver extends IntentService {
 					switch (transitionType) {
 					case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_DWELL:
 						transitionName = "dwell";
-						Event.startNewEvent(loc.getId());
+						Event.startNewEvent(this,loc.getId());
 						break;
 
 					case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER:
@@ -51,7 +51,7 @@ public class GeofenceReceiver extends IntentService {
 
 					case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT:
 						transitionName = "exit";
-						Event.endEvent(loc.getId());
+						Event.endEvent(this,loc.getId());
 						break;
 					}
 					String date = DateFormat.format("yyyy-MM-dd hh:mm:ss",
