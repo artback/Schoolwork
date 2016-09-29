@@ -136,7 +136,6 @@ public class Event {
 		Uri uri = getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
 	}
 
-
 	static public void endEvent(String location){
 		ContentValues values = new ContentValues();
 		Calendar cal = Calendar.getInstance();
