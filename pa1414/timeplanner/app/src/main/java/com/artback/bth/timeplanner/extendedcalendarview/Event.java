@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
+import android.content.ContentValues;
 import android.graphics.Bitmap;
 
 public class Event {
@@ -114,6 +115,27 @@ public class Event {
 		
 		return date;
 	}
-	static 
+	static public void newEvent(){
+		ContentValues values = new ContentValues();
+		values.put(CalendarProvider.COLOR, Event.COLOR_RED);
+		values.put(CalendarProvider.DESCRIPTION, "Some Description");
+		values.put(CalendarProvider.LOCATION, "Some location);
+				values.put(CalendarProvider.EVENT, "Event name);
+
+						Calendar cal = Calendar.getInstance();
+
+		cal.set(startDayYear, startDayMonth, startDayDay, startTimeHour, startTimeMin);
+		values.put(CalendarProvider.START, cal.getTimeInMillis());
+		values.put(CalendarProvider.START_DAY, julianDay);
+		TimeZone tz = TimeZone.getDefault();
+
+		cal.set(endDayYear, endDayMonth, endDayDay, endTimeHour, endTimeMin);
+		int endDayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
+
+		values.put(CalendarProvider.END, cal.getTimeInMillis());
+		values.put(CalendarProvider.END_DAY, endDayJulian);
+
+		Uri uri = getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
+	}
 
 }
