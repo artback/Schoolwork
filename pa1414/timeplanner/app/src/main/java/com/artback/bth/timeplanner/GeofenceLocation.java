@@ -26,6 +26,7 @@ public class GeofenceLocation {
 
 	public double getLatitude() {
 		return latitude;
+		
 	}
 
 	public double getLongitude() {
