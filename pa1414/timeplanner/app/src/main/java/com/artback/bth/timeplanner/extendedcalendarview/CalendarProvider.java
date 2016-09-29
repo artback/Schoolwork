@@ -181,4 +181,5 @@ public class CalendarProvider extends ContentProvider {
 		mMap.put(COLOR, COLOR);
 	}
 
+
 }

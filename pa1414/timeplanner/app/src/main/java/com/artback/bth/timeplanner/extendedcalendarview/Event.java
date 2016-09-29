@@ -121,20 +121,6 @@ public class Event {
 		
 		return date;
 	}
-	static public void startNewEvent(String location ){
-		Calendar cal = Calendar.getInstance();
-		ContentValues values = new ContentValues();
-		values.put(CalendarProvider.COLOR, Event.COLOR_RED);
-		values.put(CalendarProvider.DESCRIPTION, "Some Description");
-		values.put(CalendarProvider.LOCATION, location );
-				values.put(CalendarProvider.EVENT, "Event name");
-		values.put(CalendarProvider.START, cal.getTimeInMillis());
-		TimeZone tz = TimeZone.getDefault();
-		int startDayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
-		values.put(CalendarProvider.START_DAY, startDayJulian); //todays date as julian date
-
-		Uri uri = getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
-	}
 
 
 	static public void endEvent(String location){
