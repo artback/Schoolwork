@@ -2,13 +2,13 @@ package com.artback.bth.timeplanner.extendedcalendarview;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Locale;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 import android.content.ContentValues;
 import android.graphics.Bitmap;
-import android.icu.util.Calendar;
 import android.net.Uri;
 import android.text.format.Time;
 
@@ -122,17 +122,16 @@ public class Event {
 		return date;
 	}
 	static public void startNewEvent(String Location ){
+		Calendar cal = Calendar.getInstance();
 		ContentValues values = new ContentValues();
 		values.put(CalendarProvider.COLOR, Event.COLOR_RED);
 		values.put(CalendarProvider.DESCRIPTION, "Some Description");
 		values.put(CalendarProvider.LOCATION, Location );
 				values.put(CalendarProvider.EVENT, "Event name");
-						Calendar cal = Calendar.getInstance();
 		cal.set(startDayMonth, startDayDay, startTimeHour, startTimeMin);
 		values.put(CalendarProvider.START, cal.getTimeInMillis());
 		values.put(CalendarProvider.START_DAY, julianDay);
 		TimeZone tz = TimeZone.getDefault();
-
 
 		Uri uri = getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
 	}
@@ -141,10 +140,9 @@ public class Event {
 		Calendar cal = Calendar.getInstance();
 		cal.set(endDayYear, endDayMonth, endDayDay, endTimeHour, endTimeMin);
 		int endDayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
-
 		values.put(CalendarProvider.END, cal.getTimeInMillis());
 		values.put(CalendarProvider.END_DAY, endDayJulian);
-		Uri uri = getContentResolver().update(CalendarProvider.CONTENT_URI, values);
+		Uri uri = getContentResolver().update(CalendarProvider.CONTENT_URI, values,"WHERE",);
 	}
 
 
