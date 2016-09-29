@@ -30,13 +30,13 @@ public class Event {
 	public static final int COLOR_YELLOW = 3;
 	public static final int COLOR_PURPLE = 4;
 	public static final int COLOR_GREEN = 5;
-	
+
 	public Event(long eventID, long startMills, long endMills){
 		this.eventId = eventID;
 		this.start = startMills;
 		this.end = endMills;
 	}
-	
+
 	public int getColor(){
 		return color;
 	}
@@ -135,6 +135,8 @@ public class Event {
 
 		Uri uri = getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
 	}
+
+
 	static public void endEvent(String location){
 		ContentValues values = new ContentValues();
 		Calendar cal = Calendar.getInstance();
