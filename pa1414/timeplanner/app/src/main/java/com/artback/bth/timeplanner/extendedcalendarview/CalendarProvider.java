@@ -140,7 +140,7 @@ public class CalendarProvider extends ContentProvider {
 	    	sortOrder = START + " COLLATE LOCALIZED ASC";
 		Cursor c = sqlBuilder.query(db, projection, selection, selectionArgs,null,null, sortOrder);
 		c.setNotificationUri(getContext().getContentResolver(), uri);
-		
+
 		return c;
 	}
 
