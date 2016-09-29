@@ -133,7 +133,7 @@ public class Event {
 		int startDayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
 		values.put(CalendarProvider.START_DAY, startDayJulian); //todays date as julian date
 
-		Uri uri = getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
+		Uri uri = context.getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
 	}
 
 	static public void endEvent(String location){
