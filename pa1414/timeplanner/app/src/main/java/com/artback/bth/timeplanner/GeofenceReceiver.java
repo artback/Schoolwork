@@ -53,7 +53,7 @@ public class GeofenceReceiver extends IntentService {
 					}
 					String date = DateFormat.format("yyyy-MM-dd hh:mm:ss",
 							new Date()).toString();
-					
+
 					GeofenceNotification geofenceNotification = new GeofenceNotification(
 							this);
 					geofenceNotification
