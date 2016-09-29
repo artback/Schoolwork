@@ -1,6 +1,5 @@
 package com.artback.bth.timeplanner;
 
-import com.google.android.gms.location.Geofence;
 
 public class GeofenceLocation {
 	private final String id;
