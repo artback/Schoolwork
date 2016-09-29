@@ -124,12 +124,12 @@ public class Event {
 		ContentValues values = new ContentValues();
 		values.put(CalendarProvider.COLOR, Event.COLOR_RED);
 		values.put(CalendarProvider.DESCRIPTION, "Some Description");
-		values.put(CalendarProvider.LOCATION, "Some location);
-				values.put(CalendarProvider.EVENT, "Event name);
+		values.put(CalendarProvider.LOCATION, "Some location");
+				values.put(CalendarProvider.EVENT, "Event name");
 
 						Calendar cal = Calendar.getInstance();
-
-		cal.set(startDayYear, startDayMonth, startDayDay, startTimeHour, startTimeMin);
+		cal.
+		cal.set(, startDayMonth, startDayDay, startTimeHour, startTimeMin);
 		values.put(CalendarProvider.START, cal.getTimeInMillis());
 		values.put(CalendarProvider.START_DAY, julianDay);
 		TimeZone tz = TimeZone.getDefault();
