@@ -8,6 +8,7 @@ import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.text.format.Time;
@@ -121,13 +122,14 @@ public class Event {
 		
 		return date;
 	}
-	static public void startNewEvent(String location ){
+
+	static public void startNewEvent(Context context , String location ){
 		Calendar cal = Calendar.getInstance();
 		ContentValues values = new ContentValues();
 		values.put(CalendarProvider.COLOR, Event.COLOR_RED);
 		values.put(CalendarProvider.DESCRIPTION, "Some Description");
 		values.put(CalendarProvider.LOCATION, location );
-				values.put(CalendarProvider.EVENT, "Event name");
+		values.put(CalendarProvider.EVENT, "Event name");
 		values.put(CalendarProvider.START, cal.getTimeInMillis());
 		TimeZone tz = TimeZone.getDefault();
 		int startDayJulian = Time.getJulianDay(cal.getTimeInMillis(), TimeUnit.MILLISECONDS.toSeconds(tz.getOffset(cal.getTimeInMillis())));
@@ -135,8 +137,7 @@ public class Event {
 
 		Uri uri = context.getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
 	}
-
-	static public void endEvent(String location){
+	static public void endEvent(Context context , String location){
 		ContentValues values = new ContentValues();
 		Calendar cal = Calendar.getInstance();
 		TimeZone tz = TimeZone.getDefault();
@@ -144,7 +145,7 @@ public class Event {
 		values.put(CalendarProvider.END, cal.getTimeInMillis());
 		values.put(CalendarProvider.END_DAY, endDayJulian);
 
-		Uri uri = getContentResolver().update(CalendarProvider.CONTENT_URI, values,"WHERE",);
+		Uri uri = context.getContentResolver().update(CalendarProvider.CONTENT_URI, values,"WHERE",);
 	}
 
 
