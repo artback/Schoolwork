@@ -12,7 +12,6 @@ import android.icu.util.Calendar;
 import android.net.Uri;
 import android.text.format.Time;
 
-import static java.security.AccessController.getContext;
 
 public class Event {
 	
@@ -130,7 +129,7 @@ public class Event {
 				values.put(CalendarProvider.EVENT, "Event name");
 
 						Calendar cal = Calendar.getInstance();
-		cal.set(, startDayMonth, startDayDay, startTimeHour, startTimeMin);
+		cal.set(startDayMonth, startDayDay, startTimeHour, startTimeMin);
 		values.put(CalendarProvider.START, cal.getTimeInMillis());
 		values.put(CalendarProvider.START_DAY, julianDay);
 		TimeZone tz = TimeZone.getDefault();
@@ -146,7 +145,7 @@ public class Event {
 
 		values.put(CalendarProvider.END, cal.getTimeInMillis());
 		values.put(CalendarProvider.END_DAY, endDayJulian);
-		Uri uri = getContentResolver().insert(CalendarProvider.CONTENT_URI, values);
+		Uri uri = getContentResolver().update(CalendarProvider.CONTENT_URI, values);
 	}
 
 
