@@ -42,7 +42,8 @@ public class MainActivity extends Activity {
 
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
-        List<GeofenceLocation> myGeofenceSet = new ArrayList<>();
+        List<GeofenceLocation> myGeofenceSet = new ArrayList<GeofenceLocation>
+                (GeofenceLocationStore.getInstance().geofences.);
         locAdapter = new locationAdapter(myGeofenceSet);
         locationView.setAdapter(locAdapter);
 
