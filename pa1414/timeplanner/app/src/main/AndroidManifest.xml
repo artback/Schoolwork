@@ -48,7 +48,7 @@
             android:name=".GeofenceReceiver"
             android:exported="false" >
             <intent-filter>
-                <action android:name="me.hoen.geofence_21.ACTION_RECEIVE_GEOFENCE" />
+                <action android:name="com.artback.bth.timeplanner.ACTION_RECEIVE_GEOFENCE" />
             </intent-filter>
         </receiver>
 
