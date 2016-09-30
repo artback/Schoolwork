@@ -1,4 +1,4 @@
-// by https://github.com/tyczj/ExtendedCalendarView
+// by tychttps://github.com/tyczj/ExtendedCalendarView
 
 package com.artback.bth.timeplanner.extendedcalendarview;
 
