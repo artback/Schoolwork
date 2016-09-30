@@ -1,4 +1,4 @@
-package com.artback.bth.timeplanner.extendedcalendarview;
+package com..extendedcalendarview;
 
 import java.util.Calendar;
 import java.util.Locale;
