@@ -3,7 +3,7 @@
     package="com.artback.bth.timeplanner">
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <provider
-        android:name="com.tyczj.extendedcalendarview.CalendarProvider"
+        android:name="com.artback.bth.timeplanner.extendedcalendarview";
         android:authorities="extendedcalendarview.calendarprovider" />
     <application
         android:allowBackup="true"
