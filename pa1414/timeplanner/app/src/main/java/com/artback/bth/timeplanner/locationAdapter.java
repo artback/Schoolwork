@@ -1,13 +1,10 @@
 package com.artback.bth.timeplanner;
-
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.artback.bth.timeplanner.db.Event;
 
 import java.util.List;
 
@@ -56,7 +53,6 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         TextView textView1 = holder.timeTextView;
         textView.setText(location.getId());
         textView.setText("total tid");
-        //holder.mView.setText(mDataset[position].getName());
     }
     // Return the size of your dataset (invoked by the layout manager)
     @Override
