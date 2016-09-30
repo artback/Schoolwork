@@ -16,7 +16,7 @@ public class GeofenceLocationStore {
 	}
 
 	private GeofenceLocationStore() {
-		geofences.put("Ericsson", new GeofenceLocation("Ericsson", 56.164500 , ,
+		geofences.put("Ericsson", new GeofenceLocation("Ericsson", 56.164500 , 15.593149,
 				100, GEOFENCE_EXPIRATION_IN_MILLISECONDS,
 				com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_DWELL
 						| com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT));
