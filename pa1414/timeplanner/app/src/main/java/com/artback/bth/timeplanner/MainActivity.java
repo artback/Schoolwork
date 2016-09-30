@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
     private RecyclerView.LayoutManager locationLayoutManager;
     public static String TAG = "Debug";
     static public boolean geofencesAlreadyRegistered = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
