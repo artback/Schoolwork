@@ -22,9 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <provider
             android:name="com.artback.bth.timeplanner.extendedcalendarview.CalendarProvider"
             android:authorities="extendedcalendarview.calendarprovider" />
+        
     </application>
 
 </manifest>
