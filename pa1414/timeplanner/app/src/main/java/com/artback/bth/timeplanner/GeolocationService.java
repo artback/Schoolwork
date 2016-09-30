@@ -111,7 +111,6 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 		intent.putExtra("latitude", location.getLatitude());
 		intent.putExtra("longitude", location.getLongitude());
 		intent.putExtra("done", 1);
-
 		sendBroadcast(intent);
 	}
 
