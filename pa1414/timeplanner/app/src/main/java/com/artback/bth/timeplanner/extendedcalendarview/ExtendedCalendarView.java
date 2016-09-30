@@ -1,5 +1,8 @@
-// by tyczy  
-// https://github.com/tyczj/ExtendedCalendarView
+ /* 	by tyczy
+   	    Apache License
+		Version 2.0, January 2004
+		http://www.apache.org/licenses
+ https://github.com/tyczj/ExtendedCalendarView */
 
 package com.artback.bth.timeplanner.extendedcalendarview;
 
