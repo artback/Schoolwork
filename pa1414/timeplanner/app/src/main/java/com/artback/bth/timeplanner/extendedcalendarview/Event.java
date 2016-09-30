@@ -153,7 +153,7 @@ public class Event {
 		values.put(CalendarProvider.END, cal.getTimeInMillis());
 		values.put(CalendarProvider.END_DAY, endDayJulian);
 		String selection = "END IS NULL";
-		String[] selectionArgs =null;
+		String[] selectionArgs =;
 		context.getContentResolver().update(CalendarProvider.CONTENT_URI, values,selection,selectionArgs);
 	}
 
