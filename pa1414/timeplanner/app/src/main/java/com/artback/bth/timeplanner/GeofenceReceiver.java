@@ -20,6 +20,7 @@ public class GeofenceReceiver extends IntentService {
 
 	@Override
 	protected void onHandleIntent(Intent intent) {
+		
 		GeofencingEvent geoEvent = GeofencingEvent.fromIntent(intent);
 		if (geoEvent.hasError()) {
 			Log.d(MainActivity.TAG, "Error GeofenceReceiver.onHandleIntent");
