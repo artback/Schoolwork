@@ -74,7 +74,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 		GeofencingRequest geofencingRequest = geofencingRequestBuilder.build();
 		mPendingIntent = requestPendingIntent();
-		
+
 		if (ActivityCompat.checkSelfPermission(this,
 				Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 			// TODO: Consider calling
@@ -86,6 +86,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 			// for ActivityCompat#requestPermissions for more details.
 			return;
 		}
+
 		LocationServices.GeofencingApi.addGeofences(mGoogleApiClient,
 				geofencingRequest, mPendingIntent).setResultCallback(this);
 
