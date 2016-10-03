@@ -12,7 +12,7 @@ import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
-
+private int 
 
 public class MainActivity extends Activity {
     private RecyclerView locationView;
@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
                 init();
         }
         else {
-            requestPermissions(this,new );
+            requestPermissions(new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE }, REQUEST_STORAGE);
         }
 
 
