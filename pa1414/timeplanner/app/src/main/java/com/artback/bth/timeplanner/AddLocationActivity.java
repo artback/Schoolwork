@@ -15,13 +15,6 @@ public class AddLocationActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_page);
 
-        FloatingActionButton fabSave = (FloatingActionButton) findViewById(R.id.fabSave);
-        fabSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //funktion for att spara till sql och visa MainActivty igen om korrert angive
-            }
-        });
 
 
     }
