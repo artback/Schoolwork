@@ -32,8 +32,7 @@ public class MainActivity extends Activity {
                 init();
         }
         else {
-            requestPermissions(new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE },
-                    REQUEST_STORAGE);
+            requestPermissions(new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE }, REQUEST);
         }
 
 
