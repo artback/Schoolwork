@@ -1,6 +1,12 @@
 package com.artback.bth.timeplanner;
 
 
+import android.content.Context;
+
+import com.artback.bth.timeplanner.extendedcalendarview.CalendarProvider;
+
+import java.util.Date;
+
 public class GeofenceLocation {
 	private final String id;
 	private final double latitude;
@@ -28,7 +34,6 @@ public class GeofenceLocation {
 		return latitude;
 
 	}
-	public 
 
 	public double getLongitude() {
 		return longitude;
