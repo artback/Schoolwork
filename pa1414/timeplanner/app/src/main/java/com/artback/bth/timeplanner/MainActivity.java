@@ -34,18 +34,6 @@ public class MainActivity extends Activity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         locationView.setLayoutManager(llm);
 
-        FloatingActionButton fabNew = (FloatingActionButton) findViewById(R.id.fabNew);
-        fabNew.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(this, AddLocationActivity.class);
-                AddLocationActivity addintent = (AddLocationActivity) findViewById(R.layout.add_page);
-                String message = editText.getText().toString();
-                intent.putExtra(EXTRA_MESSAGE, message);
-                startActivity(intent);
-
-            }
-        });
 
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
@@ -56,6 +44,9 @@ public class MainActivity extends Activity {
 
         //start geolocation
         startService(new Intent(this, GeolocationService.class));
+    }
+    public void openaddpage(View view){
+        
     }
 
     @Override
