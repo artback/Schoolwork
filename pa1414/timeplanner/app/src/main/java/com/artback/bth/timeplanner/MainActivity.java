@@ -12,10 +12,13 @@ import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
-private static final int REQUEST_STORAGE  =1;
 
 
 public class MainActivity extends Activity {
+    private static final int REQUEST_STORAGE  =1;
+    private static final int REQUEST_NETWORK =2;
+    private static final int REQUEST_LOCATION =3;
+
     private RecyclerView locationView;
     private RecyclerView.Adapter locAdapter;
     private RecyclerView.LayoutManager locationLayoutManager;
@@ -28,15 +31,25 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
 
+
+
+
+    }
+    private int checkPermissons(){
         if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)==
-                PackageManager.PERMISSION_GRANTED) {
-                init();
+                PackageManager.PERMISSION_GRANTED ) {
+            init();
         }
         else {
             requestPermissions(new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE }, REQUEST_STORAGE);
         }
-
-
+        if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)==
+                PackageManager.PERMISSION_GRANTED ) {
+            init();
+        }
+        else {
+            requestPermissions(new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE }, REQUEST_STORAGE);
+        }
 
     }
     private void init(){
