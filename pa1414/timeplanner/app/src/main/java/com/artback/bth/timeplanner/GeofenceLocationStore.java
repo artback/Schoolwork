@@ -20,6 +20,10 @@ public class GeofenceLocationStore {
 				100, GEOFENCE_EXPIRATION_IN_MILLISECONDS,
 				com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_DWELL
 						| com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT));
+		geofences.put("Ericsson", new GeofenceLocation("Ericsson", 56.164500 , 15.593149,
+				100, GEOFENCE_EXPIRATION_IN_MILLISECONDS,
+				com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_DWELL
+						| com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT));
 	}
 
 	public HashMap<String, GeofenceLocation> getSimpleGeofences() {
