@@ -46,8 +46,7 @@ public class MainActivity extends Activity {
     }
     public void openaddpage(View view){
         Intent intent = new Intent(this, AddLocationActivity.class);
-        AddLocationActivity editText = (AddLocationActivity) findViewById(R.id.add_page);
-        String message = editText.getText().toString();
+        
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
 
