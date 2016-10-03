@@ -26,5 +26,5 @@ dependencies {
     compile 'com.google.android.gms:play-services-location:9.6.0'
     compile 'com.android.support:recyclerview-v7:24.0.+'
     compile 'com.android.support:appcompat-v7:24.0.+'
-    
-}
+
+}compile 'com.android.support:design:22.2.0'
