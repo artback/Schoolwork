@@ -55,7 +55,6 @@ public class MainActivity extends Activity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         locationView.setLayoutManager(llm);
         //start geolocation
-        startService(new Intent(this, GeolocationService.class));
 
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
