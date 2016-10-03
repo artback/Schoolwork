@@ -10,7 +10,6 @@ public class GeofenceLocationStore {
 			* DateUtils.HOUR_IN_MILLIS;
 	protected HashMap<String, GeofenceLocation> geofences = new HashMap<String, GeofenceLocation>();
 	private static GeofenceLocationStore instance = new GeofenceLocationStore();
-
 	public static GeofenceLocationStore getInstance() {
 		return instance;
 	}
