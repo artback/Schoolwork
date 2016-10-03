@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
         locationView.setLayoutManager(locationLayoutManager);
         List<GeofenceLocation> myGeofenceSet = new ArrayList<GeofenceLocation>
                 (GeofenceLocationStore.getInstance().geofences.values());
-        GeofenceNotification not = GeofenceNotification(this);
+        GeofenceNotification not = new GeofenceNotification(this);
         not.displayNotification(myGeofenceSet.get(1),1);
         locAdapter = new locationAdapter(myGeofenceSet);
         locationView.setAdapter(locAdapter);
