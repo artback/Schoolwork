@@ -36,7 +36,6 @@ public class MainActivity extends Activity {
         fabNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            setContentView(R.layout.add_location_page);
             }
         });
 
