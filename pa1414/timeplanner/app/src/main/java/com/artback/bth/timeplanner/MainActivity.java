@@ -46,7 +46,6 @@ public class MainActivity extends Activity {
     }
     public void openaddpage(View view){
         Intent intent = new Intent(Intent.ACTION_SEND);
-        
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
 
