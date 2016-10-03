@@ -52,7 +52,7 @@ public class GeofenceNotification {
 				context)
 				.setSmallIcon(R.drawable.ic_launcher)
 				.setContentTitle(context.getString(R.string.app_name))
-//				.setContentText(notificationText).setAutoCancel(true);
+				.setContentText(notificationText).setAutoCancel(true);
 
 		notification = notificationBuilder.build();
 		notification.defaults |= Notification.DEFAULT_LIGHTS;
