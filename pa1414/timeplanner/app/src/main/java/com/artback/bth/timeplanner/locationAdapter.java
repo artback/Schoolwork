@@ -52,7 +52,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         TextView textView = holder.locationTextView;
         TextView textView1 = holder.timeTextView;
         textView.setText(location.getId());
-        textView.setText("total tid");
+        textView1.setText("total tid");
     }
     // Return the size of your dataset (invoked by the layout manager)
     @Override
