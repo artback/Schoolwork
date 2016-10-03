@@ -16,15 +16,6 @@
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/location_list_page" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabNew"
-        android:layout_width="wrap_content"
-        android:backgroundTint="@color/colorAccent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_add_white_24dp"
-        />
+    
 
 </android.support.design.widget.CoordinatorLayout>
