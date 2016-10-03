@@ -23,6 +23,7 @@
         android:src="@drawable/ic_add_white_24dp"
         android:background="@drawable/circle"
         android:id="@+id/imageButton"
+        android:onClick="openaddpage"
         android:layout_gravity="right|bottom" />
 
 </android.support.design.widget.CoordinatorLayout>

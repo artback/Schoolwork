@@ -11,8 +11,6 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
-
 
 public class MainActivity extends Activity {
     private RecyclerView locationView;
