@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
         startService(new Intent(this, GeolocationService.class));
     }
     public void openaddpage(View view){
-        Intent intent = new Intent(INTe);
+        Intent intent = new Intent(Intent.ACTION);
 
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
