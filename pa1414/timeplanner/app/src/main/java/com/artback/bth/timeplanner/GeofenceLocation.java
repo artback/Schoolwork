@@ -28,6 +28,7 @@ public class GeofenceLocation {
 		return latitude;
 
 	}
+	public 
 
 	public double getLongitude() {
 		return longitude;
