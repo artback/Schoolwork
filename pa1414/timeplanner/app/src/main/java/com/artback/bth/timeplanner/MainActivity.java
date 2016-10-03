@@ -34,22 +34,16 @@ public class MainActivity extends Activity {
         init();
     }
     private int checkPermissons(){
-        if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)==
+        if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)!=
                 PackageManager.PERMISSION_GRANTED ) {
-        }
-        else {
             requestPermissions(new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE }, REQUEST_STORAGE);
         }
-        if (checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION)==
+        if (checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION)!=
                 PackageManager.PERMISSION_GRANTED ) {
-        }
-        else {
             requestPermissions(new String[] { Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_LOCATION);
         }
-        if (checkSelfPermission(Manifest.permission.ACCESS_NETWORK_STATE)==
+        if (checkSelfPermission(Manifest.permission.ACCESS_NETWORK_STATE)!=
                 PackageManager.PERMISSION_GRANTED ) {
-        }
-        else {
             requestPermissions(new String[] { Manifest.permission.ACCESS_NETWORK_STATE}, REQUEST_LOCATION);
         }
         return 0;
