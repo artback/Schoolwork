@@ -45,7 +45,9 @@ public class MainActivity extends Activity {
                 (GeofenceLocationStore.getInstance().geofences.values());
         locAdapter = new locationAdapter(myGeofenceSet);
         locationView.setAdapter(locAdapter);
-        
+
+        //start geolocation
+        startService(new Intent(this, GeolocationService.class));
     }
 
     @Override
