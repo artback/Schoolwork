@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 
 public class MainActivity extends Activity {
     private RecyclerView locationView;
@@ -36,8 +38,8 @@ public class MainActivity extends Activity {
         fabNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(this, DisplayMessageActivity.class);
-                AddLocationActivity editText = (AddLocationActivity) findViewById(R.id.add);
+                Intent intent = new Intent(this, AddLocationActivity.class);
+                AddLocationActivity  = (AddLocationActivity) findViewById(R.layout.add_page);
                 String message = editText.getText().toString();
                 intent.putExtra(EXTRA_MESSAGE, message);
                 startActivity(intent);
