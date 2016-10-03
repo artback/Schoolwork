@@ -38,9 +38,9 @@ public class MainActivity extends Activity {
                 PackageManager.PERMISSION_GRANTED ) {
             requestPermissions(new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE }, REQUEST_STORAGE);
         }
-        if (checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION)!=
+        if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)!=
                 PackageManager.PERMISSION_GRANTED ) {
-            requestPermissions(new String[] { Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_LOCATION);
+            requestPermissions(new String[] { Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
         }
         if (checkSelfPermission(Manifest.permission.ACCESS_NETWORK_STATE)!=
                 PackageManager.PERMISSION_GRANTED ) {
@@ -55,6 +55,7 @@ public class MainActivity extends Activity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         locationView.setLayoutManager(llm);
         //start geolocation
+        startService(new Intent(this, GeolocationService.class));
 
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
