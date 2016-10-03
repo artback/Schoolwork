@@ -188,6 +188,7 @@ public class CalendarProvider extends ContentProvider {
 		mMap.put(END_DAY, END_DAY);
 		mMap.put(COLOR, COLOR);
 	}
+	
 
 
 }
