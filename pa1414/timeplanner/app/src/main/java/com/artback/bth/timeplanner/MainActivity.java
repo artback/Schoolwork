@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
                 init();
         }
         else {
-            requestPermissions();
+            requestPermissions(this,new );
         }
 
 
