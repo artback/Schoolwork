@@ -48,7 +48,6 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.putExtra(, message);
         startActivity(intent);
-
     }
 
     @Override
