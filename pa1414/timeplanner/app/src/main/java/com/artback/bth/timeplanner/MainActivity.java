@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
         }
         if (checkSelfPermission(Manifest.permission.ACCESS_NETWORK_STATE)!=
                 PackageManager.PERMISSION_GRANTED ) {
-            requestPermissions(new String[] { Manifest.permission.ACCESS_NETWORK_STATE}, REQUEST_LOCATION);
+            requestPermissions(new String[] { Manifest.permission.ACCESS_NETWORK_STATE}, REQUEST_NETWORK);
         }
         return 0;
     }
