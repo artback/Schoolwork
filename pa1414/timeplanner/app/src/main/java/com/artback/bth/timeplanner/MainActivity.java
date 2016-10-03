@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(this, AddLocationActivity.class);
-                AddLocationActivity  = (AddLocationActivity) findViewById(R.layout.add_page);
+                AddLocationActivity addintent = (AddLocationActivity) findViewById(R.layout.add_page);
                 String message = editText.getText().toString();
                 intent.putExtra(EXTRA_MESSAGE, message);
                 startActivity(intent);
