@@ -30,10 +30,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
-
-
-
-
+        checkPermissons();
+        init();
     }
     private int checkPermissons(){
         if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)==
