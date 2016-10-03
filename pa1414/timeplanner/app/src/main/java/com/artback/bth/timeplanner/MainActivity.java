@@ -12,7 +12,7 @@ import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
-private int final REQUEST_STORAGE  =1;
+private static final int REQUEST_STORAGE  =1;
 
 
 public class MainActivity extends Activity {
