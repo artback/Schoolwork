@@ -1,6 +1,9 @@
 package com.artback.bth.timeplanner;
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -20,9 +23,21 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.main_page);
 
+        if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)==
+                PackageManager.PERMISSION_GRANTED) {
+                init();
+        }
+        else {
+            requestPermissions(new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE },
+                    REQUEST_STORAGE);
+        }
+
+
+
+    }
+    private void init(){
         locationView = (RecyclerView) findViewById(R.id.location_list);
         locationView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
@@ -37,7 +52,6 @@ public class MainActivity extends Activity {
                 (GeofenceLocationStore.getInstance().geofences.values());
         locAdapter = new locationAdapter(myGeofenceSet);
         locationView.setAdapter(locAdapter);
-
     }
     public void openaddpage(View view){
         Intent intent = new Intent(this, AddLocationActivity.class);
