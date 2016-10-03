@@ -23,7 +23,7 @@
         android:src="@drawable/ic_done_white_24dp"
         android:background="@drawable/circle"
         android:id="@+id/imageButton"
-        android:onClick=""
+        android:onClick="onclick"
         android:layout_gravity="right|bottom" />
 
 </android.support.design.widget.CoordinatorLayout>
