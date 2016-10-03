@@ -55,8 +55,6 @@ public class GeofenceReceiver extends IntentService {
 						Event.endEvent(this,loc.getId());
 						break;
 					}
-					String date = DateFormat.format("yyyy-MM-dd hh:mm:ss",
-							new Date()).toString();
 
 					GeofenceNotification geofenceNotification = new GeofenceNotification(
 							this);
