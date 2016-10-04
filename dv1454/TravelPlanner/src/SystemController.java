@@ -1,13 +1,10 @@
-package travelplanner;
+package TravelPlanner;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class SystemController {
 
-    public static String dbPath = "E:/massa goa grejor/Skola/PA1415/"
-            + "TravelPlanner_netbeans.project/travelplanner/src/"
-            + "TravelPlanner/pa1415_group.e2_travelplanner.db";
 
     public String user;
     public String userName;
