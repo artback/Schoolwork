@@ -1,4 +1,4 @@
-package TravelPlanner;
+package Travelplanner;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,13 +7,11 @@ import java.sql.Statement;
 import java.util.Calendar;
 
 public class PaymentController{
-    private final BankMock bank;
     private final String user;
     private final String cardNr;
     private final int price;
     
     public PaymentController(String cardNr, int price, String user){
-        this.bank = new BankMock();
         this.cardNr = cardNr;
         this.price = price;
         this.user = user;
@@ -22,7 +20,6 @@ public class PaymentController{
         boolean payed = false;
         
         if (!this.cardNr.equals("0")) {
-           payed = this.bank.makePayment(this.cardNr, this.price);
         }
         
         if (payed) {

@@ -5,7 +5,6 @@ import java.security.NoSuchAlgorithmException;
 
 public class SystemController {
 
-
     public String user;
     public String userName;
     private FlightController flight;
