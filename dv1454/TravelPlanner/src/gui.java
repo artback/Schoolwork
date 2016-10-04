@@ -1,4 +1,4 @@
-package travelplanner;
+package TravelPlanner;
 
 import java.awt.EventQueue;
 import javax.swing.*;
