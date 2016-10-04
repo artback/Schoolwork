@@ -15,8 +15,9 @@ public class FlightController {
         boolean success = true;
 
         try {
+
             connection = DriverManager.getConnection("jdbc:sqlite:" +
-                SystemController.dbPath);
+                    SystemController.dbPath);
             Statement statement = connection.createStatement();
             statement.setQueryTimeout(30);  
 
