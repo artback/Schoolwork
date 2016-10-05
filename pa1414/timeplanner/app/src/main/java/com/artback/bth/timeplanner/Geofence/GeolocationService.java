@@ -65,7 +65,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 
 		HashMap<String, GeofenceLocation> geofences = GeofenceLocationProvider
-				.getInstance().getSimpleGeofences();
+				.getInstance().getGeofencesLocations();
 
 		GeofencingRequest.Builder geofencingRequestBuilder = new GeofencingRequest.Builder();
 		for (Map.Entry<String, GeofenceLocation> item : geofences.entrySet()) {

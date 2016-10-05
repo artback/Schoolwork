@@ -36,7 +36,7 @@ public class GeofenceReceiver extends IntentService {
 
 				for (com.google.android.gms.location.Geofence geofence : triggerList) {
 					GeofenceLocation loc = GeofenceLocationProvider.getInstance()
-							.getSimpleGeofences().get(geofence.getRequestId());
+							.getGeofencesLocations().get(geofence.getRequestId());
 
 					String transitionName = "";
 					switch (transitionType) {
