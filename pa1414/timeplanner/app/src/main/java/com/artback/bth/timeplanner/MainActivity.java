@@ -37,20 +37,24 @@ public class MainActivity extends Activity {
         init();
     }
     private int checkPermissons(){
-        ArrayList<String> permissons = new ArrayList<String>();
+        String[] permisson = new String[3];
+        int nrOFpermissons=0;
         if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)!=
                 PackageManager.PERMISSION_GRANTED ) {
-            permissons.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+            permisson[nrOFpermissons] = Manifest.permission.WRITE_EXTERNAL_STORAGE;
+            nrOFpermissons++;
         }
         if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)!=
                 PackageManager.PERMISSION_GRANTED ) {
-            permissons.add(Manifest.permission.ACCESS_FINE_LOCATION);
+            permisson[nrOFpermissons] = Manifest.permission.ACCESS_FINE_LOCATION;
+            nrOFpermissons++;
         }
         if (checkSelfPermission(Manifest.permission.ACCESS_NETWORK_STATE)!=
                 PackageManager.PERMISSION_GRANTED ) {
-            permissons.add(Manifest.permission.ACCESS_NETWORK_STATE);
+            permisson[nrOFpermissons] = Manifest.permission.ACCESS_NETWORK_STATE;
+            nrOFpermissons++;
         }
-        requestPermissions(permissons.toArray(),REQUEST_LOCATION);
+        requestPermissions(permisson[]),REQUEST_LOCATION);
         return 0;
     }
     private void init(){
