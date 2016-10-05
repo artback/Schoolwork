@@ -37,18 +37,20 @@ public class MainActivity extends Activity {
         init();
     }
     private int checkPermissons(){
+        ArrayList<String> permissons = new ArrayList<String>();
         if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)!=
                 PackageManager.PERMISSION_GRANTED ) {
-            requestPermissions(new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE }, REQUEST_STORAGE);
+            permissons.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
         }
         if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)!=
                 PackageManager.PERMISSION_GRANTED ) {
-            requestPermissions(new String[] { Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
+            permissons.add(Manifest.permission.ACCESS_FINE_LOCATION);
         }
         if (checkSelfPermission(Manifest.permission.ACCESS_NETWORK_STATE)!=
                 PackageManager.PERMISSION_GRANTED ) {
-            requestPermissions(new String[] { Manifest.permission.ACCESS_NETWORK_STATE}, REQUEST_NETWORK);
+            permissons.add(Manifest.permission.ACCESS_NETWORK_STATE);
         }
+        requestPermissions(permissons,REQUEST_LOCATION);
         return 0;
     }
     private void init(){
@@ -70,7 +72,6 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, AddLocationActivity.class);
         startActivity(intent);
     }
-
     @Override
     protected void onStart() {
         super.onStart();
