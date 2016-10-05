@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
                 PackageManager.PERMISSION_GRANTED ) {
             permissons.add(Manifest.permission.ACCESS_NETWORK_STATE);
         }
-        requestPermissions(permissons,);
+        requestPermissions(permissons.toArray(),REQUEST_LOCATION);
         return 0;
     }
     private void init(){
