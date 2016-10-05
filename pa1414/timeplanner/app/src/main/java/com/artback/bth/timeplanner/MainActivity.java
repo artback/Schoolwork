@@ -67,7 +67,7 @@ public class MainActivity extends Activity {
 
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
-        List<GeofenceLocation> myGeofenceSet = new ArrayList<GeofenceLocation>
+        final List<GeofenceLocation> myGeofenceSet = new ArrayList<GeofenceLocation>
                 (GeofenceLocationProvider.getInstance().getGeofencesLocations().values());
         locAdapter = new locationAdapter(myGeofenceSet);
 
@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
                     @Override public void onItemClick(View view, int position) {
                         Intent intent = new Intent(context, AddLocationActivity.class);
                         intent.setAction(Intent.ACTION_SEND);
-                        intent.putExtra(Intent.EXTRA_, "This is my text to send.");
+                        intent.putExtra(Intent.EXTRA_TEXT, myGeofenceSet.get(position).getId());
                         startActivity(intent);
                     }
 
