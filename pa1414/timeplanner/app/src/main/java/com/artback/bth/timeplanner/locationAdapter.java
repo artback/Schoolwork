@@ -6,6 +6,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
+import com.artback.bth.timeplanner.Geofence.GeofenceLocation;
+
 import java.util.List;
 
 public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {

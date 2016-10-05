@@ -1,10 +1,14 @@
-package com.artback.bth.timeplanner;
+package com.artback.bth.timeplanner.Geofence;
 
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
+
+import com.artback.bth.timeplanner.Geofence.GeofenceLocation;
+import com.artback.bth.timeplanner.MainActivity;
+import com.artback.bth.timeplanner.R;
 
 public class GeofenceNotification {
 	public static final int NOTIFICATION_ID = 20;

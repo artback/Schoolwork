@@ -1,9 +1,10 @@
-package com.artback.bth.timeplanner;
+package com.artback.bth.timeplanner.Geofence;
 
 
 import android.content.Context;
 
 import com.artback.bth.timeplanner.extendedcalendarview.CalendarProvider;
+import com.google.android.gms.location.Geofence;
 
 import java.util.Date;
 
@@ -17,12 +18,11 @@ public class GeofenceLocation {
 	private int loiteringDelay = 60000;
 
 	public GeofenceLocation(String geofenceId, double latitude, double longitude,
-							float radius, long expiration, int transition) {
+							float radius, int transition) {
 		this.id = geofenceId;
 		this.latitude = latitude;
 		this.longitude = longitude;
 		this.radius = radius;
-		this.expirationDuration = expiration;
 		this.transitionType = transition;
 	}
 
@@ -43,19 +43,16 @@ public class GeofenceLocation {
 		return radius;
 	}
 
-	public long getExpirationDuration() {
-		return expirationDuration;
-	}
-
 	public int getTransitionType() {
 		return transitionType;
 	}
 
 	public com.google.android.gms.location.Geofence toGeofence() {
-		com.google.android.gms.location.Geofence g = new com.google.android.gms.location.Geofence.Builder().setRequestId(getId())
+		com.google.android.gms.location.Geofence g = new com.google.android.gms.location.Geofence.Builder()
+				.setRequestId(getId())
 				.setTransitionTypes(transitionType)
+				.setExpirationDuration(Geofence.NEVER_EXPIRE)
 				.setCircularRegion(getLatitude(), getLongitude(), getRadius())
-				.setExpirationDuration(expirationDuration)
 				.setLoiteringDelay(loiteringDelay).build();
 		return g;
 	}

@@ -1,4 +1,4 @@
-package com.artback.bth.timeplanner;
+package com.artback.bth.timeplanner.Geofence;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,6 +17,9 @@ import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.widget.Toast;
 
+
+import com.artback.bth.timeplanner.MainActivity;
+import com.artback.bth.timeplanner.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
@@ -62,10 +65,11 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 		Log.d(MainActivity.TAG, "Registering Geofences");
 
-		HashMap<String, GeofenceLocation> geofences = GeofenceLocationStore
+		HashMap<String, GeofenceLocation> geofences = GeofenceLocationProvider
 				.getInstance().getSimpleGeofences();
 
 		GeofencingRequest.Builder geofencingRequestBuilder = new GeofencingRequest.Builder();
+		geofencingRequestBuilder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER);
 		for (Map.Entry<String, GeofenceLocation> item : geofences.entrySet()) {
 			GeofenceLocation loc = item.getValue();
 

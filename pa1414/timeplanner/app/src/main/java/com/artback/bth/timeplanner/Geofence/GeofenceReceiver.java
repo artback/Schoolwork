@@ -1,13 +1,12 @@
-package com.artback.bth.timeplanner;
+package com.artback.bth.timeplanner.Geofence;
 
-import java.util.Date;
 import java.util.List;
 
 import android.app.IntentService;
 import android.content.Intent;
-import android.text.format.DateFormat;
 import android.util.Log;
 
+import com.artback.bth.timeplanner.MainActivity;
 import com.artback.bth.timeplanner.extendedcalendarview.Event;
 import com.google.android.gms.location.GeofencingEvent;
 
@@ -36,18 +35,18 @@ public class GeofenceReceiver extends IntentService {
 				List<com.google.android.gms.location.Geofence> triggerList = geoEvent.getTriggeringGeofences();
 
 				for (com.google.android.gms.location.Geofence geofence : triggerList) {
-					GeofenceLocation loc = GeofenceLocationStore.getInstance()
+					GeofenceLocation loc = GeofenceLocationProvider.getInstance()
 							.getSimpleGeofences().get(geofence.getRequestId());
 
 					String transitionName = "";
 					switch (transitionType) {
 					case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_DWELL:
 						transitionName = "dwell";
-						Event.startNewEvent(this,loc.getId());
 						break;
 
 					case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER:
 						transitionName = "enter";
+						Event.startNewEvent(this,loc.getId());
 						break;
 
 					case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT:

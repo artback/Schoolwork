@@ -10,6 +10,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.artback.bth.timeplanner.Geofence.GeofenceLocation;
+import com.artback.bth.timeplanner.Geofence.GeofenceLocationProvider;
+import com.artback.bth.timeplanner.Geofence.GeolocationService;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,7 +64,7 @@ public class MainActivity extends Activity {
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
         List<GeofenceLocation> myGeofenceSet = new ArrayList<GeofenceLocation>
-                (GeofenceLocationStore.getInstance().geofences.values());
+                (GeofenceLocationProvider.getInstance().geofences.values());
         locAdapter = new locationAdapter(myGeofenceSet);
         locationView.setAdapter(locAdapter);
     }
