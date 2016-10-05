@@ -58,14 +58,15 @@ public class MainActivity extends Activity {
         requestPermissions(permisson,REQUEST_LOCATION);
         return 0;
     }
-    private void init(Context context){
+    private void init(){
         locationView = (RecyclerView) findViewById(R.id.location_list);
         locationView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         locationView.setLayoutManager(llm);
-        locationView.addOnItemTouchListener(context, locationView ,
-                new RecyclerItemClickListener.OnItemClickListener() {
+
+        locationView.addOnItemTouchListener(this, locationView ,
+                new RecyclerItemClickListener.OnItemClickListener()) {
             @Override public void onItemClick(View view, int position) {
                 // do whatever
             }
@@ -73,7 +74,7 @@ public class MainActivity extends Activity {
             @Override public void onLongItemClick(View view, int position) {
                 // do whatever
             }
-        }));
+        });
 
         //start geolocation
         startService(new Intent(this, GeolocationService.class));
