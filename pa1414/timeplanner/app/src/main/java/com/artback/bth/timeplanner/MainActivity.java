@@ -66,6 +66,7 @@ public class MainActivity extends Activity {
 
         //start geolocation
         startService(new Intent(this, GeolocationService.class));
+
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
         List<GeofenceLocation> myGeofenceSet = new ArrayList<GeofenceLocation>
