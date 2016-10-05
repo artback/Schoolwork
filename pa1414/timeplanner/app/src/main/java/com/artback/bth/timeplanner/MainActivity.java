@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
                     @Override public void onItemClick(View view, int position) {
                         Intent intent = new Intent(context, AddLocationActivity.class);
                         intent.setAction(Intent.ACTION_SEND);
-                        intent.putExtra(Intent.EXTRA, "This is my text to send.");
+                        intent.putExtra(Intent.EXTRA_, "This is my text to send.");
                         startActivity(intent);
                     }
 
