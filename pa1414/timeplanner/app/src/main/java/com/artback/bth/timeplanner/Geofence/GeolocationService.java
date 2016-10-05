@@ -174,7 +174,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 	}
 
 	protected synchronized void buildGoogleApiClient() {
-		Log.i(MainActivity.TAG, "Building GoogleApiClient");
+		Log.i(this.getClass().getName(), "Building GoogleApiClient");
 		mGoogleApiClient = new GoogleApiClient.Builder(this)
 				.addConnectionCallbacks(this)
 				.addOnConnectionFailedListener(this)
@@ -197,7 +197,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 	public void onResult(Status status) {
 		if (status.isSuccess()) {
-			Log.d(MainActivity.TAG, String.valueOf(R.string.geofences_added));
+			Log.d(this.getClass().getName(), String.valueOf(R.string.geofences_added));
 		} else {
 			MainActivity.geofencesAlreadyRegistered = false;
 			String errorMessage = getErrorString(this, status.getStatusCode());
