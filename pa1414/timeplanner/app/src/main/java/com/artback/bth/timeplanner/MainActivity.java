@@ -64,7 +64,8 @@ public class MainActivity extends Activity {
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         locationView.setLayoutManager(llm);
-        locationView.addOnItemTouchListener(context, locationView ,new RecyclerItemClickListener.OnItemClickListener() {
+        locationView.addOnItemTouchListener(context, locationView ,
+                new RecyclerItemClickListener.OnItemClickListener() {
             @Override public void onItemClick(View view, int position) {
                 // do whatever
             }
