@@ -6,7 +6,7 @@ import com.google.android.gms.location.Geofence;
 //TODO: rebuild class for sqlite savings
 
 public class GeofenceLocationProvider {
-	public HashMap<String, GeofenceLocation> geofences = new HashMap<String, GeofenceLocation>();
+	private HashMap<String, GeofenceLocation> geofences = new HashMap<String, GeofenceLocation>();
 	private static GeofenceLocationProvider instance = new GeofenceLocationProvider();
 	public static GeofenceLocationProvider getInstance() {
 		return instance;
@@ -22,10 +22,10 @@ public class GeofenceLocationProvider {
 				com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER
 						| com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT));
 		geofences.put("Telenor", new GeofenceLocation("Telenor", 56.1957621, 15.5880682,
-				500, Geofence.GEOFENCE_TRANSITION_ENTER
+				200, Geofence.GEOFENCE_TRANSITION_ENTER
 						| com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT));
 		geofences.put("BTH", new GeofenceLocation("BTH", 56.182302,15.590573,
-				300, com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER
+				200, com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER
 						| com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT));
 		geofences.put("HOME", new GeofenceLocation("HOME", 56.680852,16.236984,
 				500, com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER
@@ -33,7 +33,7 @@ public class GeofenceLocationProvider {
 
 	}
 
-	public HashMap<String, GeofenceLocation> getSimpleGeofences() {
+	public HashMap<String, GeofenceLocation> getGeofencesLocations() {
 		return this.geofences;
 	}
 }
