@@ -34,7 +34,7 @@ public class GeofenceNotification {
 		switch (transitionType) {
 		case com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_DWELL:
 			notificationText = String.format(
-					context.getString(R.string.geofence_dwell),
+					context.getString(R.string.geofence_enter),
 					notificationTextParams);
 
 			break;

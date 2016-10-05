@@ -13,7 +13,6 @@ public class GeofenceLocation {
 	private final double latitude;
 	private final double longitude;
 	private final float radius;
-	private long expirationDuration;
 	private int transitionType;
 	private int loiteringDelay = 60000;
 

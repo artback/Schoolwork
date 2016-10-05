@@ -2,7 +2,6 @@
     <string name="app_name">TimePlanner</string>
     <string name="action_settings">Settings</string>
     <string name="geofence_enter">Starting Timer at  %1$s</string>
-    <string name="geofence_dwell">Dwell %1$s</string>
     <string name="geofence_exit">Stoping timer at %1$s</string>
     <string name="events">Events</string>
     <string name="map">Map</string>
