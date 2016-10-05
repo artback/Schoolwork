@@ -22,9 +22,9 @@ public class GeofenceReceiver extends IntentService {
 		
 		GeofencingEvent geoEvent = GeofencingEvent.fromIntent(intent);
 		if (geoEvent.hasError()) {
-			Log.d(MainActivity.TAG, "Error GeofenceReceiver.onHandleIntent");
+			Log.d(this.getClass().getName(), "Error GeofenceReceiver.onHandleIntent");
 		} else {
-			Log.d(MainActivity.TAG, "GeofenceReceiver : Transition -> "
+			Log.d(this.getClass().getName(), "GeofenceReceiver : Transition -> "
 					+ geoEvent.getGeofenceTransition());
 
 			int transitionType = geoEvent.getGeofenceTransition();
