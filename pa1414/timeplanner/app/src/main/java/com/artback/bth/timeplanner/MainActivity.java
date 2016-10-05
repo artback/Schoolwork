@@ -54,7 +54,7 @@ public class MainActivity extends Activity {
             permisson[nrOFpermissons] = Manifest.permission.ACCESS_NETWORK_STATE;
             nrOFpermissons++;
         }
-        requestPermissions(permisson[]),REQUEST_LOCATION);
+        requestPermissions(permisson,REQUEST_LOCATION);
         return 0;
     }
     private void init(){
