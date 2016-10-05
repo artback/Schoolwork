@@ -131,7 +131,6 @@ public class Event {
 	}
 
 	static public void startNewEvent(Context context , String location ){
-		endEvent(context,location);
 		Calendar cal = Calendar.getInstance();
 		ContentValues values = new ContentValues();
 		values.put(CalendarProvider.COLOR, Event.COLOR_RED);
