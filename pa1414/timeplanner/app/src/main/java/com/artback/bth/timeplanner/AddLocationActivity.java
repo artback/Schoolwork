@@ -11,7 +11,6 @@ public class AddLocationActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_page);
 
-
     }
     public void onclick(View view){
 
