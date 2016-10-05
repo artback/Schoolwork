@@ -1,6 +1,7 @@
 package com.artback.bth.timeplanner;
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -57,7 +58,7 @@ public class MainActivity extends Activity {
         requestPermissions(permisson,REQUEST_LOCATION);
         return 0;
     }
-    private void init(){
+    private void init(Context context){
         locationView = (RecyclerView) findViewById(R.id.location_list);
         locationView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
