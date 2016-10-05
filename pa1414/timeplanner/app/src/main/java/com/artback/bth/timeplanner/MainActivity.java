@@ -58,17 +58,28 @@ public class MainActivity extends Activity {
         requestPermissions(permisson,REQUEST_LOCATION);
         return 0;
     }
-    private void init(){
+    private void init(final Context context){
         locationView = (RecyclerView) findViewById(R.id.location_list);
         locationView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         locationView.setLayoutManager(llm);
 
-        locationView.addOnItemTouchListener(
-                new RecyclerItemClickListener(this, locationView ,new RecyclerItemClickListener.OnItemClickListener() {
-                    @Override public void onItemClick(View view, int position) {
+        locationLayoutManager= new LinearLayoutManager(this);
+        locationView.setLayoutManager(locationLayoutManager);
+        List<GeofenceLocation> myGeofenceSet = new ArrayList<GeofenceLocation>
+                (GeofenceLocationProvider.getInstance().getGeofencesLocations().values());
+        locAdapter = new locationAdapter(myGeofenceSet);
 
+        //start geolocation
+        startService(new Intent(this, GeolocationService.class));
+
+        locationView.addOnItemTouchListener(
+                new RecyclerItemClickListener(context, locationView ,new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, int position) {
+                        Intent intent = new Intent(context, AddLocationActivity.class);
+                        intent.
+                        startActivity(intent);
                     }
 
                     @Override public void onLongItemClick(View view, int position) {
@@ -77,14 +88,7 @@ public class MainActivity extends Activity {
                 })
         );
 
-        //start geolocation
-        startService(new Intent(this, GeolocationService.class));
 
-        locationLayoutManager= new LinearLayoutManager(this);
-        locationView.setLayoutManager(locationLayoutManager);
-        List<GeofenceLocation> myGeofenceSet = new ArrayList<GeofenceLocation>
-                (GeofenceLocationProvider.getInstance().getGeofencesLocations().values());
-        locAdapter = new locationAdapter(myGeofenceSet);
         locationView.setAdapter(locAdapter);
     }
     public void openaddpage(View view){
