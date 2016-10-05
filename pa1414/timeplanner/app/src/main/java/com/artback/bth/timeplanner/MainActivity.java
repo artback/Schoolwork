@@ -78,7 +78,7 @@ public class MainActivity extends Activity {
                 new RecyclerItemClickListener(context, locationView ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
                         Intent intent = new Intent(context, AddLocationActivity.class);
-                        intent.
+                        
                         startActivity(intent);
                     }
 
