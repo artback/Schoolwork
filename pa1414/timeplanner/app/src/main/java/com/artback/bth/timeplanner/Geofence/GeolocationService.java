@@ -93,7 +93,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 		LocationServices.GeofencingApi.addGeofences(mGoogleApiClient,
 				geofencingRequest, mPendingIntent).setResultCallback(this);
 		MainActivity.geofencesAlreadyRegistered = true;
-		Log.d(MainActivity.TAG, "Registering Geofences");
+		Log.d(this.getClass().getName(), "Registering Geofences");
 	}
 
 	private PendingIntent requestPendingIntent() {
@@ -143,7 +143,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 	@Override
 	public void onConnected(Bundle connectionHint) {
-		Log.i(MainActivity.TAG, "Connected to GoogleApiClient");
+		Log.i(this.getClass().getName(), "Connected to GoogleApiClient");
 		startLocationUpdates();
 	}
 
