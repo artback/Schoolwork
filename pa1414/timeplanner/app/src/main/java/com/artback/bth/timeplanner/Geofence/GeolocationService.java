@@ -63,19 +63,18 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 			return;
 		}
 
-		Log.d(MainActivity.TAG, "Registering Geofences");
 
 		HashMap<String, GeofenceLocation> geofences = GeofenceLocationProvider
 				.getInstance().getSimpleGeofences();
 
 		GeofencingRequest.Builder geofencingRequestBuilder = new GeofencingRequest.Builder();
-		geofencingRequestBuilder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER);
 		for (Map.Entry<String, GeofenceLocation> item : geofences.entrySet()) {
 			GeofenceLocation loc = item.getValue();
 
 			geofencingRequestBuilder.addGeofence(loc.toGeofence());
 		}
 
+		geofencingRequestBuilder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER);
 		GeofencingRequest geofencingRequest = geofencingRequestBuilder.build();
 		mPendingIntent = requestPendingIntent();
 
@@ -93,8 +92,8 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 		LocationServices.GeofencingApi.addGeofences(mGoogleApiClient,
 				geofencingRequest, mPendingIntent).setResultCallback(this);
-
 		MainActivity.geofencesAlreadyRegistered = true;
+		Log.d(MainActivity.TAG, "Registering Geofences");
 	}
 
 	private PendingIntent requestPendingIntent() {
