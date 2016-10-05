@@ -188,7 +188,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 		mLocationRequest.setInterval(UPDATE_INTERVAL_IN_MILLISECONDS);
 		mLocationRequest
 				.setFastestInterval(FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS);
-		mLocationRequest.setPriority(LocationRequest.);
+		mLocationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
 	}
 
 	@Override
