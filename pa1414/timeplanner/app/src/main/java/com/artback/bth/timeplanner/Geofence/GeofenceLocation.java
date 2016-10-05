@@ -1,12 +1,7 @@
 package com.artback.bth.timeplanner.Geofence;
 
-
-import android.content.Context;
-
-import com.artback.bth.timeplanner.extendedcalendarview.CalendarProvider;
 import com.google.android.gms.location.Geofence;
 
-import java.util.Date;
 
 public class GeofenceLocation {
 	private final String id;
@@ -14,7 +9,7 @@ public class GeofenceLocation {
 	private final double longitude;
 	private final float radius;
 	private int transitionType;
-	private int loiteringDelay = 60000;
+	private static int loiteringDelay = 60000;
 
 	public GeofenceLocation(String geofenceId, double latitude, double longitude,
 							float radius, int transition) {
