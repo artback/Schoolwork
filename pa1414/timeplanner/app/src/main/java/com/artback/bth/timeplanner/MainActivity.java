@@ -80,7 +80,6 @@ public class MainActivity extends Activity {
                         Intent intent = new Intent(context, AddLocationActivity.class);
                         intent.setAction(Intent.ACTION_SEND);
                         intent.putExtra(Intent.EXTRA_TEXT, myGeofenceSet.get(position).getId());
-                        
                         startActivity(intent);
                     }
 
