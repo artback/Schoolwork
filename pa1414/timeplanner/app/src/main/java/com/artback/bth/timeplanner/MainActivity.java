@@ -74,7 +74,8 @@ public class MainActivity extends Activity {
             @Override public void onLongItemClick(View view, int position) {
                 // do whatever
             }
-        });
+        }
+        );
 
         //start geolocation
         startService(new Intent(this, GeolocationService.class));
