@@ -26,7 +26,6 @@ public class MainActivity extends Activity {
     private RecyclerView locationView;
     private RecyclerView.Adapter locAdapter;
     private RecyclerView.LayoutManager locationLayoutManager;
-    public static String TAG = "Debug";
     static public boolean geofencesAlreadyRegistered = false;
 
     @RequiresApi(api = Build.VERSION_CODES.M)

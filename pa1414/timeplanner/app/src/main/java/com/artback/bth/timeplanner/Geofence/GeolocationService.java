@@ -149,7 +149,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 	@Override
 	public void onLocationChanged(Location location) {
-		Log.d(MainActivity.TAG,
+		Log.d(this.getClass().getName(),
 				"new location : " + location.getLatitude() + ", "
 						+ location.getLongitude() + ". "
 						+ location.getAccuracy());
@@ -162,13 +162,13 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 	@Override
 	public void onConnectionSuspended(int cause) {
-		Log.i(MainActivity.TAG, "Connection suspended");
+		Log.i(this.getClass().getName(), "Connection suspended");
 		mGoogleApiClient.connect();
 	}
 
 	@Override
 	public void onConnectionFailed(ConnectionResult result) {
-		Log.i(MainActivity.TAG,
+		Log.i(this.getClass().getName(),
 				"Connection failed: ConnectionResult.getErrorCode() = "
 						+ result.getErrorCode());
 	}

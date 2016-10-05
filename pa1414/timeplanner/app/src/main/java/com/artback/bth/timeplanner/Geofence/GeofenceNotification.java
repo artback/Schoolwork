@@ -51,7 +51,7 @@ public class GeofenceNotification {
 					notificationTextParams);
 			break;
 		}
-		Log.d(MainActivity.TAG, notificationText);
+		Log.d(this.getClass().getName(), notificationText);
 
 		NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(
 				context)
