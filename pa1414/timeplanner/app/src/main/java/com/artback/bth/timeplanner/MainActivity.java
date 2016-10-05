@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
         locationView.addOnItemTouchListener(
                 new RecyclerItemClickListener(this, locationView ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
-                        
+
                     }
 
                     @Override public void onLongItemClick(View view, int position) {
