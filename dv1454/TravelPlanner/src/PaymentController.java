@@ -32,7 +32,7 @@ public class PaymentController{
         Connection connection = null;
         
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:" +
+            connection = DriverManager.getConnection("jdbc:sqlserver:" +
                 SystemController.dbPath);
             Statement statement = connection.createStatement();
             statement.setQueryTimeout(30);  // set timeout to 30 sec.
