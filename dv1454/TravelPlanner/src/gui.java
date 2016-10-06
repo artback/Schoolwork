@@ -1,6 +1,4 @@
-
 import com.toedter.calendar.JDateChooser;
-
 import java.awt.EventQueue;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -15,6 +13,7 @@ import java.util.Date;
 import java.util.regex.Pattern;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.ChangeEvent;
+
 
 public class gui {
     private JTable table;
