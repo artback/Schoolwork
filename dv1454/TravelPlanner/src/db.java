@@ -1,7 +1,14 @@
-package PACKAGE_NAME;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
-/**
- * Created by freak on 10/6/16.
- */
-public class db {
-}
+public  class db{
+    String userName = "username";
+    String password = "password";
+    String url = "jdbc:sqlserver://MYPC\\SQLEXPRESS;databaseName=MYDB";
+    void connect() throws SQLException, ClassNotFoundException {
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        Connection conn = DriverManager.getConnection(url, userName, password);
+    }
+};
+
