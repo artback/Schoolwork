@@ -32,8 +32,7 @@ public class PaymentController{
         Connection connection = null;
         
         try {
-            connection = DriverManager.getConnection("jdbc:sqlserver:" +
-                );
+            connection = DriverManager.getConnection("jdbc:sqlserver:" + );
             Statement statement = connection.createStatement();
             statement.setQueryTimeout(30);  // set timeout to 30 sec.
             statement.executeUpdate(
