@@ -8,7 +8,7 @@ public class SystemController {
         String userName = "username";
         String password = "password";
         String url = "jdbc:sqlserver://MYPC\\SQLEXPRESS;databaseName=MYDB";
-         
+        db
     };
 
 
