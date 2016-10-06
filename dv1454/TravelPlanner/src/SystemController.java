@@ -1,10 +1,9 @@
-package TravelPlanner;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class SystemController {
-
+    public static String dbPath = "";
     public String user;
     public String userName;
     private FlightController flight;
@@ -66,9 +65,7 @@ public class SystemController {
 
         if (result) {
             //Send activation email
-            EmailController ec = new EmailController(userName);
-            ec.sendActivate();
-        	
+
             ret = true;
         } else {
             user = null;
@@ -83,12 +80,10 @@ public class SystemController {
     	if (this.luhn(cardNr)) {
             this.pay = new PaymentController(cardNr, price, this.user);
 
-            EmailController ec = new EmailController(this.user);
             this.flight = new FlightController();
 
             pay.makePayment();
-            ec.sendRecipt();
-            success = this.flight.bookFlight(id, nrOfPassangers);    	
+            success = this.flight.bookFlight(id, nrOfPassangers);
     	}
     	
     	return success;
@@ -128,25 +123,5 @@ public class SystemController {
         return this.flight.updateFlight(id, origin, destination, deptDate,
             deptTime, travelTime, price, nrOfSeats);
     }
-    
-    private boolean luhn(String ccNumber) {
-        int sum = 0;
-        boolean alternate = false;
 
-        for (int i = ccNumber.length() - 1; i >= 0; i--) {
-            int n = Integer.parseInt(ccNumber.substring(i, i + 1));
-
-            if (alternate) {
-                n *= 2;
-
-                if (n > 9) {
-                    n = (n % 10) + 1;
-                }
-            }
-            sum += n;
-            alternate = !alternate;
-        }
-
-        return (sum % 10 == 0);
-    }
 }
