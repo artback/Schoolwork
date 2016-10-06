@@ -4,7 +4,7 @@ import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 
 public class SystemController {
-    public static ;
+    public static class ;
 
 
     public String user;
