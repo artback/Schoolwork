@@ -77,15 +77,13 @@ public class SystemController {
     public boolean bookFlight(int id, int nrOfPassangers, String cardNr, int price) {
     	boolean success = false;
     	
-    	if (this.luhn(cardNr)) {
             this.pay = new PaymentController(cardNr, price, this.user);
 
             this.flight = new FlightController();
 
             pay.makePayment();
             success = this.flight.bookFlight(id, nrOfPassangers);
-    	}
-    	
+
     	return success;
     }
     public String[][] getAllFlights(){
