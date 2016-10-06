@@ -5,6 +5,7 @@ import java.sql.*;
 
 public class SystemController {
     public static String dbPath = "";
+
     public String user;
     public String userName;
     private FlightController flight;
@@ -12,6 +13,7 @@ public class SystemController {
     private PaymentController pay;
     
     SystemController() {
+        Db 
     }
     
     public boolean login(String username, String password) throws NoSuchAlgorithmException {
