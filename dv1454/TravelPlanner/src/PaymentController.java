@@ -1,4 +1,4 @@
-package Travelplanner;
+package TravelPlanner;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
