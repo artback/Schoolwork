@@ -4,15 +4,6 @@ import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 
 public class SystemController {
-    public static class db{
-        String userName = "username";
-        String password = "password";
-        String url = "jdbc:sqlserver://MYPC\\SQLEXPRESS;databaseName=MYDB";
-        void connect() throws SQLException, ClassNotFoundException {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection conn = DriverManager.getConnection(url, userName, password);
-        }
-    };
 
 
     public String user;
@@ -22,7 +13,6 @@ public class SystemController {
     private PaymentController pay;
     
     SystemController() {
-        DB
     }
     
     public boolean login(String username, String password) throws NoSuchAlgorithmException {
