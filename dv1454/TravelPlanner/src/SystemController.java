@@ -5,6 +5,10 @@ import java.sql.*;
 
 public class SystemController {
     public static class db(){
+        String userName = "username";
+        String password = "password";
+
+        String url = "jdbc:sqlserver://MYPC\\SQLEXPRESS;databaseName=MYDB";
         
     };
 
