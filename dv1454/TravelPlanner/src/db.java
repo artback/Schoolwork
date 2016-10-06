@@ -3,9 +3,9 @@ import java.sql.*;
 public final class db{
     static Connection conn;
      static private void connect() {
-        String userName = "username";
-        String password = "password";
-        String url = "jdbc:sqlserver://MYPC\\SQLEXPRESS;databaseName=MYDB";
+        String userName = "dv1454_ht16_8";
+        String password = "7PJEoNn&";
+         String url = "jdbc:sqlserver://\\SQLEXPRESS;databaseName=MYDB";
          try {
              Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
          } catch (ClassNotFoundException e) {
