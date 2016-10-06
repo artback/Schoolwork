@@ -1,8 +1,3 @@
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Calendar;
 
 public class PaymentController{
@@ -29,31 +24,11 @@ public class PaymentController{
     }
     
     private boolean logTranscation(){
-        Connection connection = null;
-        
-        try {
-            db.connect();
-            Statement statement = connection.createStatement();
-            statement.setQueryTimeout(30);  // set timeout to 30 sec.
-            statement.executeUpdate(
+            db.query(
                 "INSERT INTO transactions VALUES (" + null + ", " +
                 "'" + this.user + "', " +
                 "'" + this.price + "', " +
-                "'" + Calendar.getInstance().getTime() + "' )"
-            );
-            
-        } catch(SQLException e) {
-            System.err.println(e.getMessage());
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if(connection != null)
-                    connection.close();
-            } catch(SQLException e) {
-                System.err.println(e);
-            }
-        }
+                "'" + Calendar.getInstance().getTime() + "' )");
         return true;
     }
 }

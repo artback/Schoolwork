@@ -2,7 +2,7 @@ import java.sql.*;
 
 public final class db{
     static Connection conn;
-     static void connect() {
+     static private void connect() {
         String userName = "username";
         String password = "password";
         String url = "jdbc:sqlserver://MYPC\\SQLEXPRESS;databaseName=MYDB";
@@ -18,6 +18,7 @@ public final class db{
          }
      }
     static ResultSet query(String query) {
+        connect();
         Statement statement = null;
         try {
             statement = conn.createStatement();
@@ -32,6 +33,11 @@ public final class db{
         ResultSet rs = null;
         try {
             rs = statement.executeQuery(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
