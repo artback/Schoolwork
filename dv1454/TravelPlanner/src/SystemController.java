@@ -13,7 +13,7 @@ public class SystemController {
     private PaymentController pay;
     
     SystemController() {
-        Db 
+        DB
     }
     
     public boolean login(String username, String password) throws NoSuchAlgorithmException {
