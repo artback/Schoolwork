@@ -8,7 +8,10 @@ public class SystemController {
         String userName = "username";
         String password = "password";
         String url = "jdbc:sqlserver://MYPC\\SQLEXPRESS;databaseName=MYDB";
-        db
+        void connect(){
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection conn = DriverManager.getConnection(url, userName, password);
+        }
     };
 
 
