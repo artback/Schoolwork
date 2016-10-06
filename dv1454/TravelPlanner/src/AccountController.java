@@ -19,8 +19,8 @@ public class AccountController {
         String[] ret = new String[2];
         ret[0] = "";
         ret[1] = "";
-
-
+            db.connect();
+            ResultSet rs = db.query();
 
             String pwdHash = rs.getString("user_password_hash");
             //LOGIN

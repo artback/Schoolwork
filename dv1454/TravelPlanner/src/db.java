@@ -2,17 +2,39 @@ import java.sql.*;
 
 public final class db{
     static Connection conn;
-     static void connect() throws SQLException, ClassNotFoundException {
+     static void connect() {
         String userName = "username";
         String password = "password";
         String url = "jdbc:sqlserver://MYPC\\SQLEXPRESS;databaseName=MYDB";
-        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        conn = DriverManager.getConnection(url, userName, password);
-    }
-    static ResultSet query(String query) throws SQLException {
-        Statement statement = conn.createStatement();
-        statement.setQueryTimeout(30);  // set timeout to 30 sec.
-        ResultSet rs = statement.executeQuery(query);
+         try {
+             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+         } catch (ClassNotFoundException e) {
+             e.printStackTrace();
+         }
+         try {
+             conn = DriverManager.getConnection(url, userName, password);
+         } catch (SQLException e) {
+             e.printStackTrace();
+         }
+     }
+    static ResultSet query(String query) {
+        Statement statement = null;
+        try {
+            statement = conn.createStatement();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            statement.setQueryTimeout(30);  // set timeout to 30 sec.
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        ResultSet rs = null;
+        try {
+            rs = statement.executeQuery(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return rs;
     }
 
