@@ -1,4 +1,6 @@
 
+import com.toedter.calendar.JDateChooser;
+
 import java.awt.EventQueue;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
