@@ -20,20 +20,7 @@ public class AccountController {
         ret[0] = "";
         ret[1] = "";
 
-        Connection connection = null;
 
-        try {
-            connection = DriverManager.getConnection("jdbc:sqlite:" +
-                SystemController.dbPath);
-
-            Statement statement = connection.createStatement();
-            statement.setQueryTimeout(30);  // set timeout to 30 sec.
-
-            ResultSet rs = statement.executeQuery(
-                "SELECT first_name, last_name, email, user_password_hash," +
-                "account_active, admin  FROM users WHERE email = '" +
-                this.user + "'"
-            );
 
             String pwdHash = rs.getString("user_password_hash");
             //LOGIN
