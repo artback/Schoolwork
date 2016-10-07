@@ -25,6 +25,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
             private TextView timeTextView;
             public ViewHolder(View itemView) {
                 super(itemView);
+                locationTextView.
         }
 
         // Provide a suitable constructor (depends on the kind of dataset)
