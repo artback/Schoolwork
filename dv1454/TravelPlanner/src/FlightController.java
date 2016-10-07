@@ -1,5 +1,4 @@
 
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -28,7 +27,7 @@ public class FlightController {
         ResultSet rs;
         int count = 0;
             if(where != "") {
-           rs= db.query("SELECT * (Flight.Landing-Flight.TakeOff) FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID" + where);
+           rs= db.query("SELECT * (Flight.Landing-Flight.TakeOff) AS travel_time FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID" + where);
             } else{
             rs = db.query("SELECT * (Flight.Landing-Flight.TakeOff) AS travel_time FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID");
                 }
@@ -54,8 +53,7 @@ public class FlightController {
     public boolean bookFlight(int id, int nrOfPassengers) {
         Integer[] flight = this.dbGet(
             "SELECT * FROM flights WHERE flight_id = " + id
-        );
-    }
+        ); }
 	
     public String[][] getAllFlights() {
         String[][] flights = new String[0][];
@@ -72,7 +70,6 @@ public class FlightController {
             );
         return flights;
     }
-
 
 
 }
