@@ -41,8 +41,8 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
 
         // Create new views (invoked by the layout manager)
         @Override
-        public locationAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
-                                                       int viewType) {
+        public locationAdapter.ViewHolder onCreateViewHolder(final ViewGroup parent,
+                                                       final int viewType) {
             // create a new view
             View v = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.location_view, parent, false);
