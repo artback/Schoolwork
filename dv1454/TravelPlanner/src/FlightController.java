@@ -31,8 +31,8 @@ public class FlightController {
                 ResultSet rs = db.query(SQL);
                 while(rs.next()) {
                     flights[count][0] = Integer.toString(rs.getInt("flight_id"));
-                    flights[count][1] = rs.getString("origin");
-                    flights[count][2] = rs.getString("destination");
+                    flights[count][1] = rs.getString("TakeOff");
+                    flights[count][2] = rs.getString("Landing");
                     flights[count][3] = rs.getString("departure_date");
                     flights[count][4] = rs.getString("departure_time");
                     flights[count][5] = rs.getString("travel_time");
@@ -57,18 +57,27 @@ public class FlightController {
     }
 	
     public String[][] getAllFlights() {
-    	String[][] flights = this.dbGetFlights("SELECT * FROM flights");
-    	
-    	return flights;
+        String[][] flights = new String[0][];
+        try {
+            flights = this.dbGetFlights("SELECT * FROM flight");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return flights;
     }
     
     public String[][] getFlights(String origin, String destination, String date) {
-        String[][] flights = this.dbGetFlights(
-            "SELECT * FROM flights WHERE origin = '" +
-            origin + "' AND destination = '" + destination +
-            "' AND departure_date = '" + date + "'" 
-        );
-        
+        String[][] flights = new String[0][];
+        try {
+            flights = this.dbGetFlights(
+                "SELECT * FROM flights WHERE origin = '" +
+                origin + "' AND destination = '" + destination +
+                "' AND departure_date = '" + date + "'"
+            );
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return flights;
     }
 
