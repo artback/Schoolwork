@@ -10,15 +10,19 @@ public class FlightController {
     }
     
 
-    private Integer[] dbGet(String SQL) throws SQLException {
+    private Integer[] dbGet(String SQL)  {
         Connection connection = null;
         Integer flight[] = new Integer[2];
 
             ResultSet rs = db.query(SQL);
-                while(rs.next()) {
-                    flight[0] = rs.getInt("flight_id");
-                    flight[1] = rs.getInt("nr_of_seats");
-                }
+        try {
+            while(rs.next()) {
+                flight[0] = rs.getInt("flight_id");
+                flight[1] = rs.getInt("nr_of_seats");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return flight;
     }
 	
@@ -54,20 +58,11 @@ public class FlightController {
         );
         int nrOfSeats = flight[1] - nrOfPassengers;
 
-        return this.dbInsert(
-            "UPDATE FLIGHTS SET nr_of_seats = " +
-            nrOfSeats + " WHERE flight_id = " + flight[0]
-        );
     }
 	
     public String[][] getAllFlights() {
         String[][] flights = new String[0][];
-        try {
-            flights = this.dbGetFlights("SELECT * FROM flight");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
+        flights = this.dbGetFlights("SELECT * FROM flight");
         return flights;
     }
     
