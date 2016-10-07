@@ -62,7 +62,7 @@ public class FlightController {
 	
     public String[][] getAllFlights() {
         String[][] flights = new String[0][];
-        flights = this.dbGetFlights("SELECT * FROM flight INNER JOIN Travel");
+        flights = this.dbGetFlights("SELECT * FROM flight INNER JOIN Travel on ");
         return flights;
     }
     
