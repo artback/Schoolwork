@@ -13,7 +13,7 @@ import com.artback.bth.timeplanner.Geofence.GeofenceLocation;
 import java.util.List;
 
 public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {
-        public List<GeofenceLocation> mGeofenceLocations;
+        private List<GeofenceLocation> mGeofenceLocations;
         // Provide a reference to the views for each data item
         // Complex data items may need more than one view per item, and
         // you provide access to all the views for a data item in a view holder
@@ -41,7 +41,6 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
             // create a new view
             View v = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.location_view, parent, false);
-            v.setOnClickListener();
             // set the view's size, margins, paddings and layout parameters
             return new ViewHolder(v);
         }
