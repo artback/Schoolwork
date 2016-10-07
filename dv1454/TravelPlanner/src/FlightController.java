@@ -24,7 +24,6 @@ public class FlightController {
     }
 	
     private String[][] dbGetFlights(String SQL)   {
-        Connection connection = null;
         String[][] flights = new String[25][8];
         
 
@@ -34,7 +33,7 @@ public class FlightController {
             while(rs.next()) {
                 flights[count][0] = Integer.toString(rs.getInt("flight_id"));
                 flights[count][1] = rs.getString("Departure");
-                flights[count][2] = rs.getString("");
+                flights[count][2] = rs.getString("Destination");
                 flights[count][3] = rs.getString("departure_date");
                 flights[count][4] = rs.getString("departure_time");
                 flights[count][5] = rs.getString("travel_time");
