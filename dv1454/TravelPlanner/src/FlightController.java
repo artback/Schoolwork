@@ -22,24 +22,28 @@ public class FlightController {
         return flight;
     }
 	
-    private String[][] dbGetFlights(String SQL) throws SQLException {
+    private String[][] dbGetFlights(String SQL)   {
         Connection connection = null;
         String[][] flights = new String[25][8];
         
 
                 int count = 0;
                 ResultSet rs = db.query(SQL);
-                while(rs.next()) {
-                    flights[count][0] = Integer.toString(rs.getInt("flight_id"));
-                    flights[count][1] = rs.getString("TakeOff");
-                    flights[count][2] = rs.getString("Landing");
-                    flights[count][3] = rs.getString("departure_date");
-                    flights[count][4] = rs.getString("departure_time");
-                    flights[count][5] = rs.getString("travel_time");
-                    flights[count][6] = Integer.toString(rs.getInt("price"));
-                    flights[count][7] = Integer.toString(rs.getInt("nr_of_seats"));
-                    count++;
-                }
+        try {
+            while(rs.next()) {
+                flights[count][0] = Integer.toString(rs.getInt("flight_id"));
+                flights[count][1] = rs.getString("TakeOff");
+                flights[count][2] = rs.getString("Landing");
+                flights[count][3] = rs.getString("departure_date");
+                flights[count][4] = rs.getString("departure_time");
+                flights[count][5] = rs.getString("travel_time");
+                flights[count][6] = Integer.toString(rs.getInt("price"));
+                flights[count][7] = Integer.toString(rs.getInt("nr_of_seats"));
+                count++;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         return flights;
     }
