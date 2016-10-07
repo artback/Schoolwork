@@ -34,7 +34,7 @@ public class FlightController {
                 }
         try {
             while(rs.next()) {
-                flights[count][0] = Integer.toString(rs.getInt("flightID"));
+                flights[count][0] = Integer.toString(rs.getInt("FlightID"));
                 flights[count][1] = rs.getString("Departure");
                 flights[count][2] = rs.getString("Destination");
                 flights[count][3] = rs.getString("Departure");
