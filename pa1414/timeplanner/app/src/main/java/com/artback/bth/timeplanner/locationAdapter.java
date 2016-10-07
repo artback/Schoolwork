@@ -14,24 +14,15 @@ import java.util.List;
 
 public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHolder> {
         public List<GeofenceLocation> mGeofenceLocations;
-        private final View.OnClickListener mOnClickListener = new MyOnClickListener();
+        private final View.OnClickListener mOnClickListener = new View.OnClickListener();
         // Provide a reference to the views for each data item
         // Complex data items may need more than one view per item, and
         // you provide access to all the views for a data item in a view holder
         public static class ViewHolder extends RecyclerView.ViewHolder
-        implements View.OnClickListener {
+        {
             // each data item is just a string in this case
             private TextView locationTextView;
             private TextView timeTextView;
-            public ViewHolder(View v) {
-                super(v);
-
-                locationTextView = (TextView) itemView.findViewById(R.id.location_text);
-                timeTextView = (TextView) itemView.findViewById(R.id.time_text);
-            }
-            @Override
-            public void onClick(View view) {
-            }
         }
 
         // Provide a suitable constructor (depends on the kind of dataset)
