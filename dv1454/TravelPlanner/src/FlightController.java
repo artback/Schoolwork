@@ -29,7 +29,7 @@ public class FlightController {
 
                 int count = 0;
                 ResultSet rs =
-                        db.query("SELECT * FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID");
+                        db.query("SELECT * ( FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID");
         try {
             while(rs.next()) {
                 flights[count][0] = Integer.toString(rs.getInt("flight_id"));
