@@ -21,7 +21,7 @@ public class GeofenceLocationProvider {
 				100,
 				com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_ENTER
 						| com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT));
-		geofences.put("Telenor", new GeofenceLocation("Telenor", 56.1957621, 15.5880682,
+		geofences.put("Telenor", new GeofenceLocation("Telenor", 56.1843281, 15.5917499,
 				200, Geofence.GEOFENCE_TRANSITION_ENTER
 						| com.google.android.gms.location.Geofence.GEOFENCE_TRANSITION_EXIT));
 		geofences.put("BTH", new GeofenceLocation("BTH", 56.182302,15.590573,
