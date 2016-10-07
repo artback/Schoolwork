@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
 
 
         };
-        
+        TedPermission ted = 
 
 
         return 0;
