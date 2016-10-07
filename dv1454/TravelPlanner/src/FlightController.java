@@ -22,20 +22,13 @@ public class FlightController {
         return flight;
     }
 	
-    private String[][] dbGetFlights(String SQL) {
+    private String[][] dbGetFlights(String SQL) throws SQLException {
         Connection connection = null;
         String[][] flights = new String[25][8];
         
-        if (!SQL.equals("")) {
-            try {
-                connection = DriverManager.getConnection("jdbc:sqlite:" +
-                    SystemController.dbPath);
-                Statement statement = connection.createStatement();
-                statement.setQueryTimeout(30);  
-                ResultSet rs = statement.executeQuery(SQL);
-                
+
                 int count = 0;
-                
+                ResultSet rs = db.query(SQL);
                 while(rs.next()) {
                     flights[count][0] = Integer.toString(rs.getInt("flight_id"));
                     flights[count][1] = rs.getString("origin");
@@ -47,18 +40,7 @@ public class FlightController {
                     flights[count][7] = Integer.toString(rs.getInt("nr_of_seats"));
                     count++;
                 }
-            } catch(SQLException e) {
-                System.err.println(e.getMessage());
-            } finally {
-                try {
-                    if(connection != null)
-                        connection.close();
-                } catch(SQLException e) {
-                    System.err.println(e);
-                }
-            }
-        }
-        
+
         return flights;
     }
 	
