@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
         for (int i = 0; i < nrOFpermissons; i++) {
            permissonFinal[i]=permisson[i];
         }
-        requestPermissions(permisson,REQUEST_LOCATION);
+        requestPermissions(permissonFinal,REQUEST_LOCATION);
         return 0;
     }
     private void init(final Context context){

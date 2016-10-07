@@ -83,7 +83,6 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 				Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 			if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)!=
 					PackageManager.PERMISSION_GRANTED ) {
-				ActivityCompat.requestPermissions(new String{Manifest.permission.ACCESS_FINE_LOCATION},REQUEST_LOCATION);
 			}
 			// TODO: Consider calling
 			//    ActivityCompat#requestPermissions
