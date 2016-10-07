@@ -61,6 +61,17 @@ public class MainActivity extends Activity {
         RecyclerView.LayoutManager locationLayoutManager;
 
         locationView = (RecyclerView) findViewById(R.id.location_list);
+        locationView.addOnItemTouchListener(
+                new RecyclerItemClickListener(this, locationView ,new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, int position) {
+                        // do whatever
+                    }
+
+                    @Override public void onLongItemClick(View view, int position) {
+                        // do whatever
+                    }
+                })
+        );
         locationView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
