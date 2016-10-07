@@ -20,9 +20,11 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         // you provide access to all the views for a data item in a view holder
         public static class ViewHolder extends RecyclerView.ViewHolder
         {
-            
+
             private TextView locationTextView;
             private TextView timeTextView;
+            public ViewHolder(View itemView) {
+                super(itemView);
         }
 
         // Provide a suitable constructor (depends on the kind of dataset)
