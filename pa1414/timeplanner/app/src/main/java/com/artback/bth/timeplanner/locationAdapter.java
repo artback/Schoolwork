@@ -30,7 +30,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
             }
         }
 
-    
+
         public locationAdapter(List<GeofenceLocation> GeofenceLocations) {
             mGeofenceLocations = GeofenceLocations;
         }
