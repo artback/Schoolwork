@@ -32,7 +32,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), CalenderActivity.class);
-                intent.putExtra(EXTRA_MESSAGE)
+                intent.putExtra()
                 view.getContext().startActivity(intent);
             }
         }
