@@ -25,11 +25,13 @@ public class FlightController {
 	
     private String[][] dbGetFlights(String where)   {
         String[][] flights = new String[25][8];
-        
-
-                int count = 0;
-                ResultSet rs =
-                        db.query("SELECT * (Flight. FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID");
+        ResultSet rs;
+        int count = 0;
+            if(where != "") {
+           rs= db.query("SELECT * (Flight.Landing-Flight.TakeOff) FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID" + where);
+            } else{
+            rs = db.query("SELECT * (Flight.Landing-Flight.TakeOff) FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID");
+                }
         try {
             while(rs.next()) {
                 flights[count][0] = Integer.toString(rs.getInt("flight_id"));
@@ -59,7 +61,7 @@ public class FlightController {
 	
     public String[][] getAllFlights() {
         String[][] flights = new String[0][];
-        flights = this.dbGetFlights("SELECT * FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID");
+        flights = this.dbGetFlights(");
         return flights;
     }
     
