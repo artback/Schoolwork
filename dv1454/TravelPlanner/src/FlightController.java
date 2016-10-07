@@ -9,90 +9,16 @@ public class FlightController {
     public FlightController() {
     }
     
-    private boolean dbDelete(String SQL){
-        Connection connection = null;
-        boolean success = true;
 
-        try {
-
-            connection = DriverManager.getConnection("jdbc:sqlite:" +
-                    SystemController.dbPath);
-            Statement statement = connection.createStatement();
-            statement.setQueryTimeout(30);  
-
-            if(!SQL.equals("")){
-                statement.executeUpdate(SQL);
-            }
-        } catch(SQLException e) {
-            System.err.println(e.getMessage());
-            success = false;
-        } finally {
-            try {
-                if(connection != null)
-                    connection.close();
-            } catch(SQLException e) {
-                System.err.println(e);
-            }
-        }
-
-        return success;
-    }
-	
-    private boolean dbInsert(String SQL){
-        Connection connection = null;
-        boolean success = true;
-
-        try {
-            connection = DriverManager.getConnection("jdbc:sqlite:" +
-                SystemController.dbPath);
-            Statement statement = connection.createStatement();
-            statement.setQueryTimeout(30);  
-
-            if(!SQL.equals("")){
-                statement.executeUpdate(SQL);
-            }
-        } catch(SQLException e) {
-            System.err.println(e.getMessage());
-            success = false;
-        } finally {
-            try {
-                if(connection != null)
-                    connection.close();
-            } catch(SQLException e) {
-                System.err.println(e);
-            }
-        }
-
-        return success;
-    }
-	
-    private Integer[] dbGet(String SQL){
+    private Integer[] dbGet(String SQL) throws SQLException {
         Connection connection = null;
         Integer flight[] = new Integer[2];
 
-        if (!SQL.equals("")) {
-            try {
-                connection = DriverManager.getConnection("jdbc:sqlite:" +
-                    SystemController.dbPath);
-                Statement statement = connection.createStatement();
-                statement.setQueryTimeout(30);  
-                ResultSet rs = statement.executeQuery(SQL);    
-
+            ResultSet rs = db.query(SQL);
                 while(rs.next()) {
                     flight[0] = rs.getInt("flight_id");
                     flight[1] = rs.getInt("nr_of_seats");
                 }
-            } catch(SQLException e) {
-                System.err.println(e.getMessage());
-            } finally {
-                try {
-                    if(connection != null)
-                        connection.close();
-                } catch(SQLException e) {
-                    System.err.println(e);
-                }
-            }
-        }
         return flight;
     }
 	
