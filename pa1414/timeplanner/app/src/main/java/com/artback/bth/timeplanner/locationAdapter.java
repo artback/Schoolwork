@@ -18,17 +18,19 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         // Provide a reference to the views for each data item
         // Complex data items may need more than one view per item, and
         // you provide access to all the views for a data item in a view holder
-        public static class ViewHolder extends RecyclerView.ViewHolder
-        {
+        public static class ViewHolder extends RecyclerView.ViewHolder {
 
             private TextView locationTextView;
             private TextView timeTextView;
+
             public ViewHolder(View itemView) {
                 super(itemView);
-                locationTextView.
+                locationTextView = (TextView) itemView.findViewById(R.id.location_text);
+                timeTextView = (TextView) itemView.findViewById(R.id.time_text);
+            }
         }
 
-        // Provide a suitable constructor (depends on the kind of dataset)
+    
         public locationAdapter(List<GeofenceLocation> GeofenceLocations) {
             mGeofenceLocations = GeofenceLocations;
         }
