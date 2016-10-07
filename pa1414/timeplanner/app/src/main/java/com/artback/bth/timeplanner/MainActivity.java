@@ -88,8 +88,6 @@ public class MainActivity extends Activity {
                     }
                 })
         );
-
-
         locationView.setAdapter(locAdapter);
     }
     public void openaddpage(View view){
