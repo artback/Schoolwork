@@ -5,7 +5,7 @@ public final class db{
      static private void connect() {
         String userName = "dv1454_ht16_8";
         String password = "7PJEoNn&";
-         String url = "jdbc:sqlserver://194.47.129.139\\SQLEXPRESS;databaseName=";
+         String url = "jdbc:sqlserver://194.47.129.139\\SQLEXPRESS;databaseName=db";
          try {
              Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
          } catch (ClassNotFoundException e) {

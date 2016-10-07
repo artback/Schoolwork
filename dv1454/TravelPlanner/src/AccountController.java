@@ -15,11 +15,10 @@ public class AccountController {
         this.password = password;
     }
 
-    public String[] login() {
+    public String[] login() throws SQLException {
         String[] ret = new String[2];
         ret[0] = "";
         ret[1] = "";
-            db.connect();
             ResultSet rs = db.query();
 
             String pwdHash = rs.getString("user_password_hash");
@@ -39,19 +38,6 @@ public class AccountController {
             } else {
                 ret[0] = "";   //password incorrect
             }
-        } catch(SQLException e) {
-            System.err.println(e.getMessage());
-            ret[0] = "";
-            return ret; // return if user isn't found
-        } finally {
-            try {
-                if(connection != null)
-                connection.close();
-            } catch(SQLException e) {
-                System.err.println(e);
-            }
-        }
-
         return ret;
     }
 
