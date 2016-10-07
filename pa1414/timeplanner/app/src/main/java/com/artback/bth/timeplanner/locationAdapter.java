@@ -1,5 +1,6 @@
 package com.artback.bth.timeplanner;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +27,10 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
 
                 locationTextView = (TextView) itemView.findViewById(R.id.location_text);
                 timeTextView = (TextView) itemView.findViewById(R.id.time_text);
+            }
+            @Override
+            public void onClick(View view) {
+                
             }
         }
 
