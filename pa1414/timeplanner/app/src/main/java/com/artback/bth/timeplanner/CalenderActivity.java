@@ -8,7 +8,7 @@ import android.view.View;
  * Created by freak on 10/7/16.
  */
 
-public class CalenderActivty extends Activity {
+public class CalenderActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

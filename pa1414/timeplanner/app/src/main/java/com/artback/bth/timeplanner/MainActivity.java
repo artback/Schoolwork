@@ -77,7 +77,7 @@ public class MainActivity extends Activity {
         locationView.addOnItemTouchListener(
                 new RecyclerItemClickListener(context, locationView ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
-                        Intent intent = new Intent(context, AddLocationActivity.class);
+                        Intent intent = new Intent(context, CalenderActivity.class);
                         intent.setAction(Intent.ACTION_SEND);
                         intent.putExtra(Intent.EXTRA_TEXT, myGeofenceSet.get(position).getId());
                         startActivity(intent);
