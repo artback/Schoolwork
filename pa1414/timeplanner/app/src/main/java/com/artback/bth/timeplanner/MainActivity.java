@@ -17,6 +17,7 @@ import com.artback.bth.timeplanner.Geofence.GeolocationService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 
 public class MainActivity extends Activity {
@@ -43,7 +44,6 @@ public class MainActivity extends Activity {
         if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)!=
                 PackageManager.PERMISSION_GRANTED ) {
             permisson[nrOFpermissons] = Manifest.permission.WRITE_EXTERNAL_STORAGE;
-            nrOFpermissons++;
         }
         if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)!=
                 PackageManager.PERMISSION_GRANTED ) {
@@ -54,6 +54,10 @@ public class MainActivity extends Activity {
                 PackageManager.PERMISSION_GRANTED ) {
             permisson[nrOFpermissons] = Manifest.permission.ACCESS_NETWORK_STATE;
             nrOFpermissons++;
+        }
+        String[] permissonFinal = new String[nrOFpermissons];
+        for (int i = 0; i < nrOFpermissons; i++) {
+           permissonFinal[i]=permisson[i];
         }
         requestPermissions(permisson,REQUEST_LOCATION);
         return 0;

@@ -36,6 +36,7 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 		OnConnectionFailedListener, LocationListener, ResultCallback<Status> {
 	public static final long UPDATE_INTERVAL_IN_MILLISECONDS = 10000;
 	public static final long FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS = UPDATE_INTERVAL_IN_MILLISECONDS / 5;
+	private static final int REQUEST_LOCATION =3;
 	protected GoogleApiClient mGoogleApiClient;
 	protected LocationRequest mLocationRequest;
 
@@ -80,7 +81,10 @@ public class GeolocationService extends Service implements ConnectionCallbacks,
 
 		if (ActivityCompat.checkSelfPermission(this,
 				Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-
+			if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)!=
+					PackageManager.PERMISSION_GRANTED ) {
+				ActivityCompat.requestPermissions(new String{Manifest.permission.ACCESS_FINE_LOCATION},REQUEST_LOCATION);
+			}
 			// TODO: Consider calling
 			//    ActivityCompat#requestPermissions
 			// here to request the missing permissions, and then overriding
