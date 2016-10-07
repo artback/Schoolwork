@@ -53,7 +53,8 @@ public class FlightController {
     public boolean bookFlight(int id, int nrOfPassengers) {
         Integer[] flight = this.dbGet(
             "SELECT * FROM flights WHERE flight_id = " + id
-        ); }
+        );
+    }
 	
     public String[][] getAllFlights() {
         String[][] flights = new String[0][];
