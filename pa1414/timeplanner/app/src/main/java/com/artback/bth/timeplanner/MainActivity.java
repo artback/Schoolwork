@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
         checkPermissons();
-        init();
+        init(this);
     }
     private int checkPermissons(){
         String[] permisson = new String[3];
