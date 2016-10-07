@@ -30,7 +30,7 @@ public class FlightController {
             if(where != "") {
            rs= db.query("SELECT * (Flight.Landing-Flight.TakeOff) FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID" + where);
             } else{
-            rs = db.query("SELECT * (Flight.Landing-Flight.TakeOff) FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID");
+            rs = db.query("SELECT * (Flight.Landing-Flight.TakeOff) AS travel_time FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID");
                 }
         try {
             while(rs.next()) {
