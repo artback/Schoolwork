@@ -24,7 +24,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.google.android.gms:play-services-places:9.6.0'
     compile 'gun0912.ted:tedpermission:1.0.0'
-    compile ''
+    compile 'co'
     compile 'com.google.android.gms:play-services-location:9.6.0'
     compile 'com.android.support:recyclerview-v7:24.0.+'
     compile 'com.android.support:appcompat-v7:24.0.+'
