@@ -10,10 +10,12 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Toast;
 
 import com.artback.bth.timeplanner.Geofence.GeofenceLocation;
 import com.artback.bth.timeplanner.Geofence.GeofenceLocationProvider;
 import com.artback.bth.timeplanner.Geofence.GeolocationService;
+import com.gun0912.tedpermission.PermissionListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,27 +40,20 @@ public class MainActivity extends Activity {
         init(this);
     }
     private int checkPermissons(){
-        String[] permisson = new String[3];
-        int nrOFpermissons=0;
-        if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)!=
-                PackageManager.PERMISSION_GRANTED ) {
-            permisson[nrOFpermissons] = Manifest.permission.WRITE_EXTERNAL_STORAGE;
-        }
-        if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)!=
-                PackageManager.PERMISSION_GRANTED ) {
-            permisson[nrOFpermissons] = Manifest.permission.ACCESS_FINE_LOCATION;
-            nrOFpermissons++;
-        }
-        if (checkSelfPermission(Manifest.permission.ACCESS_NETWORK_STATE)!=
-                PackageManager.PERMISSION_GRANTED ) {
-            permisson[nrOFpermissons] = Manifest.permission.ACCESS_NETWORK_STATE;
-            nrOFpermissons++;
-        }
-        String[] permissonFinal = new String[nrOFpermissons];
-        for (int i = 0; i < nrOFpermissons; i++) {
-           permissonFinal[i]=permisson[i];
-        }
-        requestPermissions(permissonFinal,REQUEST_LOCATION);
+        PermissionListener permissionlistener = new PermissionListener() {
+            @Override
+            public void onPermissionGranted() {
+                Toast.makeText(MainActivity.this, "Permission Granted", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onPermissionDenied(ArrayList<String> deniedPermissions) {
+                Toast.makeText(MainActivity.this, "Permission Denied\n" + deniedPermissions.toString(), Toast.LENGTH_SHORT).show();
+            }
+
+
+        };
+
         return 0;
     }
     private void init(final Context context){
