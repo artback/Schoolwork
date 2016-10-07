@@ -52,7 +52,7 @@ public class FlightController {
 	
     public boolean bookFlight(int id, int nrOfPassengers) {
         Integer[] flight = this.dbGet(
-            "SELECT * FROM flights WHERE flight_id = " + id
+            "SELECT * FROM Flights WHERE flight_id = " + id
         );
 
     }
