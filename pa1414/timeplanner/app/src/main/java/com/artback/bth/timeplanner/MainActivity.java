@@ -16,6 +16,7 @@ import com.artback.bth.timeplanner.Geofence.GeofenceLocation;
 import com.artback.bth.timeplanner.Geofence.GeofenceLocationProvider;
 import com.artback.bth.timeplanner.Geofence.GeolocationService;
 import com.gun0912.tedpermission.PermissionListener;
+import com.gun0912.tedpermission.TedPermission;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,24 +41,7 @@ public class MainActivity extends Activity {
         init(this);
     }
     private int checkPermissons(){
-        PermissionListener permissionlistener = new PermissionListener() {
-            @Override
-            public void onPermissionGranted() {
-                Toast.makeText(MainActivity.this, "Permission Granted", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onPermissionDenied(ArrayList<String> deniedPermissions) {
-                Toast.makeText(MainActivity.this, "Permission Denied\n" + deniedPermissions.toString(), Toast.LENGTH_SHORT).show();
-            }
-            new TedPermission(this)
-            .setPermissionListener(permissionlistener)
-            .setDeniedMessage("If you reject permission,you can not use this service\n\nPlease turn on permissions at [Setting] > [Permission]")
-            .setPermissions(Manifest.permission.READ_CONTACTS, Manifest.permission.ACCESS_FINE_LOCATION)
-            .check();
-
-
-        };
+        PermissionListener permissionlistener;
 
         return 0;
     }
