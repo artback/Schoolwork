@@ -20,7 +20,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         // you provide access to all the views for a data item in a view holder
         public static class ViewHolder extends RecyclerView.ViewHolder
         {
-            // each data item is just a string in this case
+            
             private TextView locationTextView;
             private TextView timeTextView;
         }
