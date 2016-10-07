@@ -55,8 +55,6 @@ public class FlightController {
         Integer[] flight = this.dbGet(
             "SELECT * FROM flights WHERE flight_id = " + id
         );
-        int nrOfSeats = flight[1] - nrOfPassengers;
-
     }
 	
     public String[][] getAllFlights() {
