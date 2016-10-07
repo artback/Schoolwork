@@ -35,7 +35,7 @@ public class FlightController {
                 flights[count][1] = rs.getString("Departure");
                 flights[count][2] = rs.getString("Destination");
                 flights[count][3] = rs.getString("TakeOff");
-                flights[count][4] = rs.getString("");
+                flights[count][4] = rs.getString("e_time");
                 flights[count][5] = rs.getString("travel_time");
                 flights[count][6] = Integer.toString(rs.getInt("price"));
                 flights[count][7] = Integer.toString(rs.getInt("nr_of_seats"));
