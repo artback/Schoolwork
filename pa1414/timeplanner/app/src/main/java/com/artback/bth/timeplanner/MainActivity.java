@@ -19,17 +19,9 @@ import com.gun0912.tedpermission.TedPermission;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
 
 public class MainActivity extends Activity {
-    private static final int REQUEST_STORAGE  =1;
-    private static final int REQUEST_NETWORK =2;
-    private static final int REQUEST_LOCATION =3;
-
-    private RecyclerView locationView;
-    private RecyclerView.Adapter locAdapter;
-    private RecyclerView.LayoutManager locationLayoutManager;
     static public boolean geofencesAlreadyRegistered = false;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -38,7 +30,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
         checkPermissons();
-        init(this);
+        init();
     }
     private int checkPermissons(){
         PermissionListener permissionlistener = new PermissionListener() {
@@ -63,7 +55,11 @@ public class MainActivity extends Activity {
 
         return 0;
     }
-    private void init(final Context context){
+    private void init(){
+        RecyclerView locationView;
+        RecyclerView.Adapter locAdapter;
+        RecyclerView.LayoutManager locationLayoutManager;
+
         locationView = (RecyclerView) findViewById(R.id.location_list);
         locationView.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(this);
@@ -72,27 +68,13 @@ public class MainActivity extends Activity {
 
         locationLayoutManager= new LinearLayoutManager(this);
         locationView.setLayoutManager(locationLayoutManager);
-        final List<GeofenceLocation> myGeofenceSet = new ArrayList<GeofenceLocation>
+        final List<GeofenceLocation> myGeofenceSet = new ArrayList<>
                 (GeofenceLocationProvider.getInstance().getGeofencesLocations().values());
         locAdapter = new locationAdapter(myGeofenceSet);
 
         //start geolocation
         startService(new Intent(this, GeolocationService.class));
 
-        locationView.addOnItemTouchListener(
-                new RecyclerItemClickListener(context, locationView ,new RecyclerItemClickListener.OnItemClickListener() {
-                    @Override public void onItemClick(View view, int position) {
-                        Intent intent = new Intent(context, CalenderActivity.class);
-                        intent.setAction(Intent.ACTION_SEND);
-                        intent.putExtra(Intent.EXTRA_TEXT, myGeofenceSet.get(position).getId());
-                        startActivity(intent);
-                    }
-
-                    @Override public void onLongItemClick(View view, int position) {
-                        // do whatever
-                    }
-                })
-        );
         locationView.setAdapter(locAdapter);
     }
     public void openaddpage(View view){
