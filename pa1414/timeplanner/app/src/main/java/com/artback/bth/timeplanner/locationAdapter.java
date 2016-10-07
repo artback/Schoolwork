@@ -17,7 +17,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         // Complex data items may need more than one view per item, and
         // you provide access to all the views for a data item in a view holder
         public static class ViewHolder extends RecyclerView.ViewHolder
-                {
+        implements View.{
             // each data item is just a string in this case
             private TextView locationTextView;
             private TextView timeTextView;
