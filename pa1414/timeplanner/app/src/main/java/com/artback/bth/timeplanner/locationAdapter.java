@@ -18,8 +18,8 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         // you provide access to all the views for a data item in a view holder
         public static class ViewHolder extends RecyclerView.ViewHolder {
             // each data item is just a string in this case
-            public TextView locationTextView;
-            public TextView timeTextView;
+            private TextView locationTextView;
+            private TextView timeTextView;
             public ViewHolder(View v) {
                 super(v);
 
@@ -41,8 +41,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
             View v = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.location_view, parent, false);
             // set the view's size, margins, paddings and layout parameters
-            ViewHolder vh = new ViewHolder(v);
-            return vh;
+            return new ViewHolder(v);
         }
 
     // Replace the contents of a view (invoked by the layout manager)
@@ -54,7 +53,7 @@ public class locationAdapter extends RecyclerView.Adapter<locationAdapter.ViewHo
         TextView textView = holder.locationTextView;
         TextView textView1 = holder.timeTextView;
         textView.setText(location.getId());
-        textView1.setText("total tid");
+        textView1.setText("Total tid");
     }
     // Return the size of your dataset (invoked by the layout manager)
     @Override
