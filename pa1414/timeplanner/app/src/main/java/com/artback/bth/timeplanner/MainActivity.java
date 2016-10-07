@@ -44,7 +44,6 @@ public class MainActivity extends Activity {
         PermissionListener permissionlistener = new PermissionListener() {
             @Override
             public void onPermissionGranted() {
-                Toast.makeText(MainActivity.this, "Permission Granted", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -54,7 +53,7 @@ public class MainActivity extends Activity {
 
 
         };
-         
+
 
         return 0;
     }
