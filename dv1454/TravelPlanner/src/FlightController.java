@@ -22,15 +22,11 @@ public class FlightController {
         return flight;
     }
 	
-    private String[][] dbGetFlights(String where)   {
+    private String[][] dbGetFlights(String SQL)   {
         String[][] flights = new String[25][8];
         ResultSet rs;
         int count = 0;
-            if(where != "") {
-           rs= db.query("SELECT * (Flight.Landing-Flight.TakeOff) AS travel_time FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID" + where);
-            } else{
-            rs = db.query("SELECT * (Flight.Landing-Flight.TakeOff) AS travel_time FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID");
-                }
+           rs= db.query(SQL);
         try {
             while(rs.next()) {
                 flights[count][0] = Integer.toString(rs.getInt("FlightID"));
@@ -59,16 +55,16 @@ public class FlightController {
 	
     public String[][] getAllFlights() {
         String[][] flights = new String[0][];
-        flights = this.dbGetFlights(");
+        flights = this.dbGetFlights("SELECT * (Flight.Landing-Flight.TakeOff) AS travel_time FROM Flight INNER JOIN Travel on Flight.TravelID=Travel.TravelID");
         return flights;
     }
     
     public String[][] getFlights(String origin, String destination, String date) {
         String[][] flights = new String[0][];
             flights = this.dbGetFlights(
-                "SELECT * FROM flights WHERE origin = '" +
-                origin + "' AND destination = '" + destination +
-                "' AND departure_date = '" + date + "'"
+                "SELECT * FROM Flight WHERE Departure = '" +
+                origin + "' AND Destination = '" + destination +
+                "' AND takeOff  = '" + date + "'"
             );
         return flights;
     }
