@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.artback.bth.locationtimer.Geofence.GeofenceLocation;
 import com.artback.bth.locationtimer.Geofence.GeolocationService;
 import com.artback.bth.locationtimer.Geofence.GeofenceLocationProvider;
+import com.artback.bth.timeplanner.R;
 import com.github.stephenbaidu.placepicker.PlacePicker;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
@@ -59,7 +60,6 @@ public class MainActivity extends Activity {
         RecyclerView locationView;
         RecyclerView.Adapter locAdapter;
         RecyclerView.LayoutManager locationLayoutManager;
-
         locationView = (RecyclerView) findViewById(R.id.location_list);
         locationView.addOnItemTouchListener(
                 new RecyclerItemClickListener(this, locationView ,new RecyclerItemClickListener.OnItemClickListener() {
