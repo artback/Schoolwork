@@ -59,7 +59,6 @@ public class gui {
         dateOrigin.setBounds(94, 159, 95, 20);
         frame.getContentPane().add(dateOrigin);
         Date dateString = new Date();
-        Date todaysDate = new Date();
         dateOrigin.setDate(dateString);
 
         JLabel lblOrigin = new JLabel("Origin");
@@ -82,9 +81,6 @@ public class gui {
 
                 if (origin.equals("") || destination.equals("")) {
                     JOptionPane.showMessageDialog(frame, "Not valid search params",
-                        "Couldn't search", JOptionPane.ERROR_MESSAGE);
-                } else if (dateString1.before(todaysDate)){
-                    JOptionPane.showMessageDialog(frame, "You can't search for old flights",
                         "Couldn't search", JOptionPane.ERROR_MESSAGE);
                 } else {
                     String[][] flights = sc.getFlights(origin, destination, formatedDate);
@@ -201,7 +197,6 @@ public class gui {
         dateOrigin.setDate(date);
         dateOrigin.setBounds(411, 49, 95, 20);
         frame.getContentPane().add(dateOrigin);
-        Date todaysDate = new Date();
 
         JLabel lblOrigin = new JLabel("Origin");
         lblOrigin.setBounds(66, 24, 46, 14);
@@ -223,9 +218,6 @@ public class gui {
 
                 if (origin1.equals("") || destination1.equals("")) {
                     JOptionPane.showMessageDialog(frame, "Not valid search parameters",
-                        "Couldn't search", JOptionPane.ERROR_MESSAGE);
-                } else if (dateString.before(todaysDate)) {
-                    JOptionPane.showMessageDialog(frame, "You can't search for old flights",
                         "Couldn't search", JOptionPane.ERROR_MESSAGE);
                 } else {
                     String[][] flights1 = sc.getFlights(origin1, destination1, formatedDate);
