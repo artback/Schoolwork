@@ -58,12 +58,7 @@ public class gui {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
         
-        if (login == false) {
-            login_register(frame);
-        } else {
-            user_logout(frame);
-        }
-        
+
         txtOrigin = new JTextField();
         txtOrigin.setBounds(94, 107, 144, 20);
         frame.getContentPane().add(txtOrigin);
@@ -133,126 +128,8 @@ public class gui {
         dateReturn.setBounds(376, 159, 95, 20);
         frame.getContentPane().add(dateReturn);
     }
-    
-    public void login_register(JFrame frame) {
-        JButton btnLogin = new JButton("Login");
-        btnLogin.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                frame.getContentPane().removeAll();
-                login(frame);
-                frame.getContentPane().revalidate();
-                frame.getContentPane().repaint();
-             }
-         });
-         btnLogin.setBounds(391, 11, 89, 21);
-         frame.getContentPane().add(btnLogin);
 
-         JButton btnRegister = new JButton("Register");
-         btnRegister.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                frame.getContentPane().removeAll();
-                register(frame);
-                frame.getContentPane().revalidate();
-                frame.getContentPane().repaint();
-             }
-         });
-         btnRegister.setBounds(489, 11, 89, 21);
-         frame.getContentPane().add(btnRegister);
-    }
-    
-    public void user_logout(JFrame frame){
-        JLabel lblUser = new JLabel("Welcome " + sc.userName);
-        lblUser.setBounds(345, 11, 150, 21);
-        frame.getContentPane().add(lblUser);
 
-        JButton btnLogout = new JButton("Logout");
-        btnLogout.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-            frame.getContentPane().removeAll();
-                initialize(frame,false);
-                frame.getContentPane().revalidate();
-                frame.getContentPane().repaint();
-                JOptionPane.showMessageDialog(frame, "You are now signed out",
-                    "Signed out successfully", JOptionPane.INFORMATION_MESSAGE);
-            }
-        });
-        btnLogout.setBounds(500, 11, 89, 21);
-        frame.getContentPane().add(btnLogout);
-    }
-    
-    public void login(JFrame frame) {
-        contentPane = new JPanel();
-        frame.getContentPane().setLayout(null);
-        frame.getContentPane().add(contentPane);
-
-        usernameField = new JTextField();
-        usernameField.setBounds(127, 107, 196, 20);
-        frame.getContentPane().add(usernameField);
-        usernameField.setColumns(10);
-
-        passwordField = new JPasswordField();
-        passwordField.setBounds(127, 177, 196, 20);
-        frame.getContentPane().add(passwordField);
-        passwordField.setColumns(10);
-
-        JLabel lblPassword = new JLabel("Password");
-        lblPassword.setBounds(127, 150, 100, 14);
-        frame.getContentPane().add(lblPassword);
-
-        JLabel lblUsername = new JLabel("Username");
-        lblUsername.setBounds(127, 74, 78, 14);
-        frame.getContentPane().add(lblUsername);
-
-        JButton btnLogin = new JButton("Login");
-        btnLogin.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    boolean res = sc.login(usernameField.getText(), passwordField.getText());
-                    
-                    if (res && sc.user.equals("ADMIN")) {
-                        frame.getContentPane().removeAll();
-                        adminMain(frame,null);
-                        frame.getContentPane().revalidate();
-                        frame.getContentPane().repaint();
-                        JOptionPane.showMessageDialog(frame, "You are now signed in",
-                            "Signed in successfully", JOptionPane.INFORMATION_MESSAGE);
-                    } else if(res) {
-                        frame.getContentPane().removeAll();
-                        frame.getContentPane().revalidate();
-                        initialize(frame,true);
-                        frame.getContentPane().repaint();
-                        JOptionPane.showMessageDialog(frame, "You are now signed in",
-                            "Signed in successfully", JOptionPane.INFORMATION_MESSAGE);
-                    } else {
-                        JOptionPane.showMessageDialog(frame, "Couldn't sign in",
-                            "Couldn't sign in", JOptionPane.ERROR_MESSAGE);
-                    }
-                } catch (NoSuchAlgorithmException ex) {
-                    Logger.getLogger(gui.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
-        });
-        btnLogin.setBounds(182, 250, 89, 23);
-        frame.getContentPane().add(btnLogin);
-        
-        JButton btnHome = new JButton("Home");
-        btnHome.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent arg0) {
-                frame.getContentPane().removeAll();
-                initialize(frame,false);
-                frame.getContentPane().revalidate();
-                frame.getContentPane().repaint();
-            }
-        });
-        btnHome.setBounds(0, 2, 70, 23);
-        frame.getContentPane().add(btnHome);
-    }
-    
     public void register(JFrame frame){
         contentPane = new JPanel();
         frame.getContentPane().setLayout(null);
@@ -273,15 +150,6 @@ public class gui {
         emailField.setBounds(173, 175, 156, 20);
         frame.getContentPane().add(emailField);
 
-        passwordField = new JPasswordField();
-        passwordField.setColumns(10);
-        passwordField.setBounds(173, 229, 156, 20);
-        frame.getContentPane().add(passwordField);
-
-        passwordConfirmField = new JPasswordField();
-        passwordConfirmField.setColumns(10);
-        passwordConfirmField.setBounds(173, 281, 156, 20);
-        frame.getContentPane().add(passwordConfirmField);
 
         JLabel lblName = new JLabel("Name");
         lblName.setBounds(173, 48, 46, 14);
@@ -299,9 +167,6 @@ public class gui {
         lblPassword.setBounds(173, 206, 70, 14);
         frame.getContentPane().add(lblPassword);
 
-        JLabel lblConfirmPassword = new JLabel("Confirm Password");
-        lblConfirmPassword.setBounds(173, 260, 116, 14);
-        frame.getContentPane().add(lblConfirmPassword);
 
         JButton btnRegister = new JButton("Register");
         btnRegister.addActionListener(new ActionListener() {
@@ -309,26 +174,19 @@ public class gui {
             public void actionPerformed(ActionEvent e) {
                 if (passwordField.getText().equals(passwordConfirmField.getText())) {
                     String email= emailField.getText();
-                    String pass= passwordField.getText();
                     String name= nameField.getText();
                     String lastName= lastNameField.getText();
-                    if (!email.isEmpty() && !pass.isEmpty() && !name.isEmpty() && !lastName.isEmpty()) {
-                        try {
-                            boolean reg = sc.register(email, pass, name, lastName);
-                            if (reg) {
+                    if (!email.isEmpty() &&  && !name.isEmpty() && !lastName.isEmpty()) {
                                 frame.getContentPane().removeAll();
                                 initialize(frame, false);
                                 frame.getContentPane().validate();
                                 frame.getContentPane().repaint();
                                 JOptionPane.showMessageDialog(frame, "You are now registered",
                                     "Registered successfully", JOptionPane.INFORMATION_MESSAGE);
-                            } else {
+                        else {
                                 JOptionPane.showMessageDialog(frame, "Email already exist",
                                     "Couldn't register", JOptionPane.ERROR_MESSAGE);
                             }
-                        } catch (NoSuchAlgorithmException ex) {
-                            Logger.getLogger(gui.class.getName()).log(Level.SEVERE, null, ex);
-                        }
                     } else {
                         JOptionPane.showMessageDialog(frame, "Parameters are not valid",
                             "Couldn't register", JOptionPane.ERROR_MESSAGE);
