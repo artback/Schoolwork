@@ -9,7 +9,6 @@ public class SystemController {
     public String user;
     public String userName;
     private FlightController flight;
-    private AccountController account;
     private PaymentController pay;
     
     SystemController() {
