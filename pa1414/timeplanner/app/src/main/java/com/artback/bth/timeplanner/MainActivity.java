@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.artback.bth.timeplanner.Geofence.GeofenceLocation;
 import com.artback.bth.timeplanner.Geofence.GeofenceLocationProvider;
 import com.artback.bth.timeplanner.Geofence.GeolocationService;
+import com.github.stephenbaidu.placepicker.PlacePicker;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
@@ -89,9 +90,18 @@ public class MainActivity extends Activity {
         locationView.setAdapter(locAdapter);
     }
     public void openaddpage(View view){
-        Intent intent = new Intent(this, AddLocationActivity.class);
-        startActivity(intent);
-    }
+        // Create an intent with `PlacePicker.class`
+        Intent intent = new Intent(MainActivity.this, PlacePicker.class);
+
+        // Set your server api key (required)
+        intent.putExtra(PlacePicker.PARAM_API_KEY, api_key);
+
+        // Set extra query in a one line like below
+        intent.putExtra(PlacePicker.PARAM_EXTRA_QUERY, "&components=country:gh&types=(cities)");
+
+        // Then start the intent for result
+        startActivityForResult(intent, PlacePicker.REQUEST_CODE_PLACE);
+r    }
     @Override
     protected void onStart() {
         super.onStart();
