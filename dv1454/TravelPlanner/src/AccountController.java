@@ -46,7 +46,7 @@ public class AccountController {
         return success;
     }
 
-    private boolean addUserToDB(String firstName, String lastName) {
+    private boolean addUserToDB(String firstName, String lastName, ) {
         boolean ret = false;
         String activationHash = this.makeActivationHash();
 
