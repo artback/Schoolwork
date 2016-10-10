@@ -13,7 +13,6 @@ import android.widget.Toast;
 import com.artback.bth.locationtimer.Geofence.GeofenceLocation;
 import com.artback.bth.locationtimer.Geofence.GeolocationService;
 import com.artback.bth.locationtimer.Geofence.GeofenceLocationProvider;
-import com.artback.bth.timeplanner.R;
 import com.github.stephenbaidu.placepicker.PlacePicker;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
