@@ -29,13 +29,8 @@ public class gui {
     private final SystemController sc = new SystemController();
     
     public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
                     gui window = new gui();
                     window.frame.setVisible(true);
-        });
-        }
     }
 
     public gui() {
