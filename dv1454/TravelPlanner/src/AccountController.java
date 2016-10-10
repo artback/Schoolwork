@@ -46,10 +46,8 @@ public class AccountController {
         return success;
     }
 
-    private boolean addUserToDB(String firstName, String lastName, String Adress,
+    private void addUserToDB(String firstName, String lastName, String Adress,
                                 String Email,String PhoneNr) {
-        boolean ret = false;
-        String activationHash = this.makeActivationHash();
 
             ResultSet rs = db.query("SELECT ");
 
@@ -59,45 +57,10 @@ public class AccountController {
                     "INSERT INTO Customer VALUES(" + null + ", " +
                     "'" + this.user + "', " +
                     "'" + this.password + "', " +
-                    "'" + activationHash + "', " +
-                    "'" + 1 + "', " +
-                    "'" + 0 + "', " +
                     "'" + firstName + "', " +
                     "'" + lastName + "' )"
                 ); 
-
-                /*// The code above is for demoing, the acount is instantly activated. Code below is original
-                statement.executeUpdate(
-                    "INSERT INTO users VALUES(" + null + ", " +
-                    "'" + this.user + "', " +
-                    "'" + this.password + "', " +
-                    "'" + activationHash + "', " +
-                    "'" + 0 + "', " +
-                    "'" + 0 + "', " +
-                    "'" + firstName + "', " +
-                    "'" + lastName + "' )"
-                );                
-                 */
-                
-                ret = true;
             }
-        } catch(SQLException e) {
-            System.err.println(e.getMessage());
-        } finally {
-            try {
-                if(connection != null)
-                connection.close();
-            } catch(SQLException e) {
-                System.err.println(e);
-            }
-        }
-
-        return ret;
     }
     
-    private String makeActivationHash(){
-    	int ret = ThreadLocalRandom.current().nextInt(10000000, 49999999);
-    	return Integer.toString(ret);
-    	
-    }
 }
