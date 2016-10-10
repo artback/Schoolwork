@@ -34,7 +34,6 @@ public class CalendarProvider extends ContentProvider {
 	public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/events");
 	public static final Uri CONTENT_ID_URI_BASE = Uri.parse("content://" + AUTHORITY + "/events/");
 	private static final UriMatcher uriMatcher;
-	
 	public static final String EVENT = "event";
 	public static final String LOCATION = "location";
 	public static final String DESCRIPTION = "description";
