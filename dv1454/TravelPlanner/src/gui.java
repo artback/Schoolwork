@@ -28,7 +28,7 @@ public class gui {
     private JTextField txtNrOfSeats;
     private final SystemController sc = new SystemController();
     
-    public void main(String[] args) {
+    public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
