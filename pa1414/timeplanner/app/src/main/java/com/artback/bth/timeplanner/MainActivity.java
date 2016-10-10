@@ -101,7 +101,7 @@ public class MainActivity extends Activity {
 
         // Then start the intent for result
         startActivityForResult(intent, PlacePicker.REQUEST_CODE_PLACE);
-r    }
+    }
     @Override
     protected void onStart() {
         super.onStart();
