@@ -52,16 +52,6 @@ public class AccountController {
 
         Connection connection = null;
 
-        try {
-            connection = DriverManager.getConnection("jdbc:sqlite:" +
-                SystemController.dbPath);
-            Statement statement = connection.createStatement();
-            statement.setQueryTimeout(30);  // set timeout to 30 sec.
-
-            //CHECK IF A USER WITH THE EMAIL ALREADY EXISTS
-            ResultSet rs = statement.executeQuery(
-                "SELECT email FROM users WHERE email = '" + this.user + "'"
-            );	
 
             //IF NO SUCH USER EXISTS ADD THE USER
             if( !rs.isBeforeFirst() ) {
