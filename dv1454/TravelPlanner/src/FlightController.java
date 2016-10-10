@@ -50,7 +50,7 @@ public class FlightController {
         Integer[] flight = this.dbGet(
             "SELECT * FROM Flights WHERE flight_id = " + id
         );
-
+        return true;
     }
 	
     public String[][] getAllFlights() {
