@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="place_picker_suggest_list_row_name">16sp</dimen>
+    <dimen name="place_picker_suggest_list_row_description">15sp</dimen>
+    <dimen name="place_picker_list_row_icon_width">70dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="first_day_margin">10dp</dimen>
     <dimen name="day_margin">24dp</dimen>
