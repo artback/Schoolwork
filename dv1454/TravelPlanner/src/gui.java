@@ -181,37 +181,9 @@ public class gui {
                                 initialize(frame, false);
                                 frame.getContentPane().validate();
                                 frame.getContentPane().repaint();
-                                JOptionPane.showMessageDialog(frame, "You are now registered",
-                                    "Registered successfully", JOptionPane.INFORMATION_MESSAGE);
-                        else {
-                                JOptionPane.showMessageDialog(frame, "Email already exist",
-                                    "Couldn't register", JOptionPane.ERROR_MESSAGE);
-                            }
-                    } else {
-                        JOptionPane.showMessageDialog(frame, "Parameters are not valid",
-                            "Couldn't register", JOptionPane.ERROR_MESSAGE);
-                    }
-                } else {
-                    JOptionPane.showMessageDialog(frame, "Passwords doesnt' match",
-                        "Couldn't register", JOptionPane.ERROR_MESSAGE);
-                }
-            }
         });
         btnRegister.setBounds(208, 334, 89, 23);
         frame.getContentPane().add(btnRegister);
-        
-        JButton btnHome = new JButton("Home");
-        btnHome.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent arg0) {
-                frame.getContentPane().removeAll();
-                initialize(frame,false);
-                frame.getContentPane().revalidate();
-                frame.getContentPane().repaint();
-            }
-        });
-        btnHome.setBounds(0, 2, 70, 23);
-        frame.getContentPane().add(btnHome);
     }
 
     public void search(JFrame frame, String[][] flights, String origin, String destination, Date date) {
@@ -714,8 +686,7 @@ public class gui {
     
     public void adminEditAdd(JFrame frame, String[] flight){
         contentPane = new JPanel();
-        user_logout(frame);
-        
+
         JButton btnHome = new JButton("Back");
         btnHome.addActionListener(new ActionListener() {
             @Override
