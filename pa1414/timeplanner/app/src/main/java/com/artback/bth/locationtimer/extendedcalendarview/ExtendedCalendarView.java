@@ -4,7 +4,7 @@
 		http://www.apache.org/licenses
  https://github.com/tyczj/ExtendedCalendarView */
 
-package com.artback.bth.timeplanner.extendedcalendarview;
+package com.artback.bth.locationtimer.extendedcalendarview;
 
 import java.util.Calendar;
 import java.util.Locale;

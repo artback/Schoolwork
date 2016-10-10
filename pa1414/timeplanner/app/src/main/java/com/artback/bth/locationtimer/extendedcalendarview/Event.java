@@ -5,7 +5,7 @@
 https://github.com/tyczj/ExtendedCalendarView */
 
 
-package com.artback.bth.timeplanner.extendedcalendarview;
+package com.artback.bth.locationtimer.extendedcalendarview;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

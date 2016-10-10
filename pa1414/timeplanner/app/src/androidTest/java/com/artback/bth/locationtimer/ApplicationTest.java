@@ -1,4 +1,4 @@
-package com.artback.bth.timeplanner;
+package com.artback.bth.locationtimer;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

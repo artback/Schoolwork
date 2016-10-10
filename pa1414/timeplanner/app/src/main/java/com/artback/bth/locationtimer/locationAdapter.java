@@ -1,4 +1,4 @@
-package com.artback.bth.timeplanner;
+package com.artback.bth.locationtimer;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.artback.bth.timeplanner.Geofence.GeofenceLocation;
+import com.artback.bth.locationtimer.Geofence.GeofenceLocation;
 
 import java.util.List;
 

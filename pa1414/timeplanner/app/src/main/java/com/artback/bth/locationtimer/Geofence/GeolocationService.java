@@ -1,4 +1,4 @@
-package com.artback.bth.timeplanner.Geofence;
+package com.artback.bth.locationtimer.Geofence;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,7 +18,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 
-import com.artback.bth.timeplanner.MainActivity;
+import com.artback.bth.locationtimer.MainActivity;
 import com.artback.bth.timeplanner.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;

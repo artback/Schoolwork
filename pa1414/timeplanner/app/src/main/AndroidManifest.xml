@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.artback.bth.locationtimer.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -23,27 +23,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AddLocationActivity"
+            android:name="com.artback.bth.locationtimer.AddLocationActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
          </activity>
         <provider
-            android:name="com.artback.bth.timeplanner.extendedcalendarview.CalendarProvider"
+            android:name="com.artback.bth.timeplanner.com.artback.bth.locationtimer.extendedcalendarview.CalendarProvider"
             android:authorities="extendedcalendarview.calendarprovider" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <service
-            android:name=".Geofence.GeolocationService"
+            android:name="com.artback.bth.locationtimer.Geofence.GeolocationService"
             android:icon="@drawable/ic_launcher"
             android:label="@string/app_name" >
         </service>
         <service
-            android:name=".Geofence.GeofenceReceiver"
+            android:name="com.artback.bth.locationtimer.Geofence.GeofenceReceiver"
             android:exported="false" >
         </service>
         <receiver
-            android:name=".Geofence.GeofenceReceiver"
+            android:name="com.artback.bth.locationtimer.Geofence.GeofenceReceiver"
             android:exported="false" >
             <intent-filter>
                 <action android:name="com.artback.bth.timeplanner.ACTION_RECEIVE_GEOFENCE" />

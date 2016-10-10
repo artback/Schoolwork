@@ -1,4 +1,4 @@
-package com.artback.bth.timeplanner.Geofence;
+package com.artback.bth.locationtimer.Geofence;
 
 import java.util.List;
 
@@ -6,8 +6,7 @@ import android.app.IntentService;
 import android.content.Intent;
 import android.util.Log;
 
-import com.artback.bth.timeplanner.MainActivity;
-import com.artback.bth.timeplanner.extendedcalendarview.Event;
+import com.artback.bth.locationtimer.extendedcalendarview.Event;
 import com.google.android.gms.location.GeofencingEvent;
 
 public class GeofenceReceiver extends IntentService {

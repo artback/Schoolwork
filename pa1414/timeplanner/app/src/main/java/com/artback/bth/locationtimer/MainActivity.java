@@ -1,7 +1,6 @@
-package com.artback.bth.timeplanner;
+package com.artback.bth.locationtimer;
 import android.Manifest;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -11,9 +10,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
-import com.artback.bth.timeplanner.Geofence.GeofenceLocation;
-import com.artback.bth.timeplanner.Geofence.GeofenceLocationProvider;
-import com.artback.bth.timeplanner.Geofence.GeolocationService;
+import com.artback.bth.locationtimer.Geofence.GeofenceLocation;
+import com.artback.bth.locationtimer.Geofence.GeolocationService;
+import com.artback.bth.locationtimer.Geofence.GeofenceLocationProvider;
 import com.github.stephenbaidu.placepicker.PlacePicker;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;

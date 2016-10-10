@@ -3,7 +3,7 @@
        Version 2.0, January 2004
        http://www.apache.org/licenses
 https://github.com/tyczj/ExtendedCalendarView */
-package com.artback.bth.timeplanner.extendedcalendarview;
+package com.artback.bth.locationtimer.extendedcalendarview;
 
 
 import java.util.ArrayList;

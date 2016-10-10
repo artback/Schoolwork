@@ -1,4 +1,4 @@
-package com.artback.bth.timeplanner.Geofence;
+package com.artback.bth.locationtimer.Geofence;
 
 import java.util.HashMap;
 
