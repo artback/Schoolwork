@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(MainActivity.this, PlacePicker.class);
 
         // Set your server api key (required)
-        intent.putExtra(PlacePicker.PARAM_API_KEY, );
+        intent.putExtra(PlacePicker.PARAM_API_KEY,  "AIzaSyB6I5KhMEFArn94e3llopUWb11Y8jcrqsM" );
 
         // Set extra query in a one line like below
         intent.putExtra(PlacePicker.PARAM_EXTRA_QUERY, "&components=country:gh&types=(cities)");
