@@ -56,7 +56,7 @@ public class AccountController {
             //IF NO SUCH USER EXISTS ADD THE USER
             if( !rs.isBeforeFirst() ) {
                 statement.executeUpdate(
-                    "INSERT INTO users VALUES(" + null + ", " +
+                    "INSERT INTO Customer VALUES(" + null + ", " +
                     "'" + this.user + "', " +
                     "'" + this.password + "', " +
                     "'" + activationHash + "', " +
