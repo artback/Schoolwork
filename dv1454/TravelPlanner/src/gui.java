@@ -35,6 +35,7 @@ public class gui {
                     gui window = new gui();
                     window.frame.setVisible(true);
         });
+        }
     }
 
     public gui() {
