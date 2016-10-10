@@ -51,8 +51,7 @@ public class AccountController {
         boolean ret = false;
         String activationHash = this.makeActivationHash();
 
-        Connection connection = null;
-
+            ResultSet rs = db.query("");
 
             //IF NO SUCH USER EXISTS ADD THE USER
             if( !rs.isBeforeFirst() ) {
