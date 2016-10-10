@@ -3,9 +3,6 @@ import java.awt.EventQueue;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionListener;
-import java.security.NoSuchAlgorithmException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.awt.event.ActionEvent;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -18,33 +15,25 @@ import javax.swing.event.ChangeEvent;
 public class gui {
     private JTable table;
     private JPanel contentPane;
-    private final JFrame frame;
+    private static JFrame frame;
     private JTextField txtCardNr;
     private JTextField txtOrigin;
     private JTextField txtDestination;
-    private JTextField usernameField;
-    private JTextField passwordField;
     private JTextField nameField;
     private JTextField lastNameField;
     private JTextField emailField;
-    private JTextField passwordConfirmField;
     private JTextField txtDepartureTime;
     private JTextField txtTravelTime;
     private JTextField txtPricePerSeat;
     private JTextField txtNrOfSeats;
     private final SystemController sc = new SystemController();
     
-    public static void main(String[] args) {
+    public void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                try {
                     gui window = new gui();
                     window.frame.setVisible(true);
-                } finally {
-                    
-                }
-            }
         });
     }
 
@@ -517,8 +506,7 @@ public class gui {
     
     public void adminMain(JFrame frame,String[][] flights) {
         contentPane = new JPanel();
-        user_logout(frame);
-        
+
         frame.getContentPane().setLayout(null);
         frame.getContentPane().add(contentPane);
 
@@ -686,7 +674,6 @@ public class gui {
     
     public void adminEditAdd(JFrame frame, String[] flight){
         contentPane = new JPanel();
-
         JButton btnHome = new JButton("Back");
         btnHome.addActionListener(new ActionListener() {
             @Override
