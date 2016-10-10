@@ -90,17 +90,7 @@ public class MainActivity extends Activity {
         locationView.setAdapter(locAdapter);
     }
     public void openaddpage(View view){
-        // Create an intent with `PlacePicker.class`
-        Intent intent = new Intent(MainActivity.this, PlacePicker.class);
 
-        // Set your server api key (required)
-        intent.putExtra(PlacePicker.PARAM_API_KEY,  "AIzaSyB6I5KhMEFArn94e3llopUWb11Y8jcrqsM" );
-
-        // Set extra query in a one line like below
-        intent.putExtra(PlacePicker.PARAM_EXTRA_QUERY, "&components=country:gh&types=(cities)");
-
-        // Then start the intent for result
-        startActivityForResult(intent, PlacePicker.REQUEST_CODE_PLACE);
     }
     @Override
     protected void onStart() {
