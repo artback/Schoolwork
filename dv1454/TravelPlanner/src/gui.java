@@ -154,21 +154,19 @@ public class gui {
 
 
         JButton btnRegister = new JButton("Register");
-        btnRegister.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (passwordField.getText().equals(passwordConfirmField.getText())) {
-                    String email= emailField.getText();
-                    String name= nameField.getText();
-                    String lastName= lastNameField.getText();
-                    if (!email.isEmpty() &&  && !name.isEmpty() && !lastName.isEmpty()) {
-                                frame.getContentPane().removeAll();
-                                initialize(frame, false);
-                                frame.getContentPane().validate();
-                                frame.getContentPane().repaint();
-        });
-        btnRegister.setBounds(208, 334, 89, 23);
-        frame.getContentPane().add(btnRegister);
+        btnRegister.addActionListener(e -> {
+                String email= emailField.getText();
+                String name= nameField.getText();
+                String lastName= lastNameField.getText();
+                if (!email.isEmpty() &&  && !name.isEmpty() && !lastName.isEmpty()) {
+                            frame.getContentPane().removeAll();
+                            initialize(frame, false);
+                            frame.getContentPane().validate();
+                            frame.getContentPane().repaint();
+    });
+    btnRegister.setBounds(208, 334, 89, 23);
+    frame.getContentPane().add(btnRegister);
+         }
     }
 
     public void search(JFrame frame, String[][] flights, String origin, String destination, Date date) {
@@ -307,8 +305,7 @@ public class gui {
     
     public void book(JFrame frame,String[] flight) {
         contentPane = new JPanel();
-        user_logout(frame);
-        
+
         frame.getContentPane().setLayout(null);
         frame.getContentPane().add(contentPane);
 
@@ -424,8 +421,7 @@ public class gui {
 
     public void pay(JFrame frame,String[] flight,String price, int nrOfPassengers) {
         contentPane = new JPanel();
-        user_logout(frame);
-        
+
         frame.getContentPane().setLayout(null);
         frame.getContentPane().add(contentPane);
 
