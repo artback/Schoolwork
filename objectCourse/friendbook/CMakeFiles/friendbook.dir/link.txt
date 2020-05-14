@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11   CMakeFiles/friendbook.dir/main.cpp.o CMakeFiles/friendbook.dir/Friendbook.cpp.o CMakeFiles/friendbook.dir/Friend.cpp.o CMakeFiles/friendbook.dir/utilities.cpp.o  -o friendbook -rdynamic 

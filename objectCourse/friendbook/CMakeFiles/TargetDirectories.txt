@@ -1,0 +1,1 @@
+/home/freak/ClionProjects/objectCourse/friendbook/CMakeFiles/friendbook.dir

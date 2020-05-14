@@ -1,0 +1,47 @@
+1a cat datasets/q1data.txt | grep -o '{/,}'
+1b the pattern I found was a pair of curly brackets with a slash and a Quotation mark between
+2a cat datasets/q2data.txt | grep -o '\[[A-Z][a-z]*::]' 
+2b the pattern I have found was the square brackets inside of them where a name of 
+2b 2-5 characters starting with a uppercase character that follows by two colon. Example [Name::]
+3a cat datasets/q3data.txt | grep -o ':://'
+3b the pattern is two colon followed by two slashes
+4a cat datasets/q4data.txt | grep -o '{,}[0-9]\{8\}'   
+4b pattern is a pair curly bracket with a comma between that is followed by exact eight digits 
+5a cat datasets/5data.txt | grep -o ':;\?:[A-Z][a-z]\{3,5\}' ask
+5b pattern consist of a a colon followed by either one or zero semicolon. that is followed by a colon
+5b that follows by a name starting with a uppercase letter and 3-5 lowercase.
+6a cat datasets/q6data.txt | grep -o '{[<>-]\{2\}}{[<>-]\{2\}}'  
+6b this pattern consisting of two sets of curly brackets inside each set is an arrow.
+6b the arrow could be directed either left or right. 
+7a cat datasets/q7data.txt | grep -o '\(Edna\|Phil\|Tom\|Harry\|George\)\{2\}' 
+7b the pattern matches the names Edna Phil Tom Harry and George in varius orders but exectly two times per line.
+8a cat datasets/q8data.txt | grep -o '(\?\(Edna\|Phil\|Tom\|Harry\|George\)[\/]\?\(Edna\|Phil\|Tom\|Harry\|George\)[)\/]\?'
+8b this pattern consist two names ( Edna Phil Tom Harry and George ) 
+8b they could either be surrended by a pair of parentheses or be split and followed by either a back or front slash
+9a cat datasets/q9data.txt | grep -o '(.)[\/]\?\(tokyo\|stockholm\|paris\)'
+9b this pattern consist of a pair of parentheses with either a dot or colon between 
+9b that is followed by a optional front- or backslash that follows by the city names tokyo,stockholm,paris
+10a cat datasets/q10data.txt | grep -o '{.}\(Edna\|Phil\|Tom\|Harry\|George\)\?[,.]'
+10b this patter consist of a pair of curly brackets with a either a dot or a colon between.
+10b that follows by an optial name either Edna Phil Tom Harry and George. 
+10b Last the pattern ends with either a colon or dot
+11a cat datasets/q11data.txt | sed 's/.*\(\[\/[A-Z][a-z]*\]\).*/\{8982\}\,\-\>\1Tom\/::/g'
+11b this pattern consist of a pair of square brackets with  a frontslash and a name between
+12a cat datasets/q12data.txt | sed 's/.*\((\/[0-9]*)\).*/,::Edna\1\{\/\}->->/g'
+12b this pattern consist of a pair of parantheses with a frontslash and four digits between
+13a cat datasets/q13data.txt | sed 's/.*\(\([-+][0-9]\{4\}\)\{3\}\).*\+\(\([-+][0-9]\{4\}\)\{3\}\).*/\{,8514\}\1->Edna->\3(63817944)/g'
+13b this pattern consists of either a -+ sign followed by 4 digits this repeats 3 times. 
+13b This pattern is matched two times per line.
+14a cat datasets/q14data.txt | sed -r 's/.*(\([A-Z][a-z]{2,5}\)\[[A-Z][a-z]{2,5}\]\([A-Z][a-z]{2,5}\)).*(\([A-Z][a-z]{2,5}\)\[[A-Z][a-z]{2,5}\]\([A-Z][a-z]{2,5}\)).*/{Tom}2073,\1\[Phil\],->\2,\/\:\:/g' 
+14b this patter consist of  a name inside parantheses followed by a a name inside square brackets 
+14b followed by a name inside paranatheses.  
+15a cat datasets/q15data.txt | sed -r 's/.*(([+-](tokyo|paris|stockholm))|(\([A-Za-z]*\)[0-9]{8})).*(([+-](tokyo|paris|stockholm))|(\([A-Za-z]*\)[0-9]{8})).*/\{\/\}::,\4\8\{\/\}Edna::\2\6[::,\]/g'
+15b this pattern consist of two subpatterns that can be in various order.
+15b the first subpattern consist of a pair of parantheses with  
+15b a name with a uppercase first letter and followed by 8 digits. 
+15b the next subpattern is either a -+ sign followed by either the city name tokyo, paris or stockholm
+16a cat datasets/q16data.txt | sed -r 's/.*((\[[A-Z][a-z]{2,5}\]\([A-Z][a-z]{2,5}\)\[[A-Z][a-z]{2,5}\])|(\([0-9]{4}->\))).*((\[[A-Z][a-z]{2,5}\]\([A-Z][a-z]{2,5}\)\[[A-Z][a-z]{2,5}\])|(\([0-9]{4}->\))).*/\[2039,\]\3\6->::\/\2\5[,]::::/g'
+16b this pattern conists of two subpatterns that appear ones per line they could be in diffrent order of each other.
+16b the first subpattern is a pair of parantheses with 4 digits and a -> arrow between
+16b the second patern consist of a name inside a pair of square brackets followed by a a name inside parantheses.
+16b followed by third name inside a pair square brackets. 

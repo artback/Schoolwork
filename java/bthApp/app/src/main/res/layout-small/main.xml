@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout1"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:weightSum="3"
+	android:background="#ffffff">
+
+	<LinearLayout
+		android:id="@+id/linearLayout2"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/btnMainNews"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_margin="1dp"
+			android:layout_weight="1"
+			android:background="@android:color/transparent"
+			android:drawableTop="@drawable/news_button"
+			android:paddingTop="20dp"
+			android:text="@string/news"
+			 />
+
+		<Button
+			android:id="@+id/btnMainCalendar"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_margin="1dp"
+			android:layout_weight="1"
+			android:background="@android:color/transparent"
+			android:drawableTop="@drawable/calendar_button"
+			android:paddingTop="20dp"
+			android:text="@string/calendar"
+			 />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout3"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/btnMainContacts"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_margin="1dp"
+			android:layout_weight="1"
+			android:background="@android:color/transparent"
+			android:drawableTop="@drawable/contacts_button"
+			android:paddingTop="20dp"
+			android:text="@string/contacts"
+			 />
+
+		<Button
+			android:id="@+id/btnMainSchedules"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_margin="1dp"
+			android:layout_weight="1"
+			android:background="@android:color/transparent"
+			android:drawableTop="@drawable/schedules_button"
+			android:paddingTop="20dp"
+			android:text="@string/schedules"
+			 />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout4"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/btnMainMap"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_margin="1dp"
+			android:layout_weight="1"
+			android:background="@android:color/transparent"
+			android:drawableTop="@drawable/map_button"
+			android:paddingTop="20dp"
+			android:text="@string/map"
+			 />
+
+		<Button
+			android:id="@+id/btnBlank"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_margin="1dp"
+			android:layout_weight="1"
+			android:text=""
+			android:visibility="invisible"
+			android:background="@android:color/transparent" />
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,868 @@
+1  sudo pkill X
+2  cat /var/log/Xorg.0.log
+3  cat /var/log/Xorg.0.log | grep EE
+4  install compton
+5  compton -b -c --backend glx --vsync opengl-swc
+6  mkdir /etc/pm/power.d/00-brightness
+7  mkdir /etc/pm/power.d/
+8  vim /etc/pm/power.d/00-brightness
+9  systemctl enable --now upower
+10  systemctl enable --now mariadb
+11  time
+12  pacs batt
+13  pacs pow
+14   xrandr -q 
+15  mount -t cifs  //192.168.0.252/Openshare/ /mnt/nas -o user=admin,uid=1000,gid=10,password=MtvYPpc9zaaTwUZ,workgroup=WORKGROUP,ip=$server,vers=1.0
+16  etcher
+17  remove etcehr
+18  pacs etcher
+19  install etcher
+20  mkdir jooq
+21  install go-mtpfs
+22  install go-mtpfs-git
+23  mysql -u chief -p RECIPEDB
+24  mv mysql-connector-java-5.1.43-bin.jar mysql.jar
+25  java -cp jooq-3.9.5.jar;jooq-meta-3.9.4.jar;jooq-codegen-2.6.4.jar;
+26  java -cp jooq-3.9.5.jar;jooq-meta-3.9.5.jar;jooq-codegen-3.9.5.jar;mysql.jar;jooq-config.xml
+27  java -cp jooq-3.9.5.jar;jooq-meta-3.9.5.jar;jooq-codegen-3.9.5.jar;mysql.jar;.jooq-config.xml
+28  systemctl restart dnsmasqw
+29  gzip -xz linux-pine64-0.6.2.tar.xz
+30  java -cp jooq-3.9.5.jar;jooq-meta-3.9.5.jar;jooq-codegen-3.9.5.jar;mysql.jar;. org.jooq.util.GenerationTool ./jooq-config.xml 
+31  gzip -d android-7.1-pine-a64-tv-v0.3.10-r66.img.gz
+32  jar mysql.jar
+33  jar -t mysql.jar
+34  jar -tf mysql.jar
+35  java -classpath jooq-3.9.5.jar:jooq-meta-3.9.5.jar:jooq-codegen-3.9.5.jar:mysql.jar:./org.jooq.util.GenerationTool jooq-config.xml
+36  java -classpath jooq.jar:jooq-meta.jar:jooq-codegen.jar:mysql.jar:./org.jooq.util.GenerationTool ./jooq-config.xml
+37  java -classpath jooq-3.9.5.jar:jooq-meta-3.9.5.jar:jooq-codegen-3.9.5.jar:mysql.jar:./org.jooq.util.GenerationTool ./jooq-config.xml
+38  java -classpath jooq-3.9.5.jar:jooq-meta-3.9.5.jar:jooq-codegen-3.9.5.jar:mysql.jar:./org.jooq.util.GenerationTool /jooq-config.xml
+39  autorandr -s tv
+40  java -classpath jooq.jar::jooq-codegen.jar:mysql.jar:./org.jooq.util.GenerationTool /jooq-config.xml
+41  java -classpath jooq.jar:jooq-codegen.jar:mysql.jar:./org.jooq.util.GenerationTool /jooq-config.xml
+42  java -classpath jooq.jar:jooq-codegen.jar:mysql.jar: ./org.jooq.util.GenerationTool /jooq-config.xml
+43  java -classpath jooq.jar:jooq-codegen.jar:mysql.jar ./org.jooq.util.GenerationTool /jooq-config.xml
+44  java -classpath jooq.jar:jooq-meta.jar:jooq-codegen.jar:mysql.jar: ./org.jooq.util.GenerationTool /jooq-config.xml
+45  java -classpath jooq.jar:jooq-meta.jar:jooq-codegen.jar:mysql.jar: .org.jooq.util.GenerationTool /jooq-config.xml
+46  java -classpath jooq.jar:jooq-meta.jar:jooq-codegen.jar:mysql.jar: .org.jooq.util.GenerationToo/jooq-config.xml
+47  java -classpath jooq.jar:jooq-meta.jar:jooq-codegen.jar:mysql.jar:.org.jooq.util.GenerationTool /jooq-config.xml
+48  sudo rfkill block
+49  sudo rfkill block wifi
+50  sudo rfkill unblock wifi
+51  cd ./Code/foodDB/jooq
+52  java -classpath jooq.jar:jooq-meta.jar:jooq-codegen.jar:mysql.jar:./org.jooq.util.GenerationTool /jooq-config.xml
+53  vim jooq-config.xml
+54  cd Code/foodDB/jooq
+55  systemctl restart NetworkManager
+56  cat /etc/resolv.conf
+57  remove transmisson
+58  vim ./.zsh
+59   mount -t cifs  //192.168.0.252/Openshare/ /mnt/nas -o user=admin,uid=1000,gid=10,password=MtvYPpc9zaaTwUZ,workgroup=WORKGROUP,ip=192.168.0.252,vers=1.0
+60  sudo  mount -t cifs  //192.168.0.252/Openshare/ /mnt/nas -o user=admin,uid=1000,gid=10,password=MtvYPpc9zaaTwUZ,workgroup=WORKGROUP,ip=192.168.0.252,vers=1.0
+61  pacs mtp
+62  remove gvfs-mtp
+63  pacs mtpfs
+64  install headphones
+65  pacs tran
+66  remove transmisson-remote-gtk
+67  poll-xrandr
+68  man grep
+69  vim /.config/autorandr/postswitch
+70  autorandr | grep current | grep tv
+71  autorandr | grep current | grep 
+72  autorandr | grep current 
+73  autorandr | grep current
+74  autorandr 
+75  autorandr | grep -n current
+76  autorandr | grep default
+77  autorandr | grep -i current
+78  dmesg
+79  headphones
+80  pacs git
+81  remove scalpel-git
+82  remove polkil-qt5
+83  remove polkit-qt5
+84  remove kauth
+85  remove kconfigwidgets
+86  remove kiconthemes
+87  remove kwallet
+88  remove kio
+89  remove kpmcore
+90  remove partitionmanager
+91  cd headphones
+92  python headphones.py
+93  python Headphones.py
+94  sed '20,25!d' Headphones.py
+95  sed '23,25!d' Headphones.py
+96  sed '23,25!d' headphones/__init__.py
+97  sed '23,25!D' HEAdphones/__init__.py
+98  pacs iwl
+99  sshnas
+1000  mv /etc/hosts2 /etc/hosts 
+1001  sudo mv /etc/hosts2 /etc/hosts 
+1002  cal
+1003  cal -3
+1010  sed -e 's/^[[:digit:]]\{3\}/(&)/g'  \ \
+1011     -e 's/)[[:digit:]]\{3\}/&-/g' phone.txt 
+1012  cat phone.txt
+1013  sed -e 's/^[[:digit:]]\{3\}/(&)/g' phone.txt 
+1014  sed -e 's/^[[:digit:]]\{3\}/(&)/g'-e -e 's/)[[:digit:]]\{3\}/&-/g' phone.txt  
+1015  sed -e 's/)[[:digit:]]\{3\}/&-/g' phone.txt  
+1016  sed -e 's/^[[:digit:]]\{3\}/(&-)/g'   phone.txt  
+1017  sed -e 's/^[[:digit:]]\{3\}/(&)/g'  -e 's/)[[:digit:]]\{3\}/&-/g' phone.txt  
+1018  sed -e 's/^[[:digit:]]\{3\}/(&)/g'  -e 's/)[[:digit:]]\{3\}/1-/g' phone.txt  
+1019  sed -e 's/^[[:digit:]]\{3\}/(&)/g'  -e 's/)[[:digit:]]\{3\}/(&-)/g' phone.txt  
+1020  echo $$
+1021  ..
+1022  mathfunc
+1023  nas 
+1024  ls .git
+1025  rm .git
+1026  rm -rf .git
+1027  git init
+1028  git remote add origin git@bitbucket.org:janneDev/recipeclient.git
+1029  git add *
+1030  git commit -m "initial commit"
+1031  git push -u origin master
+1032  jobs
+1033  autorandr -c
+1034  j
+1035  conky
+1036  pactl list short sinks
+1037  pactl list sinks 
+1039  pactl set
+1040  pactl -h
+1041  pactl list sinks
+1042  vim .xbindkeys
+1043  pactl load-module module-switch-on-connect
+1044  amixer
+1045  pgrep trans
+1046  kill 19597
+1047  ping 192.168.0.254
+1048  ping -3 www.duckduckgo.com
+1049  ping -c 3 www.duckduckgo.com
+1050  install speed-test
+1051  speedtest-cli
+1052  vim .hosts
+1053  vim /etc/hosts2
+1054  bindkeys -k\
+1055  xbindkeys -k\
+1056  vim /etc/group
+1057  autorandr -c 
+1058  su freak -c "hdmi_sound_toggle.sh"\
+1059  vim /usr/local/bin/hdmi.sh
+1060  sudo su freak -c "hdmi_sound_toggle.sh"
+1061  sudo vim $(where hdmi_sound_toggle.sh )
+1062  sudo hdmi_sound_toggle.sh
+1063  su
+1064  su root -c "hdmi_sound_toggle.sh"
+1065  vimrc
+1066  mv /etc/hosts2 /etc/hosts2
+1067  sudo su
+1068  xset -q
+1069  su freak -c "changeinput 0"
+1070  sudo su freak -c "changeinput 0"
+1071  sudo "su freak -c "changeinput 0""
+1072  htop
+1073  ./cmus-notify.sh
+1074  ranger
+1075  illall -HUP xbindkeys
+1076  killall -HUP xbindkeys
+1077  cd .config
+1078  sranger
+1079  pactl set-sink-volume @DEFAULT_SINK@ -5%
+1080  cmusPlay.sh
+1081  killall xbindkeys
+1082  xbindkeys &
+1083  pacmd set-default-sink 0
+1084  pactl set-default-sink 0
+1085  mpsyt
+1086  remove
+1087  remove transmission-remote-gui-bin
+1088  xev
+1089  vim ~/.Xmodmap
+1090  showkeys 
+1091  find . -name "*.java"
+1092  xev 
+1093  man xev
+1094  vim $(where changeinput )
+1095  vim
+1096  xbindkeys
+1097  KLÃƒ¶
+1098  reboot
+1099  vim .xbindkeysrc
+1100  xmodmap ~/.Xmodmap
+1101  remove xmodmap
+1102  remove xorg-xmodmap
+1103  systemctl list-timers
+1104  pulseaudio
+1105  \
+1106  find . -type l -print | xargs ls -ld | awk '{print $10}'\
+1107  \
+1108  find . -type l -print | xargs ls -ld
+1109  changeinput 0
+1110  speech-test
+1111  find -name "*.java" 
+1112  find -name "*.java"  -print
+1113  \
+1114  find . -mtime +10 -size +50000c -exec ls -l {} \;\
+1115  \
+1116  find . -mtime +10 -size +5000000c -exec ls -l {} \;\
+1117  \
+1118  find . -mtime -10 -size +5000000c -exec ls -l {} \;\
+1119  ping artback.dynu.net
+1120  changeinput
+1121  find . -name "*.java"  -print
+1122  setxkbmap -option caps:shift
+1123  top
+1124  type bsh
+1125  type bs
+1126  type b2
+1127  bc 2+2
+1128  echo 2+2 | bc
+1129  echo 3*3 | bc
+1130  echo 2+6 | bc
+1131  echo 2*6 | bc
+1132  echo '2*6' | bc 
+1133  calc 
+1134  echo 'scale=2; 3*3' | bc
+1135  echo 'scale=2; $1' | bc
+1136  calc 3
+1137  dc 1+1
+1138  echo 'scale=2; 5 '| bc
+1139  echo 'scale=2; 5*2 '| bc
+1140  echo 'scale=2; 5*3 '| bc
+1141  echo 'scale=2;5*3 '| bc
+1142  echo 'scale=2;5*3'| bc
+1143  bc -q
+1144  echo 'scale=2;5*3'| bc -q
+1145  calc '3*3'
+1146  calc '1'
+1147  vim caps:shift1
+1148  cat $1
+1149  cat $11
+1150  echo cow1
+1151  vim $sudo pkill X
+1152  echo $
+1153  echo !
+1154  echo $!1
+1155  echo cow
+1156  echo $!
+1157  echo $1
+1158  set $1=5
+1159  echo cow |        awk ' $1==0 { print $2 }'
+1160  echo 0 |        awk ' $1==0 { print $1 }'
+1161  echo 0 |        awk ' $1==0 { print $2 }'
+1162  ssh root@artback.dynu.net
+1163  wan-router
+1164  sh -c "cat hero cat cow\
+1165  "
+1166  sh -c "echo hero eho cow\
+1167  "
+1168  sh -c "echo hero echo cow\
+1169  "
+1170  sh -c "echo hero; echo cow\
+1171  "
+1172  ./curler bth.se
+1173  curl www.bth.se
+1174  curl www.mechani.se
+1175  ./dispatchloop
+1176  curl -s www.bth.se
+1177  cat temp.txt | sed 's/\(bth.se\)/\1 -/g'
+1178  cd Code/Schoolwork/DV1466/webspider
+1179  cat temp.txt | sed 's/\(www.*....\)/\1 -/g'
+1180  cat temp.txt | sed 's/\(www.*.*\)/\1 -/g'
+1181  cat temp.txt | sed 's/\(www.*.com\)/\1 -/g'
+1182  cat temp.txt | sed 's/\(www.*.se\)/\1 -/g'
+1183  cat temp.txt | sed 's/\(mechani.se\)/\1-/g'
+1184  cat temp.txt | sed 's/\(mechani.se\)\1 -/g'
+1185  cat tem
+1186  cat temp
+1187  cat temp.txt
+1188  cat temp.txt | sed 's/\(mechani.se\)/\1 -/g'
+1189  ls file.txt
+1191  cat file
+1192  vim file.txt
+1193  cat file.txt
+1195  cat file.txt | wc -l
+1196  curl -s www.mechani.se/rtos/public/index.html
+1197  curl -s www.mechani.se
+1198  curl -s www.mechani.se | grep www.mechani.se
+1199  curl -s www.mechani.se | grep mechani
+1200  curl -s www.mechani.se | grep http
+1201  cat domain.txt | sed 's/www.//d'
+1202  run-help sed
+1203  cat domain.txt | sed 's/www\.//d'
+1204  cat domain.txt | sed -e 's/www\.//d'
+1205  cat domain.txt | sed -e 's/www/w/'
+1206  cat domain.txt | sed -e 's/www//'
+1207  cat list.txt | uniq
+1208  uniq -q list.txt
+1209  uniq -u list.txt
+1210  wc -l temp.txt
+1211  sort list.txt | uniq
+1212  sort temp.txt | uniq
+1213  sort file.txt | uniq
+1214  cat temp.txt | sed -e 's/\($domain\)/\1/g'
+1215  cat temp.txt | sed -e 's/\($domain\)/\/g'
+1216  cat temp.txt | sed -e 's/\($domain\)/\*/g'
+1217  cat temp.txt | sed -e 's/\($domain\)/\&/g'
+1218  cat domain.txt | sed -e 's/www.//'
+1219  cat temp.txt 
+1220  cat list.txt | awk '{print $3, $4}' | sed 's#-##' | awk '{print $1}' | cut -c 1 | grep -q "h" 
+1221  cat list.txt | awk '{print $3, $4}' | sed 's#-##' | awk '{print $1}' | cut -c 1  
+1222  cat list.txt | awk '{print $3, $4}' | sed 's#-##' | awk '{print $1}' 
+1223  cat list.txt|  | awk '{print $1, $4}' | sed 's#-##' | awk '{print $1}' 
+1224  cat list.txt | awk '{print $1, $4}' | sed 's#-##' | awk '{print $1}' 
+1225  cat list.txt | awk '{print $1, $2}' | sed 's#-##' | awk '{print $1}' 
+1226  cat list.txt | awk '{print $1, $2}' |\
+1227  \
+1228  \
+1229  [o
+1230  cat list.txt | awk '{print $1, $2}' | sed 's#-##'  
+1231  cat list.txt | awk '{print $1, $2}' |  awk '{print $1}' 
+1232  cat list.txt | awk '{print $1, $2}' |  awk '{print $1}' | cut -c 1
+1233  run-help awk
+1234  cat list.txt | awk '{print $1, $2}' | \
+1235  \
+1236  kj
+1237  cat list.txt | awk '{print $1, $2}' 
+1238  cat list.txt | awk '{print $1, $2}' | cut -c 1
+1239  cat list.txt |  awk '{print $1, $4}' | s
+1240  cat list.txt |  awk '{print $1}' | s
+1241  curl -s www.mechani.se/rtos/public/index.html | sed -n 's/.*href="\([^"]*\).*/\1/p' | sed 's/?.*//g' | sed 's/ //g'
+1242  curl -s www.mechani.se/unix/public/index.html | sed -n 's/.*href="\([^"]*\).*/\1/p' | sed 's/?.*//g' | sed 's/ //g'
+1243  curl -s www.mechani.se/unix/public/index.html | sed -n 's/.*href="\([^"]*\).*/\1/p'
+1244  curl -s www.mechani.se/unix/public/index.html | sed -n 's/.*href="\([^"]*\).*/\1/p' | \
+1245  \
+1246  f
+1247  curl -s www.mechani.se/unix/public/index.html | sed -n 's/.*href="\([^"]*\).*/\1/p' \
+1248  f
+1249  curl -s www.mechani.se/unix/public/index.html 
+1250  curl -s www.mechani.se/unix/private/index.html
+1251  curl -s www.mechani.se/rtos/public/index.html |\
+1252  fd
+1253  curl -s www.mechani.se/rtos/public/index.html 
+1254  curl -s www.mechani.se/unix/public/index.html | sed -n 's/.*href=*\1/p' 
+1255  curl -s www.mechani.se/unix/public/index.html | sed -n 's/.*href=*/\1/p' 
+1256  curl -s www.mechani.se/unix/public/index.html | sed -n 's/*href=*/\1/p' 
+1257  curl -s www.mechani.se/unix/public/index.html | sed -n 's/.*href=*/p' 
+1258  curl -s www.mechani.se/unix/public/index.html | sed 's/.*href="\([^"]*\).*/\1/p' 
+1259  curl -s www.mechani.se/unix/public/index.html | sed -n 's/.*href="\([^"]*\).*/\1/p' 
+1260  ./curler
+1261  curl -s www.mechani.se | sed 's:<a href="\(.*\)">.*</a>:\1:' url_file
+1262  curl -s www.mechani.se | sed 's:<a href="\(.*\)">.*</a>:\1:' 
+1263  curl -s www.mechani.se | perl -F\" -alne 'print $F[1]'
+1264  install markdown-reader
+1265  pacman
+1266  pacman -Q
+1267  pacaur -Q
+1268  set $EDITOR=vim
+1269  $EDITOR=vim
+1270  vim .zshrc
+1271  export $EDITOR=vim
+1272  export $EDITOR='vim'
+1273  export EDITOR='vim'
+1274  update
+1275  echo $EDITOR
+1276  install typora
+1277  cat list.txt| awk '{print $3, $4}' | sed 's#-##' | sed 's#</a></li>##' | awk '{print $1}\
+1278  '
+1279  cat list.txt| awk '{print $1, $2}' | sed 's#-##' | sed 's#</a></li>##' | awk '{print $1}\
+1280  '
+1281  cat list.txt |  awk '{print $1, $4}' | sed 's#-##' | sed 's#</a></li>##'
+1282  cat list.txt |  awk '{print $1}' 
+1283  cat list.txt |  awk '{print $1, $2}' | sed 's#-##' | sed 's#</a></li>##'
+1284  cat list.txt |  awk '{print $1}' | sed 's#-##' | sed 's#</a></li>##'
+1285  cat list.txt
+1286  wget mechani.se
+1287  cat list.txt | awk '{print $3, $4}' | sed 's#-##' | sed 's#</a></li>##' | awk '{print $2}'
+1288  cat list.txt | awk '{print $2}' | sed 's#-##' | sed 's#</a></li>##' | awk '{print $2}'
+1289  cat list.txt | awk '{print $2}' | sed 's#-##' | sed 's#</a></li>##' 
+1290  cat list.txt | awk '{print $2}' | sed 's#-##' 
+1291  cat list.txt | awk '{print $2}' 
+1292  curl -s www.mechani.se | sed -n 's/.*href="\([^"]*\).*/\1/p' | sed 's/?.*//g' | sed 's/ //g' 
+1293  curl -s www.mechani.se | sed -n 's/.*href="\([^"]*\).*/\1/p' | sed 's/?.*//g' | sed 's/ //g' | grep -v '^http'
+1294  curl -s www.mechani.se | sed -n 's/.*href="\([^"]*\).*/\1/p'  \
+1295  curl -s www.mechani.se | sed -n 's/.*href="\([^"]*\).*/\1/p' | sed 's/?.*//g' |\
+1296  j
+1297  curl -s www.mechani.se | sed -n 's/.*href="\([^"]*\).*/\1/p' | sed 's/?.*//g' |\
+1298  \
+1299  jk
+1300  curl -s www.mechani.se | sed -n 's/.*href="\([^"]*\).*/\1/p' | sed 's/?.*//g' \
+1301  \
+1302  curl -s www.mechani.se | sed -n 's/.*href="\([^"]*\).*/\1/p' | sed 's/?.*//g' \
+1303  j
+1304  curl -s www.mechani.se | sed -n 's/.*href="\([^"]*\).*/\1/p' | sed 's/?.*//g' | grep -v '^http'\
+1305  chmod 755 startUpClean
+1306  curl -s  http://www.mechani.se/static/Teaching/dv1445/ | sed -n 's/.*href="\([^"]*\).*/\1/p' | sed 's/?.*//g' | grep -v '^http'\
+1307  echo $SHELL
+1308  ./curler www.mechani.se
+1309  ./curler www.mechani.se/rtos/public/index.html
+1310  ./curler www.mechani.se/unix/public/index.html
+1311  cat temp.txt | sed -e 's/\($domain\)/\1 -/g'
+1312  cd Code/webspider
+1313  vim curler
+1314  chmod 755 curler
+1315  ./curler www.bth.se
+1316  wiif
+1317  tar -xvf 2017_cw1_9512295099_0.tgz
+1318  pwd
+1319  find -name "firstclue"
+1320  find -name "*firstclue"
+1321  find -name "*firstclue*"
+1322  cat $(find -name "*moon*"\
+1323  )
+1324  cat $(find -name "*firstclue*"\
+1325  )
+1326  kill redshift
+1327  find -name "moon"\
+1328  find -name "moon$"\
+1329  find -name "*moon$"\
+1330  find -name "*moon"\
+1331  find -name "*moon*"\
+1332  cat $(find -name "*moon")\
+1333  cat $(find -name "*moon") | xclip \
+1334  cat $(find -name "*moon") | xclip -o\
+1335   
+1336  cat $(find -name "*moon") | xclip -selection clipboard\
+1337   
+1338  find -name "*leathal*"
+1339  find -name "*weapon*"
+1340  find -name "*leathalweapon*"
+1341  awebinds
+1342  awebind
+1343  c
+1344  find -name "*lethalweapon*"
+1345  find -name "*lethalweapon*" | c
+1346  cat $(find -name "*lethalweapon*" | c)
+1347  find . -name "*lethalweapon*" 
+1348  cat $(find -name "*lethalweapon*" )
+1349  cat $(find -name "*lethalweapon*")
+1350  find . -name "*mars*" 
+1351  find . -name "*mars*" | c
+1352  cat $(find -name "*firstclue*")
+1353  cat $(find -name "*firstclue*") 
+1354  cat $(find -name "*firstclue*") | xclip -selection clipboard
+1355  find -name "*mars*"| xsel
+1356  find -name "*mars*"
+1357  thunderbird
+1358  cat $(find -name "*mars*")
+1359  find -name "*hapiness*"
+1360  vim /usr/local/sbin/nas
+1361  groups
+1362  sudo usermod -a -G fuse freak
+1363  vim /etc/fuse.conf
+1364  nas umount
+1365  fusermount -u /mnt
+1366  cat $(find -name "*mars*") | c
+1367  echo * sandbox/doesntQuiteFit/mixed/mixed | wc -l
+1368  cd test
+1369  mkdir test
+1370  mkdir .test
+1371  mkdir test23
+1372  echo * | wc -l
+1373  echo */ | wc -l
+1374  echo */ 
+1375  echo */ | wc -c
+1376  echo */ | wc 
+1377  echo */ | wc
+1378  man wc
+1379  ls -a
+1380  echo */ | wc -w
+1381  cd sandbox
+1382  echo * sandbox/doesntQuiteFit/mixed/mixed
+1383  echo * sandbox/doesntQuiteFit/mixed/mixed 
+1384  echo */ sandbox/doesntQuiteFit/mixed/mixed
+1385  echo */ sandbox/doesntQuiteFit/mixed/mixed 
+1386  echo * sandbox/doesntQuiteFit/mixed/mixed | wc 
+1387  echo */ sandbox/doesntQuiteFit/mixed/mixed | wc 
+1388  echo */ sandbox/doesntQuiteFit/mixed/mixed | wc -w
+1389  df  sandbox/doesntQuiteFit/mixed/mixed 
+1390  df  /doesntQuiteFit/mixed/mixed 
+1391  df  ./doesntQuiteFit/mixed/mixed 
+1392  du  ./doesntQuiteFit/mixed/mixed 
+1393  mplayer Seul\ contre\ tous.avi
+1394  install libva
+1395  mpv Seul\ contre\ tous.avi
+1396  du  ./doesntQuiteFit/mixed/mixed | sort -s -n -k 1,1
+1397  du  ./doesntQuiteFit/mixed/mixed | sort -s -n -k 1,1 | tail -n 1
+1398  du  ./doesntQuiteFit/mixed/mixed | sort -s -n -k 1,1 | tail -n 1 | awk '{print $2}'
+1399  du  ./doesntQuiteFit/mixed/mixed/ | sort -s -n -k 1,1 | tail -n 1 | awk '{print $2}'
+1400  du  ./doesntQuiteFit/mixed/mixed/* | sort -s -n -k 1,1 
+1401  du  ./doesntQuiteFit/mixed/mixed/* | sort -s -n -k 1,1 | tail -n 1 | awk '{print $2}'
+1402  echo * ./doesntQuiteFit/mixed
+1403  echo * ./doesntQuiteFit/mixed | wc -w
+1404  ls | wc 
+1405  ls | wc -w
+1406  ls -d | wc -w
+1407  ls ./doesntQuiteFit/mixed 
+1408  ls ./doesntQuiteFit/mixed | wc -w
+1409  cd Code/treasurehunt/sandbox
+1410  ls -d ./doesntQuiteFit/mixed/mixed | wc -w\
+1411  ls -d ./doesntQuiteFit/mixed/mixed/ | wc -w\
+1412  ls  ./doesntQuiteFit/mixed/mixed/  \
+1413  ls -d ./doesntQuiteFit/mixed/mixed/  \
+1414  ls -d ./doesntQuiteFit/mixed/mixed/*/  | wc 0w\
+1415  echo * ./doesntQuiteFit/mixed 
+1416  echo */ ./doesntQuiteFit/mixed/mixed
+1417  echo */ ./doesntQuiteFit/mixed/mixed | wc -w
+1418  echo  ./doesntQuiteFit/mixed/mixed/*/
+1419  echo  ./doesntQuiteFit/mixed/mixed/*/ | wc -l
+1420  echo  ./doesntQuiteFit/mixed/mixed/*/ | wc -w
+1421  ls ./doesntQuiteFit/mixed/mixed
+1422  ls -d ./doesntQuiteFit/mixed/mixed/*/  | wc -w\
+1423  ls ./doesntQuiteFit/mixed/ | wc -wl
+1424  ls -d ./doesntQuiteFit/mixed/mixed | wc -w
+1425  ls -d ./doesntQuiteFit/mixed/mixed 
+1426  ls  ./doesntQuiteFit/mixed/*
+1427  ls  ./doesntQuiteFit/mixed/* | wc -l
+1428  ls -l  ./doesntQuiteFit/mixed/* | wc -l
+1429  ls -l  ./doesntQuiteFit/mixed/* 
+1430  ls   ./doesntQuiteFit/mixed/* 
+1431  print $SHELL
+1432  ls   ./doesntQuiteFit/mixed/
+1433  find -maxdepth 1 -type f\
+1434  ls   ./doesntQuiteFit/mixed/ | wc -w
+1435  ls   ./doesntQuiteFit/mixed/ 
+1436  ls   ./doesntQuiteFit/mixed
+1437  ls -l
+1438  ls 
+1439  ls -d ./doesntQuiteFit/mixed/mixed/*/ | wc -l
+1440  ls -d ./doesntQuiteFit/mixed/mixed/*/ | wc -w
+1441  ls -d ./doesntQuiteFit/mixed/mixed/*/ 
+1442  find  -type f | sort\
+1443  find  -type f | awk '{print length($0)"\t"$0}' \
+1444  find  -type f | awk '{print length($0)"\t"$0}' | sort  \
+1445  find  -type f | awk '{print length($0)"\t"$0}' | sort -n \
+1446  ls -p | grep "/" | wc -l
+1447  ls -p | grep "/" 
+1448  ls  | grep "/" 
+1449  find  -type f | awk '{///count($0)"\t"$0}' | sort -n \
+1450  find  -type f | awk '{//count($0)"\t"$0}' | sort -n \
+1451  find  -type f | awk '/\// { count++ } ' \
+1452  find  -type f | awk '/\// { count++ } END { print count }' \
+1453  firefox
+1454  pkill firefox
+1455  grep -v '/'
+1456  grep -v '/' ./*
+1457  man awk
+1458  find  -type f | awk -F '/\// { count++ } END { print count }' \
+1459  find  -type f | sed 's/[^\/]/&/g'\
+1460  find  -type f | sed 's/[^\/]/1/g'\
+1461  find  -type f | sed 's/[^\/]/\1/g'\
+1462  find  -type f | sed 's/([^\/])/\1/g'\
+1463  find  -type f | sed 's/([^\/])/1/g'\
+1464  find  -type f | sed 's/([^\/])//g'\
+1465  find  -type f | sed "s/\('\([^/]\+\)'\)/\1\nparam2=\2/g"\
+1466  find  -type f | sed "s/\('\([^/]\+\)'\)/\1\n\2/g"\
+1467  find  -type f | sed "s/\('\([^/]\+\)'\)//g"\
+1468  find  -type f | sed "s/\('[^/]'\)//g"\
+1469  find  -type f | sed 's/[^\/]/ \1/g'\
+1470  find  -type f | sed 's/[^\/]/ 1/g'\
+1471  find  -type f | sed 's/[^\/]//g'\
+1472  find  -type f | grep -c '^/'\
+1473  find  -type f | grep -c '/'\
+1474  find  -type f | awk '{print $1,$2,gsub(/word/,"")}'\
+1475  find  -type f | awk '{print $1,$2,gsub(/,"")}'\
+1476  find  -type f | awk '{print $1,$2,gsub(/word/,"/")}'\
+1477  find  -type f | awk '{print $1,gsub(/word/,"/")}'\
+1478  find  -type f | awk '{print $1,gsub("/","/")}'\
+1479  find  -type f | awk '{print gsub("/","/"),$1}'\
+1480  find  -type f | awk '{print gsub("/","/"),$1}' | sort \
+1481  man sort
+1482  find  -type f | awk '{print gsub("/","/"),$1}' | sort -r | grep "^5"\
+1483  find  -type f | awk '{print gsub("/","/"),$1}' |  grep "^6"\
+1484  find  -type f | awk '{print gsub("/","/"),$1}' |  grep "^5"\
+1485  find  -type f | awk '{print gsub("/","/"),$1}' | sort -r | cut -c 1 -N\
+1486  find  -type f | awk '{print gsub("/","/"),$1}' | sort -r | cut -c 1-N\
+1487  find  -type f | awk '{print gsub("/","/"),$1}' | sort -r | cut -c 1\
+1488  find  -type f | awk '{print gsub("/","/"),$1}' | sort -r | cut -c 1 -n 1\
+1489  find  -type f | awk '{print gsub("/","/"),$1}' | sort -r |\
+1490  \
+1491  fjdkfind  -type f | awk '{print gsub("/","/"),$1}' | sort -r | cut -c 1 -n 1\
+1492  find  -type f | awk '{print gsub("/","/"),$1}' | sort -r | \
+1493  \
+1494  \
+1496  find  -type f | awk '{print gsub("/","/"),$1}' | sort -r \
+1497  find  -type f | awk '{print gsub("/","/"),$1}' | sort -r | grep '^5' | wc -l\
+1498  find  -type f | awk '{print gsub("/","/"),$1}' | sort -r | echo $1 \
+1499  find  -type f | awk 'BEGIN{{a[$1]++;b[$1]=b[$1]+$2}END{for (i in a) printf("%s %10.0f %10.0f %10.2f\n", i, a[i], b[i], b[i]/a[i])} '  \
+1500  find  -type f | awk 'BEGIN{x{a[$1]++;b[$1]=b[$1]+$2}END{for (i in a) printf("%s %10.0f %10.0f %10.2f\n", i, a[i], b[i], b[i]/a[i])} '  \
+1501  find -type f 
+1502  find  -type f | awk 'BEGIN{FS=":"; print "continent count total avg"} NR!=1 {a[$1]++;b[$1]=b[$1]+$2}END{for (i in a) printf("%s %10.0f %10.0f %10.2f\n", i, a[i], b[i], b[i]/a[i])} ' \
+1503  find  -type f | awk '{print gsub("/","/"),$1}' | awk 'BEGIN{FS=":"; print "continent count total avg"} NR!=1 {a[$1]++;b[$1]=b[$1]+$2}END{for (i in a) printf("%s %10.0f %10.0f %10.2f\n", i, a[i], b[i], b[i]/a[i])} '\
+1504  find  -type f | awk '{print gsub("/","/"),$1}' | awk 'BEGIN{FS=":"; print "continent count total avg"} NR!=1 {a[$1]++;}END{for (i in a) printf("%s %10.0f %10.0f %10.2f\n", i, a[i], b[i], b[i]/a[i])} '\
+1505  find  -type f | awk '{print gsub("/","/"),$1}' | awk 'BEGIN{FS=":"; } NR!=1 {a[$1]++;}END{for (i in a) printf("%s %10.0f %10.0f %10.2f\n", i, a[i], b[i], b[i]/a[i])} '\
+1506  find  -type f | awk '{print gsub("/","/"),$1}' | awk 'BEGIN{FS=":"; } NR!=1 {a[$1]++;}END{for (i in a), i, a[i], b[i], b[i]/a[i])} '\
+1507  find  -type f | awk '{print gsub("/","/"),$1}' | awk 'BEGIN{FS=":"; } NR!=1 {a[$1]++;}END, i, a[i], b[i], b[i]/a[i])} '\
+1508  find  -type f | awk '{print gsub("/","/"),$1}' | awk -F, 'NR>1{arr[$1]++}END{for (a in arr) print a, arr[a]}' \
+1509  find  -type f | awk '{print gsub("/","/"),$1}' | awk  'NR>1{arr[$1]++}END{for (a in arr) print a, arr[a]}' \
+1510  find  -type f  | awk '{print gsub("/","/"),$1}' | awk  'NR>1{arr[$1]++}END{for (a in arr) print a, arr[a]}' |  \
+1511  \
+1513  find  -type f  | awk '{print gsub("/","/"),$1}' | awk  'NR>1{arr[$1]++}END{for (a in arr) print a, arr[a]}' |  tail -n 1\
+1514  find  -type f  | awk '{print gsub("/","/")}' | awk  'NR>1{arr[$1]++}END{for (a in arr) print a, arr[a]}' |  tail -n 1 | awk \
+1515  find  -type f  | awk '{print gsub("/","/")}' | awk  'NR>1{arr[$1]++}END{for (a in arr) print a, arr[a]}' |  tail -n 1  \
+1516  find  -type f  | awk '{print gsub("/","/")}' | awk  'NR>1{arr[$1]++}END{for (a in arr) print  arr[a]}' |  tail -n 1  |\
+1517  \
+1518  kd
+1519  find  -type f  | awk '{print gsub("/","/")}' | awk  'NR>1{arr[$1]++}END{for (a in arr) print  arr[a]}'  
+1520  find  -type f  | awk '{print gsub("/","/")}' | awk  'NR>1{arr[$1]++}END{for (a in arr) print  arr[a]}' |  tail -n 1 
+1521  find -type f ./doesntQuiteFit | wc -l
+1522  find -type f ./doesntQuiteFit/ | wc -l
+1523  find -type f ./doesntQuiteFit/ 
+1524  find  ./doesntQuiteFit/ -type f 
+1525  find  ./doesntQuiteFit/ -type f  | wc -l
+1526  find . -type f -exec grep -Iq . {} \; -and -print
+1527  find ./doesntQuiteFit -type f -exec grep -Iq . {} \; -and -print *
+1528  find ./doesntQuiteFit/ -type f -exec grep -Iq . {} \; -and -print *
+1529  find ./doesntQuiteFit -type f -exec grep -Iq ./oesntQuiteFit {} \; -and -print *
+1530  find ./doesntQuiteFit -type f -exec grep -Iq ./doesntQuiteFit {} \; -and -print *
+1531  find . -type f -exec grep -Iq ./doesntQuiteFit {} \; -and -print *
+1532  find ./doesntQuiteFit -type f -exec grep -Iq  {} \; -and -print
+1533  find ./doesntQuiteFit -type f -exec grep -Iq . {} \; -and -print
+1534  find ./doesntQuiteFit -type f -exec grep -Iq . {} \; -and -print | wc -l
+1535  find ./doesntQuiteFit -type d
+1536  find ./doesntQuiteFit -type d | wc -l
+1537  find ./doesntQuiteFit -type d | wc -l | c
+1538  find ./doesntQuiteFit -not -empty -type d | wc -l
+1539  find ./doesntQuiteFit -not -empty -type d 
+1540  find ./doesntQuiteFit ! -empty -type d 
+1541  find ./doesntQuiteFit ! -empty -type d | wc -l 
+1542  find ./elsewhere/lockheed -maxdepth 1 -type f  -ls 
+1543  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls 
+1544  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk 'print{$7}\
+1545  '
+1546  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk 'print{$7}'
+1547  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk 'print{ $7 }'
+1548  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk '{print{ $7 }}'
+1549  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk '{print $7 }'
+1550  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk '{sum += $1} END {print sum}'
+1551  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk '{sum += $7} END {print sum}'
+1552  find ./doesntQuiteFit/lockheed   -ls | awk '{sum += $7} END {print sum}'
+1553  find ./doesntQuiteFit/lockheed -ls
+1554  find ./doesntQuiteFit/lockheed  -type f  -ls | awk '{sum += $7} END {print sum}'
+1555  ewhh
+1556  ehh
+1557  speed-test
+1558  wif
+1559  wifi
+1560  find -name "*god*"
+1561  router
+1562  cat ./doesntQuiteFit/mixed/celestialmotion/ballofrock/mars
+1563  man man | cat
+1564  netstat
+1565  man history
+1566  history | grep -B 6 -A 6
+1567  history | grep  -A 6 6
+1568  history | grep  -A 6 "^6"
+1569  history | head -n 6
+1570  history | head -n 6,12
+1571  history | head -n 12
+1572  history | grep   '^6'
+1573  history | grep   '^6*'
+1574  history | grep   '^[6-12] '
+1575  history | sed '6,12!d' | awk '{print $2}'
+1576  history | sed '6,12!d' 
+1577  cd Code/unix2
+1578  touch report.txt
+1579  history -n 7
+1580  exit
+1581  bash 
+1582  history > histcopy.txt
+1583  echo "2a $(history -7') > report.txt
+1584  |"
+1585  echo "1a $(history | sed '6,12!d')" > report.txt
+1588  ek
+1589  "
+1590  $
+1591  !
+1592  \
+1593  |
+1594  history ls
+1595  vim .config/autorandr
+1596  where hdmi_sound_toggle.sh
+1597  source file
+1598  ls
+1599  file
+1600  remove notmuch
+1601  mv /etc/hosts /etc/hosts
+1602  hdmi_sound_toggle.sh
+1603  pulseaudio -k
+1604  pulseaudio 
+1605  bc
+1606  acpi
+1607  sys
+1608  echo $x2
+1609  unset varname; varname=hello; ./dotest; echo $varname
+1610  expr 3+3
+1611  expr 3 + 3
+1612  calc 3*3
+1613  calc
+1614  echo "$SHELL"
+1615  echo '$SHELL'
+1616  calc "3*3"
+1617  calc "3*5"
+1618  calc "3*6"
+1619  zfunc
+1620  calc "3*4"
+1621  calc 5+5
+1622  aliases[=]="calc"
+1623  = "5*2"
+1624  = "5*5"
+1625  aliases[=]='calc'
+1626  zalias
+1627  = 5+5
+1628  = "6*5"
+1629  echo $DEFAULTSINK
+1630  ps aux | tail -n +2 | cut -c21-24 
+1631  ps aux | tail -n +2 | cut -c21-24 | tr '\n' +
+1632  <(echo)
+1633  grep blah <(ls -l)
+1634  grep file <(ls -l)
+1635  nas
+1636  nas mount
+1637  homescan
+1638  date
+1639  mv /etc/hosts2 /etc/hosts
+1640  zshrc
+1641  Chamberlain
+1642  sort < 3
+1643  echo $?
+1644  bash
+1645  $?
+1646  history history
+1647  history | sed '6,12\!d'
+1648  history | sed 's/6,12\!d'
+1649  history | sed '6,12d'
+1650  history | sed '6,12!d'
+1651  mv /etc/hosts /etc/hosts2
+1652  fuck
+1653  systemctl restart dnsmasq
+1654  pkill redshift
+1655  echo 1234 | https://item.taobao.com/item.htm?spm=2013.1.20141001.1.5cf1f30dFFPIT1&id=546198751514&scm=1007.12144.81309.42296_42296&pvid=115852bd-6336-43b4-9928-b17c10cb4619
+1656  echo 1234 | tr 1234 adcd
+1657  echo 1235 | tr 1234 adcd
+1658  echo 1235 | tr 1235 adcd
+1659  echo 1235 | tr 1235 adcns
+1660  echo 1235 | tr 1235 adcnfd
+1661  pacmd list-sinks | grep default
+1662  pacmd list | grep default
+1663  pacmd list-sinks
+1664  pactl load-module module-switch-on-connect\
+1665  pacmd list | grep firefox
+1666  pacmd list
+1667  pacmd list-clients
+1668  pacmd list-clients | grep index
+1669  pacmd list-clients | grep index | sed 's/index://d'
+1670  pacmd list-clients | grep index | sed -e 's/index://d'
+1671  pacmd list-clients | grep index | sed -e 's/index\://d'
+1672  pacmd list-clients | grep index | sed -e 's/index//d'
+1673  pacmd list-clients | grep index | sed -i 's/index//d'
+1674  pacmd list-clients | grep index | sed -i 's/index//'
+1675  pacmd list-clients | grep index | sed -i 's/index/'
+1676  pacmd list-clients | grep index | sed -i 's/index:/&/'
+1677  pacmd list-clients | grep index | sed  's/index://'
+1678  pacmd list-clients | grep index | sed  's/index:\ \ //'
+1679  pacmd list-clients | grep index | sed  's/index:\ //'
+1680  vim $(where hdmi_sound_toggle.sh )
+1681  vim $(where changeinput)
+1682  pacmd list-clients | grep index | sed  's/index:\ //' | xargs -I val pactl move-sink-input val 1
+1683  pacmd list-clients | grep index | sed  's/index:\ //' | xargs -I val pactl move-sink-input val -
+1684  pactl list-sink-inputs
+1685  pacmd list-clients 
+1686  pacmd list-clients | grep index | sed  's/index:\ //' | xargs -I val pactl move-sink-input val 0
+1687  pactl list sink-inputs
+1688  pacmd list-clients | grep index | sed  's/index:\ //' 
+1689  pactl move-sink-input 18 0 
+1690  pactl move-sink-input 157 0 
+1691  pactl move-sink-input 376 0 
+1692  pacmd list-clients | grep in  
+1693  cat .history
+1694  vim .bashrc
+1695  history
+1696  cd Code/DV1466/TextProcessing/
+1697  history 7
+1699  vim report.txt
+1700  echo "2a $(history 7)"
+1701  history > histcopy.txt 
+1702  cat histcopy.txt 
+1704  cat report.txt 
+1705  sed 's/history\ 7)/(history)\ 7/g' report.txt 
+1706  sed 's/history\ 7)/history\ 7/g' report.txt 
+1709  history
+1710  echo histcopy.txt > ~/.bash_history
+1711  history
+1712  source ~/.bash_history
+1713  cat histcopy.txt > ~/.bash_history
+1714  history
+1715  source ~/.bash_history
+1722  history
+1723  history | grep gc
+1724  history | grep gc
+1726  history > histcopy.txt 
+1727  history | grep ls
+1729  cat report.txt 
+1730  history | head -n 8
+1732  cat report.txt 
+1733  vim report.txt 
+1735  cat report.txt 
+1736  ps aux
+1737  netstat -tWae > netcopy.txt
+1738  netstat -tWae > netcopy.txt
+1739  cat netcoy.txt
+1740  cat netcopy.txt 
+1741  cat netcopy.txt 
+1742  netstat -tWae 
+1743  netstat -tWae 
+1744  netstat -tWae | cut -d 5
+1745  netstat -tWae | cut -c 5
+1746  netstat -tWae 
+1747  netstat -tWae | awk '{print 8}'
+1748  netstat -tWae | awk '{print $8}'
+1749  netstat -tWae | cut -c 8
+1750  netstat -tWae | cut -c8
+1751  netstat -tWae | cut -c7-8
+1752  netstat -tWae | cut -c 4
+1753  netstat -tWae | cut -c 2
+1754  netstat -tWae | awk '{print $8}'
+1755  netstat -tWae | cut -d 2
+1756  netstat -tWae | cut -f 2
+1757  netstat -tWae | cut -f 8
+1758  netstat -tWae | cut -f8
+1759  netstat -tWae | awk '{print $8}'
+1760  netstat -tWae | cut -f 2
+1761  netstat -tWae | awk '{print $8}'
+1762  netstat -tWae | awk '{print $8}'
+1763* echo netcopy | 
+1764* netstat -tWae | awk
+1765  netstat -tWae | grep "root"
+1766  netstat -tWae | awk '{print $7,$8}'
+1767  netstat -tWae | awk '{print $7,$8}'| grep root
+1768  netstat -tWae | awk '{print $7,$8}'| grep root | awk '{print $2}'
+1769  netstat -tWae | awk '{print $7,$8}'| grep root | awk '{print $2}'
+1770  echo netcopy.txt | awk '{print $7,$8}'| grep root | awk '{print $2}'
+1771* echo netcopy.txt | 
+1772  cat netcopy.txt | awk '{print $7,$8}'| grep root | awk '{print $2}'
+1773  cat netcopy.txt | awk '{print $7,$8}'
+1774  cat netcopy.txt | awk '{print $7,$8}'| grep root | awk '{print $2}'
+1775  cat netcopy.txt | awk '{print $7,$8}'| grep root | awk '{print $2}'| grep -v 0
+1776* cat netcopy.txt | awk '{print $7,$8}'| grep root | awk '{print $2}'| grep -v "^0" 
+1777  cat netcopy.txt | awk '{print $7,$8}'| grep root | awk '{print $2}'| grep -v "^0"
+1779  netstat -tWae | awk '{print $7,$8}'| grep root | awk '{print $2}'| grep -v "^0"
+1780  netstat -tWae | awk '{print $7,$8}'| grep root | awk '{print $2}'
+1781  netstat -tWae | awk '{print $7,$8}'| grep root | awk '{print $2}'
+1782  netstat -tWae | awk '{print $7,$8}'| grep root | awk '{print $2}'| grep -v "^0"
+1783  cat netcopy.txt | awk '{print $7,$8}'| grep root | awk '{print $2}'| grep -v "^0"
+1785  netstat -Twae > netcopy.txt
+1786  netstat -tWae > netcopy.txt
+1787  cat netcopy.txt | awk '{print $7,$8}'| grep root | awk '{print $2}'| grep -v "^0"
+1788  netstat -tWae | awk '{print $7,$8}'| grep root | awk '{print $2}'| grep -v "^0"
+1789  history 7
+1790  cat histcopy.txt | egrep "^[6-12]"
+1791  cat histcopy.txt | grep "^[6-12]"
+1792  cat histcopy.txt | grep "^[6-9]"
+1793  cat histcopy.txt | egrep "^[6-10]"
+1794  cat histcopy.txt | sed '6,12!d'
+1795  cat histcopy.txt | tail -n 7
+1796  cat histcopy.txt 
+1797  history 7

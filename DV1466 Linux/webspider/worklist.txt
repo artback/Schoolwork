@@ -1,0 +1,7 @@
+www.mechani.se /unix/public/cw4a.html www.mechani.se /unix/public/cw4aWorklistExample.txt
+www.mechani.se /unix/public/cw4a.html www.mechani.se /unix/public/cw4aWorklistExample2.txt
+www.mechani.se /unix/public/cw4a.html www.mechani.se /unix/public/cw4aGraphviz.svg
+www.mechani.se /unix/public/cw4a.html www.mechani.se /unix/public/cw4aWorklistExample3.txt
+www.mechani.se /unix/public/cw4a.html www.mechani.se /unix/public/spider1.html
+www.mechani.se /unix/public/cw4a.html www.mechani.se /unix/public/spider2.html
+www.mechani.se /unix/public/cw4a.html www.google.com

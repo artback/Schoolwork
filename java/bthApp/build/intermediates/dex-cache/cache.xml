@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\IamSoGay\Downloads\bsk.git\app\libs\android-vcard.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="912e9e430a52c74ae5974288f7de69afa9acf985">
+        <dex dex="C:\Users\IamSoGay\Downloads\bsk.git\app\build\intermediates\pre-dexed\debug\android-vcard-4852fc1f3b03d8982f6635f4f62622bede723b6a.jar" />
+    </item>
+
+</items>

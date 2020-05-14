@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res"><file name="calendar_button" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\calendar_button.xml" qualifiers="" type="drawable"/><file name="contacts_button" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\contacts_button.xml" qualifiers="" type="drawable"/><file name="ic_tab_calendar" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\ic_tab_calendar.xml" qualifiers="" type="drawable"/><file name="ic_tab_contacts" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\ic_tab_contacts.xml" qualifiers="" type="drawable"/><file name="ic_tab_map" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\ic_tab_map.xml" qualifiers="" type="drawable"/><file name="ic_tab_news" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\ic_tab_news.xml" qualifiers="" type="drawable"/><file name="ic_tab_schedules" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\ic_tab_schedules.xml" qualifiers="" type="drawable"/><file name="map_button" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\map_button.xml" qualifiers="" type="drawable"/><file name="news_button" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\news_button.xml" qualifiers="" type="drawable"/><file name="schedules_button" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\schedules_button.xml" qualifiers="" type="drawable"/><file name="tile_blue" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\tile_blue.xml" qualifiers="" type="drawable"/><file name="tile_green" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\tile_green.xml" qualifiers="" type="drawable"/><file name="tile_magenta" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\tile_magenta.xml" qualifiers="" type="drawable"/><file name="tile_orange" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\tile_orange.xml" qualifiers="" type="drawable"/><file name="tile_red" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\tile_red.xml" qualifiers="" type="drawable"/><file name="tile_white" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable\tile_white.xml" qualifiers="" type="drawable"/><file name="icon" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\icon.png" qualifiers="hdpi" type="drawable"/><file name="ic_bsk" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_bsk.png" qualifiers="hdpi" type="drawable"/><file name="ic_calendar" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_calendar.png" qualifiers="hdpi" type="drawable"/><file name="ic_calendar_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_calendar_flat.png" qualifiers="hdpi" type="drawable"/><file name="ic_calendar_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_calendar_flat_pressed.png" qualifiers="hdpi" type="drawable"/><file name="ic_contacts" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_contacts.png" qualifiers="hdpi" type="drawable"/><file name="ic_contacts_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_contacts_flat.png" qualifiers="hdpi" type="drawable"/><file name="ic_contacts_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_contacts_flat_pressed.png" qualifiers="hdpi" type="drawable"/><file name="ic_launcher_bsk" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_launcher_bsk.png" qualifiers="hdpi" type="drawable"/><file name="ic_launcher_bsk_black" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_launcher_bsk_black.png" qualifiers="hdpi" type="drawable"/><file name="ic_launcher_bsk_black_dev" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_launcher_bsk_black_dev.png" qualifiers="hdpi" type="drawable"/><file name="ic_map" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_map.png" qualifiers="hdpi" type="drawable"/><file name="ic_map_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_map_flat.png" qualifiers="hdpi" type="drawable"/><file name="ic_map_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_map_flat_pressed.png" qualifiers="hdpi" type="drawable"/><file name="ic_news" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_news.png" qualifiers="hdpi" type="drawable"/><file name="ic_news_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_news_flat.png" qualifiers="hdpi" type="drawable"/><file name="ic_news_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_news_flat_pressed.png" qualifiers="hdpi" type="drawable"/><file name="ic_schedules" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_schedules.png" qualifiers="hdpi" type="drawable"/><file name="ic_schedules_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_schedules_flat.png" qualifiers="hdpi" type="drawable"/><file name="ic_schedules_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_schedules_flat_pressed.png" qualifiers="hdpi" type="drawable"/><file name="ic_sexistenz" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_sexistenz.png" qualifiers="hdpi" type="drawable"/><file name="ic_sis" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_sis.png" qualifiers="hdpi" type="drawable"/><file name="ic_smoersex" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_smoersex.png" qualifiers="hdpi" type="drawable"/><file name="ic_tab_calendar_selected" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_tab_calendar_selected.png" qualifiers="hdpi" type="drawable"/><file name="ic_tab_calendar_unselected" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_tab_calendar_unselected.png" qualifiers="hdpi" type="drawable"/><file name="ic_tab_contacts_selected" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_tab_contacts_selected.png" qualifiers="hdpi" type="drawable"/><file name="ic_tab_contacts_unselected" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_tab_contacts_unselected.png" qualifiers="hdpi" type="drawable"/><file name="ic_tab_map_selected" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_tab_map_selected.png" qualifiers="hdpi" type="drawable"/><file name="ic_tab_map_unselected" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_tab_map_unselected.png" qualifiers="hdpi" type="drawable"/><file name="ic_tab_news_selected" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_tab_news_selected.png" qualifiers="hdpi" type="drawable"/><file name="ic_tab_news_unselected" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_tab_news_unselected.png" qualifiers="hdpi" type="drawable"/><file name="ic_tab_schedules_selected" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_tab_schedules_selected.png" qualifiers="hdpi" type="drawable"/><file name="ic_tab_schedules_unselected" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\ic_tab_schedules_unselected.png" qualifiers="hdpi" type="drawable"/><file name="marker_a" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_a.png" qualifiers="hdpi" type="drawable"/><file name="marker_atm" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_atm.png" qualifiers="hdpi" type="drawable"/><file name="marker_b" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_b.png" qualifiers="hdpi" type="drawable"/><file name="marker_bsk" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_bsk.png" qualifiers="hdpi" type="drawable"/><file name="marker_c" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_c.png" qualifiers="hdpi" type="drawable"/><file name="marker_d" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_d.png" qualifiers="hdpi" type="drawable"/><file name="marker_e" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_e.png" qualifiers="hdpi" type="drawable"/><file name="marker_f" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_f.png" qualifiers="hdpi" type="drawable"/><file name="marker_g" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_g.png" qualifiers="hdpi" type="drawable"/><file name="marker_h" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_h.png" qualifiers="hdpi" type="drawable"/><file name="marker_j" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_j.png" qualifiers="hdpi" type="drawable"/><file name="marker_kauren" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_kauren.png" qualifiers="hdpi" type="drawable"/><file name="marker_rotundan" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_rotundan.png" qualifiers="hdpi" type="drawable"/><file name="marker_softcenter" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\marker_softcenter.png" qualifiers="hdpi" type="drawable"/><file name="no_image" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-hdpi\no_image.png" qualifiers="hdpi" type="drawable"/><file name="bsk" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-ldpi\bsk.png" qualifiers="ldpi" type="drawable"/><file name="ic_calendar_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-ldpi\ic_calendar_flat.png" qualifiers="ldpi" type="drawable"/><file name="ic_calendar_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-ldpi\ic_calendar_flat_pressed.png" qualifiers="ldpi" type="drawable"/><file name="ic_contacts_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-ldpi\ic_contacts_flat.png" qualifiers="ldpi" type="drawable"/><file name="ic_contacts_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-ldpi\ic_contacts_flat_pressed.png" qualifiers="ldpi" type="drawable"/><file name="ic_map_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-ldpi\ic_map_flat.png" qualifiers="ldpi" type="drawable"/><file name="ic_map_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-ldpi\ic_map_flat_pressed.png" qualifiers="ldpi" type="drawable"/><file name="ic_news_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-ldpi\ic_news_flat.png" qualifiers="ldpi" type="drawable"/><file name="ic_news_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-ldpi\ic_news_flat_pressed.png" qualifiers="ldpi" type="drawable"/><file name="ic_schedules_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-ldpi\ic_schedules_flat.png" qualifiers="ldpi" type="drawable"/><file name="ic_schedules_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-ldpi\ic_schedules_flat_pressed.png" qualifiers="ldpi" type="drawable"/><file name="bsk" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\bsk.png" qualifiers="mdpi" type="drawable"/><file name="icon" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\icon.png" qualifiers="mdpi" type="drawable"/><file name="ic_calendar_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\ic_calendar_flat.png" qualifiers="mdpi" type="drawable"/><file name="ic_calendar_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\ic_calendar_flat_pressed.png" qualifiers="mdpi" type="drawable"/><file name="ic_contacts_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\ic_contacts_flat.png" qualifiers="mdpi" type="drawable"/><file name="ic_contacts_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\ic_contacts_flat_pressed.png" qualifiers="mdpi" type="drawable"/><file name="ic_map_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\ic_map_flat.png" qualifiers="mdpi" type="drawable"/><file name="ic_map_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\ic_map_flat_pressed.png" qualifiers="mdpi" type="drawable"/><file name="ic_news_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\ic_news_flat.png" qualifiers="mdpi" type="drawable"/><file name="ic_news_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\ic_news_flat_pressed.png" qualifiers="mdpi" type="drawable"/><file name="ic_schedules_flat" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\ic_schedules_flat.png" qualifiers="mdpi" type="drawable"/><file name="ic_schedules_flat_pressed" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\drawable-mdpi\ic_schedules_flat_pressed.png" qualifiers="mdpi" type="drawable"/><file name="article" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\article.xml" qualifiers="" type="layout"/><file name="calendar_list_item" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\calendar_list_item.xml" qualifiers="" type="layout"/><file name="contacts_list_item" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\contacts_list_item.xml" qualifiers="" type="layout"/><file name="list_divider" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\list_divider.xml" qualifiers="" type="layout"/><file name="list_weekday_divider" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\list_weekday_divider.xml" qualifiers="" type="layout"/><file name="list_week_divider" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\list_week_divider.xml" qualifiers="" type="layout"/><file name="main" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\main.xml" qualifiers="" type="layout"/><file name="main_empty" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\main_empty.xml" qualifiers="" type="layout"/><file name="map" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\map.xml" qualifiers="" type="layout"/><file name="news_list_item" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\news_list_item.xml" qualifiers="" type="layout"/><file name="rooms" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\rooms.xml" qualifiers="" type="layout"/><file name="schedules_add" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\schedules_add.xml" qualifiers="" type="layout"/><file name="schedules_item" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\schedules_item.xml" qualifiers="" type="layout"/><file name="schedules_main" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\schedules_main.xml" qualifiers="" type="layout"/><file name="schedules_settings" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\schedules_settings.xml" qualifiers="" type="layout"/><file name="schedules_settings_calendar_edit" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\schedules_settings_calendar_edit.xml" qualifiers="" type="layout"/><file name="schedules_settings_item" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout\schedules_settings_item.xml" qualifiers="" type="layout"/><file name="main" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout-land\main.xml" qualifiers="land" type="layout"/><file name="main" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout-small\main.xml" qualifiers="small" type="layout"/><file name="main" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\layout-small-land\main.xml" qualifiers="small-land" type="layout"/><file name="calendar_menu" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\menu\calendar_menu.xml" qualifiers="" type="menu"/><file name="main_menu" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\menu\main_menu.xml" qualifiers="" type="menu"/><file name="news_menu" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\menu\news_menu.xml" qualifiers="" type="menu"/><file name="schedules_menu" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\menu\schedules_menu.xml" qualifiers="" type="menu"/><file name="schedules_settings_menu" path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\menu\schedules_settings_menu.xml" qualifiers="" type="menu"/><file path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\values\color.xml" qualifiers=""><color name="green">#00CC93</color><color name="blue">#899FC5</color><color name="orange">#F89A0E</color><color name="white">#FFF</color><color name="black">#000</color></file><file path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\values\feeds.xml" qualifiers=""><array name="sexistenzcalendarfeed">
+		<item>Sexistenz</item>
+		<item>http://sexistenz.bthstudent.se/calendar.rss</item>
+		<item>http://sexistenz.bthstudent.se</item>
+		<item>rsscal</item>
+		<item>@drawable/ic_sexistenz</item>
+		<item>@color/green</item>
+		<item>UTF-8</item>
+	</array><array name="kaurencalendarfeed">
+		<item>Kårhuset .kauren</item>
+		<item>http://karen.bthstudent.se/meta/ical/khn</item>
+		<item>http://karen.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_smoersex</item>
+		<item>@color/white</item>
+		<item>UTF-8</item>
+	</array><array name="smoersexnewsfeed">
+		<item>.smoersex</item>
+		<item>http://smoersex.bthstudent.se/?feed=rss2</item>
+		<item>http://smoersex.bthstudent.se</item>
+		<item>news</item>
+		<item>@drawable/ic_smoersex</item>
+		<item>@color/white</item>
+		<item>ISO-8859-1</item>
+	</array><array name="siscalendarfeed">
+		<item>SIS</item>
+		<item>http://sis.bthstudent.se/?ical</item>
+		<item>http://sis.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_sis</item>
+		<item>@color/black</item>
+		<item>UTF-8</item>
+	</array><array name="sexistenznewsfeed">
+		<item>Sexistenz</item>
+		<item>http://sexistenz.bthstudent.se/events.rss</item>
+		<item>http://sexistenz.bthstudent.se</item>
+		<item>news</item>
+		<item>@drawable/ic_sexistenz</item>
+		<item>@color/green</item>
+		<item>UTF-8</item>
+	</array><array name="sisnewsfeed">
+		<item>SIS</item>
+		<item>http://sis.bthstudent.se/feed/</item>
+		<item>http://sis.bthstudent.se</item>
+		<item>news</item>
+		<item>@drawable/ic_sis</item>
+		<item>@color/black</item>
+		<item>UTF-8</item>
+	</array><array name="bthstudentnewsfeed">
+		<item>bthstudent.se</item>
+		<item>http://www.bthstudent.se/meta.php?p=rss&amp;t=news&amp;l=swe</item>
+		<item>https://www.bthstudent.se</item>
+		<item>news</item>
+		<item>@drawable/ic_bsk</item>
+		<item>@color/orange</item>
+		<item>ISO-8859-1</item>
+	</array><array name="newsfeeds">
+		<item>@array/bthstudentnewsfeed</item>
+		<item>@array/sexistenznewsfeed</item>
+		<item>@array/sisnewsfeed</item>
+		<item>@array/smoersexnewsfeed</item>
+	</array><array name="calendarfeeds">
+		<item>@array/bthstudentcalendarfeed</item>
+		<item>@array/kaurencalendarfeed</item>
+		<item>@array/rotundancalendarfeed</item>
+		<item>@array/sexistenzcalendarfeed</item>
+		<item>@array/siscalendarfeed</item>
+	</array><array name="bthstudentcalendarfeed">
+		<item>bthstudent.se</item>
+		<item>http://www.bthstudent.se/meta.php?p=ical&amp;t=cal&amp;l=swe</item>
+		<item>https://www.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_bsk</item>
+		<item>@color/orange</item>
+		<item>ISO-8859-1</item>
+	</array><array name="rotundancalendarfeed">
+		<item>Kårhuset Rotundan</item>
+		<item>http://karen.bthstudent.se/meta/ical/kna</item>
+		<item>http://karen.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_bsk</item>
+		<item>@color/blue</item>
+		<item>UTF-8</item>
+	</array></file><file path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\values\maps_points.xml" qualifiers=""><array name="locations">
+		<item>@array/location_bsk</item>
+		<item>@array/location_rotundan</item>
+		<item>@array/location_kauren</item>
+		<item>@array/location_kna_a</item>
+		<item>@array/location_kna_b</item>
+		<item>@array/location_kna_c</item>
+		<item>@array/location_kna_d</item>
+		<item>@array/location_kna_e</item>
+		<item>@array/location_kna_f</item>
+		<item>@array/location_kna_g</item>
+		<item>@array/location_kna_h</item>
+		<item>@array/location_kna_j</item>
+		<item>@array/location_khn_a</item>
+		<item>@array/location_khn_b</item>
+		<item>@array/location_kauren</item>
+		<item>@array/location_softcenter</item>
+		<item>@array/location_kna_er_atm</item>
+		<item>@array/location_kna_seb_atm</item>
+		<item>@array/location_kna_handelsbanken_atm</item>
+		<item>@array/location_kna_swedbank_atm</item>
+		<item>@array/location_khn_nordea_atm</item>
+		<item>@array/location_khn_sparbanken_atm</item>
+	</array><array name="location_kna_j">
+		<item>@drawable/marker_j</item>
+		<item>56182908</item>
+		<item>15590281</item>
+		<item>J-huset</item>
+		<item>Nya byggnaden, multisalen finns här\n\n- Högskoleledningen\n- Förvaltningen (FOR)\n- Sektionen för datavetenskap och kommunikation (COM)\n- Sektionen för ingenjörsvetenskap (ING)\n- Sektionen för management (MAM)\n- Multisalen\n- Bistro J (servering)</item>
+	</array><array name="location_kna_h">
+		<item>@drawable/marker_h</item>
+		<item>56182376</item>
+		<item>15590651</item>
+		<item>H-huset</item>
+		<item>- Biblioteket\n- Sektionen för hälsa (HAL)\n- Sektionen för datavetenskap och kommunikation (COM)</item>
+	</array><array name="location_kna_g">
+		<item>@drawable/marker_g</item>
+		<item>56181908</item>
+		<item>15591273</item>
+		<item>G-huset</item>
+		<item>- Sektionen för datavetenskap och kommunikation (COM)\n- Sektionen för ingenjörsvetenskap (ING)\n- Studerandeavdelningen\n- Studenthälsan</item>
+	</array><array name="location_kna_f">
+		<item>@drawable/marker_f</item>
+		<item>56182018</item>
+		<item>15592368</item>
+		<item>F-huset</item>
+		<item>För närvarande tomt</item>
+	</array><array name="location_kauren">
+		<item>@drawable/marker_kauren</item>
+		<item>56168346</item>
+		<item>14863255</item>
+		<item>.kauren</item>
+		<item>Studentpub</item>
+	</array><array name="location_kna_e">
+		<item>@drawable/marker_e</item>
+		<item>56181851</item>
+		<item>15592775</item>
+		<item>E-huset</item>
+		<item>För närvarande tomt</item>
+	</array><array name="location_kna_handelsbanken_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56162030</item>
+	    <item>15584964</item>
+	    <item>Uttagsautomat</item>
+	    <item>Handelsbanken\nRonnebygatan 47\n371 33 Karlskrona</item>
+	</array><array name="location_khn_nordea_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56171169</item>
+	    <item>14864180</item>
+	    <item>Uttagsautomat</item>
+	    <item>Nordea\nKungsgatan 44\n374 36 Karlshamn</item>
+	</array><array name="location_khn_a">
+		<item>@drawable/marker_a</item>
+		<item>56163721</item>
+		<item>14866589</item>
+		<item>A-huset</item>
+		<item>Etapp 1\n\n- Sektionen för planering och mediedesign\n- Sektionen för datavetenskap och kommunikation (logistik)\n- Bibliotek</item>
+	</array><array name="location_khn_sparbanken_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56170715</item>
+	    <item>14861798</item>
+	    <item>Uttagsautomat</item>
+	    <item>Sparbanken\nDrottninggatan 55\n374 35 Karlshamn</item>
+	</array><array name="location_kna_seb_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56161982</item>
+	    <item>15586112</item>
+	    <item>Uttagsautomat</item>
+	    <item>SEB\nRonnebygatan 43\n371 33 Karlskrona</item>
+	</array><array name="location_khn_b">
+		<item>@drawable/marker_b</item>
+		<item>56164483</item>
+		<item>14865961</item>
+		<item>B-huset</item>
+		<item>Etapp 2\n\n- Sektionen för planering och mediedesign</item>
+	</array><array name="location_bsk">
+		<item>@drawable/marker_bsk</item>
+		<item>56181937</item>
+		<item>15590090</item>
+		<item>Blekinge studentkår</item>
+		<item>Blekinge studentkårs kårhus\n\nÖppettider\n* Måndag-Torsdag: 10:00-14:00\n* Fredag: Stängt</item>
+	</array><array name="location_kna_er_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56182237</item>
+	    <item>15605513</item>
+	    <item>ATM</item>
+	    <item/>
+	</array><array name="location_rotundan">
+		<item>@drawable/marker_rotundan</item>
+		<item>56181770</item>
+		<item>15590002</item>
+		<item>Rotundan</item>
+		<item>Studentpub</item>
+	</array><array name="location_kna_d">
+		<item>@drawable/marker_d</item>
+		<item>56181693</item>
+		<item>15592309</item>
+		<item>D-huset</item>
+		<item>Gamla \"Länken\"\n\n- Enheten för Externa Relationer (EXR), en del av Marknadsavdelningen\n- Studentregion Blekinge\n- Café bistro</item>
+	</array><array name="location_kna_c">
+		<item>@drawable/marker_c</item>
+		<item>56181248</item>
+		<item>15592287</item>
+		<item>C-huset</item>
+		<item>-n Sektionen för planering och mediedesign (DSN)\n- Centre for Spatial Development and Planning (CTUP)\n- Blekinge Yrkeshögskola (BCY)</item>
+	</array><array name="location_kna_swedbank_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56161611</item>
+	    <item>15583655</item>
+	    <item>Uttagsautomat</item>
+	    <item>Swedbank\nBorgmästaregatan 13\n371 31 Karlskrona</item>
+	</array><array name="location_kna_b">
+		<item>@drawable/marker_b</item>
+		<item>56180671</item>
+		<item>15590737</item>
+		<item>B-huset</item>
+		<item>För närvarande tomt\n\n-BTH innovation</item>
+	</array><array name="location_softcenter">
+		<item>@drawable/marker_softcenter</item>
+		<item>56198910</item>
+		<item>15289450</item>
+		<item>Soft Centers lokaler i Ronneby</item>
+		<item/>
+	</array><array name="location_kna_a">
+		<item>@drawable/marker_a</item>
+		<item>56181928</item>
+		<item>15590630</item>
+		<item>A-huset</item>
+		<item>Badtunnan aka Silon aka Röret aka Den där stora runda grejen\n\n- Reception\n- Serviceavdelning</item>
+	</array></file><file path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\values\strings.xml" qualifiers=""><string-array name="calendarsettings">
+		<item>SettingsCalendarBthstudent</item>
+		<item>SettingsKarenKhn</item>
+		<item>SettingsKarenKna</item>
+		<item>SettingsSexistenz</item>
+		<item>SettingsSIS</item>
+	</string-array><string name="schedule_name">Namn (som beskrivning på schemat)</string><string name="location">Placering</string><string name="institution">Sektion</string><string name="room_requested">Sökt rum:</string><string name="schedule_end">Slutdatum</string><string name="vice_president">Vice kårordförande</string><string name="schedules">Scheman</string><string name="cellphone">Mobiltelefon</string><string name="article_button_text">Öppna inlägg (webb)</string><string name="schedules_title">Schema-hjälp</string><string name="homepage">Hemsida</string><string name="name">Namn</string><string name="schedules_settings">Ändra scheman</string><string-array name="calendarfeedtitles">
+		<item>bthstudent.se</item>
+		<item>Kårhuset .kauren</item>
+		<item>Kårhuset Rotundan</item>
+		<item>Sexistenz</item>
+		<item>SIS</item>
+	</string-array><string name="schedule_save">Spara</string><string name="by">Av</string><string name="map_my_location">Min position</string><string name="schedule_start">Startdatum</string><string name="mail">E-post</string><string name="not_specified">[Ej angivet]</string><string name="app_name_dev">BSK-dev</string><string name="fetch_calendar">Hämtar kommande händelser</string><string name="schedules_add_blank_name">Namn-fältet får inte vara tomt!</string><string-array name="newssettings">
+		<item>SettingsNewsBthstudent</item>
+		<item>SettingsNewsSexistenz</item>
+		<item>SettingsNewsSis</item>
+		<item>SettingsNewsSmoersex</item>
+	</string-array><string name="schedules_message">För att kunna använda dig av schema-delen av denna
+		app kan du använda dig av två metoder. Den första utgår ifrån att du
+		känner till kurskoden på schemat du vill lägga till. Den andra utgår
+		ifrån att du inte känner till kurskod eller id för schemat och måste
+		söka upp dessa uppgifter på http://schema.bth.se.\n\nMetod ett (känd
+		kurskod):\n1: I fältet Schema-id, skriv in kurskoden för kursen du
+		vill lägga till, tryck därefter på knappen \"Sök kurs\".\n2: Avvakta
+		tills texten i fältet där du skrivit in kurskoden ändras till en
+		8-siffrig nummerserie (detta kan ta kortare eller längre tid beroende
+		på vilken typ av Internet-anslutning som finns via din enhet).\n3:
+		Skriv in en valfri beskrivning för schemat i Namn-fältet och ange ett
+		tidsintervall du vill övervaka.\n4: Tryck på knappen
+		\"Spara\".\n\nMetod två (okänd kurskod):\nFör att kunna använda dig av
+		detta alternativet måste du åtmninstonde ha några uppgifter om kursen;
+		tex namnet på kursen eller vem som är kursansvarig. Med hjälp
+		av dessa
+		uppgifter måste du ta reda på vilket ID schemat har på
+		http://schema.bth.se.\n1: Surfa in på http://schema.bth.se\n2: Sök upp
+		och titta på schemat för kursen du vill övervaka.\n3: I adressfältet i
+		webbläsaren ska du nu leta upp wv_obj1=[8 siffror]. Detta är det ID
+		som ska matas in i ID-fältet i appen. Det får bara förekomma siffror
+		och de ska vara åtta till antalet. \"Namn\"-fältet är det fritt fram
+		att skriva in vad som helst; vi rekommenderar att det beskriver
+		schemat på något sätt så det är lätt att hålla reda på.
+	</string><string name="acronym">Akronym</string><string name="end_before_start">Slutdatum får inte vara före startdatum!</string><string name="fetch_schedules">Hämtar scheman</string><string name="room_image_error">Något gick ohyggligt snett när vi försökte ladda NÅGON bild för det du efterfrågade. Underrätta app-utvecklaren om det inträffade. (Eller försök igen senare)</string><string name="news">Nyheter</string><string name="settings_news">Ställ in nyhetskällor</string><string name="contacts">Kontakter</string><string-array name="newsfeedtitles">
+		<item>bthstudent.se</item>
+		<item>Sexistenz</item>
+		<item>SIS</item>
+		<item>.smoersex</item>
+	</string-array><string name="schedules_search_course_code">Kurskod</string><string name="settings">Inställningar</string><string name="future">Framtiden......</string><string name="room">Rum</string><string name="schedules_add_only_integers">ID-fältet får bara innehålla siffror! (Glömde du trycka på Sök-knappen?)</string><string name="schedule_id">Kurskod (tex FY1404) eller\nschema-id (8 siffror)</string><string name="schedules_settings_no_data">Lägg till ett schema genom att trycka på meny-knappen och välj \'Lägg till schema\'.</string><string name="phone">Telefon</string><string name="empty_schedule">Du måste lägga till ett schema först!</string><string name="about_title">Blekinge studentkår-appen</string><string name="about">
+		Syftet med Android-applikationen är att tillhandahålla en informationskanal till Blekinge studentkårs verksamhet. Detta i hopp om att öka medvetenheten kring organisationen framförallt bland studenter. Applikationen är dock ej begränsad till enbart studenter utan fritt tillgänglig för vem som helst att använda.\n\n
+
+		Vad man kan göra:\n
+		* Se nyheter (samt hela artiklar) och händelser från ett antal sektioner som är en del av Blekinge studentkår.\n
+		* Av/Prenumerera olika flöden.\n
+		* Av/Prenumerera på scheman i kurser du går (eller inte går om du baqra vill hålla koll).\n
+		* Komma i kontakt med presidiet. (Man kan till och med trycka på telefonnummer, e-postadresser och URL:er!)\n\n
+
+		Observera: Eftersom applikationen hämtar flöden och artiklar från flera olika ställen på internet rekommenderar vi att man använder sig av en snabb internetförbindelse för att minska nedladdningstiderna.\n\n
+
+		Vill du engagera dig i detta projekt? Ta dig till
+		http://sis.bthstudent.se/skunkworks/android_bsk/
+	</string><string name="week">Vecka</string><string name="app_name">Blekinge studentkår</string><string name="fetch_news">Hämtar senaste nytt</string><string name="settings_refresh">Tvinga hämtning</string><string name="fetch_contacts">Hämtar kontakter</string><string name="no_location_support">Vi kan tyvärr inte se om personen är i sitt rum just nu, men våra kodapor jobbar på att se om det går att lösa i framtiden.</string><string name="schedules_add_blank_id">ID-fältet får inte vara tomt!</string><string name="no_data">Ingen data att visa. För att kunna lägga till ett schema, tryck på meny-knappen och välj \'Ändra scheman\' och följ instruktionerna där. Läs även hjälpen!</string><string name="chairman">Kårordförande</string><string name="employment">Tjänst</string><string name="map">Karta</string><string name="schedules_add_schedule">Lägg till schema</string><string name="settings_about">Om appen</string><string name="room_info_download_progress">Hämtar lokalinfo</string><string name="schedules_search_button">Sök kurs</string><string name="calendar">Kalender</string><string name="settings_cal">Ställ in kalenderkällor</string><string name="schedules_help">Hjälp</string><string name="schedules_ok">OK</string></file><file path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\values-en\feeds.xml" qualifiers="en"><array name="smoersexnewsfeed">
+		<item>.smoersex</item>
+		<item>http://smoersex.bthstudent.se/?feed=rss2</item>
+		<item>http://smoersex.bthstudent.se</item>
+		<item>rssnews</item>
+		<item>@drawable/ic_smoersex</item>
+		<item>@color/white</item>
+		<item>ISO-8859-1</item>
+	</array><array name="calendarfeeds">
+		<item>@array/bthstudentcalendarfeed</item>
+		<item>@array/kaurencalendarfeed</item>
+		<item>@array/rotundancalendarfeed</item>
+		<item>@array/sexistenzcalendarfeed</item>
+		<item>@array/siscalendarfeed</item>
+	</array><array name="rotundancalendarfeed">
+		<item>Student pub Rotundan</item>
+		<item>http://karen.bthstudent.se/meta/ical/kna/en</item>
+		<item>http://karen.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_bsk</item>
+		<item>@color/blue</item>
+		<item>UTF-8</item>
+	</array><array name="newsfeeds">
+		<item>@array/bthstudentnewsfeed</item>
+		<item>@array/sexistenznewsfeed</item>
+		<item>@array/sisnewsfeed</item>
+		<item>@array/smoersexnewsfeed</item>
+	</array><array name="sisnewsfeed">
+		<item>SIS</item>
+		<item>http://sis.bthstudent.se/feed/</item>
+		<item>http://sis.bthstudent.se</item>
+		<item>rssnews</item>
+		<item>@drawable/ic_sis</item>
+		<item>@color/black</item>
+		<item>UTF-8</item>
+	</array><array name="kaurencalendarfeed">
+		<item>Student pub .kauren</item>
+		<item>http://karen.bthstudent.se/meta/ical/khn/en</item>
+		<item>http://karen.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_smoersex</item>
+		<item>@color/white</item>
+		<item>UTF-8</item>
+	</array><array name="bthstudentcalendarfeed">
+		<item>bthstudent.se</item>
+		<item>http://www.bthstudent.se/meta.php?p=ical&amp;t=cal&amp;l=eng</item>
+		<item>https://www.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_bsk</item>
+		<item>@color/orange</item>
+		<item>ISO-8859-1</item>
+	</array><array name="siscalendarfeed">
+		<item>SIS</item>
+		<item>http://sis.bthstudent.se/?ical</item>
+		<item>http://sis.bthstudent.se</item>
+		<item>ical</item>
+		<item>@drawable/ic_sis</item>
+		<item>@color/black</item>
+		<item>UTF-8</item>
+	</array><array name="sexistenznewsfeed">
+		<item>Sexistenz</item>
+		<item>http://sexistenz.bthstudent.se/events.rss</item>
+		<item>http://sexistenz.bthstudent.se</item>
+		<item>rssnews</item>
+		<item>@drawable/ic_sexistenz</item>
+		<item>@color/green</item>
+		<item>UTF-8</item>
+	</array><array name="sexistenzcalendarfeed">
+		<item>Sexistenz</item>
+		<item>http://sexistenz.bthstudent.se/calendar.rss</item>
+		<item>http://sexistenz.bthstudent.se</item>
+		<item>rsscal</item>
+		<item>@drawable/ic_sexistenz</item>
+		<item>@color/green</item>
+		<item>UTF-8</item>
+	</array><array name="bthstudentnewsfeed">
+		<item>bthstudent.se</item>
+		<item>http://www.bthstudent.se/meta.php?p=rss&amp;t=news&amp;l=eng</item>
+		<item>https://www.bthstudent.se</item>
+		<item>rssnews</item>
+		<item>@drawable/ic_bsk</item>
+		<item>@color/orange</item>
+		<item>ISO-8859-1</item>
+	</array></file><file path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\values-en\maps_points.xml" qualifiers="en"><array name="location_khn_sparbanken_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56170715</item>
+	    <item>14861798</item>
+	    <item>ATM</item>
+	    <item>Sparbanken\nDrottninggatan 55\n374 35 Karlshamn</item>
+	</array><array name="location_rotundan">
+		<item>@drawable/marker_rotundan</item>
+		<item>56181770</item>
+		<item>15590002</item>
+		<item>Rotundan</item>
+		<item>Student pub</item>
+	</array><array name="location_kna_h">
+		<item>@drawable/marker_h</item>
+		<item>56182376</item>
+		<item>15590651</item>
+		<item>H-building</item>
+		<item>- Library\n- School of health\n- School of computer science and communication</item>
+	</array><array name="location_kna_g">
+		<item>@drawable/marker_g</item>
+		<item>56181908</item>
+		<item>15591273</item>
+		<item>G-building</item>
+		<item>- School of computer science and communication\n- School of engineering\n- Student health</item>
+	</array><array name="location_kna_f">
+		<item>@drawable/marker_f</item>
+		<item>56182018</item>
+		<item>15592368</item>
+		<item>F-building</item>
+		<item>Currently vacated</item>
+	</array><array name="location_kna_e">
+		<item>@drawable/marker_e</item>
+		<item>56181851</item>
+		<item>15592775</item>
+		<item>E-building</item>
+		<item>Currently vacated</item>
+	</array><array name="location_kna_d">
+		<item>@drawable/marker_d</item>
+		<item>56181693</item>
+		<item>15592309</item>
+		<item>D-building</item>
+		<item>Formerly \"The link\"\n\n- Student center\n- Café bistro</item>
+	</array><array name="location_kna_c">
+		<item>@drawable/marker_c</item>
+		<item>56181248</item>
+		<item>15592287</item>
+		<item>C-building</item>
+		<item>- School of planning and media design\n- Centre for spatial development and planning</item>
+	</array><array name="location_kna_b">
+		<item>@drawable/marker_b</item>
+		<item>56180671</item>
+		<item>15590737</item>
+		<item>B-building</item>
+		<item>Currently vacated\n\n- BTH Innovation</item>
+	</array><array name="location_kna_a">
+		<item>@drawable/marker_a</item>
+		<item>56181928</item>
+		<item>15590630</item>
+		<item>A-building</item>
+		<item>Aka the barrel hot tub aka the cylinder aka the pipe\n\n- Information center\n- Reception\n- Service department (in the basement)</item>
+	</array><array name="location_kna_er_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56182237</item>
+	    <item>15605513</item>
+	    <item>ATM</item>
+	    <item>Swedbank\nLasarettsvägen\n371 41 Karlskrona</item>
+	</array><array name="location_bsk">
+		<item>@drawable/marker_bsk</item>
+		<item>56181937</item>
+		<item>15590090</item>
+		<item>Blekinge student union</item>
+		<item>Blekinge student union office\n\nOpening hours\n* Monday-Thursday: 10:00-14:00.\n* Friday: Closed</item>
+	</array><array name="location_kna_seb_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56161982</item>
+	    <item>15586112</item>
+	    <item>ATM</item>
+	    <item>SEB\nRonnebygatan 43\n371 33 Karlskrona</item>
+	</array><array name="location_kna_swedbank_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56161611</item>
+	    <item>15583655</item>
+	    <item>ATM</item>
+	    <item>Swedbank\nBorgmästaregatan 13\n371 31 Karlskrona</item>
+	</array><array name="location_kna_j">
+		<item>@drawable/marker_j</item>
+		<item>56182908</item>
+		<item>15590281</item>
+		<item>J-building</item>
+		<item>The "new building".\n\n- The multi-hall.\n- The Café J bistro.\n- Management of higher education\n- Management\n- School of computer science and communication\n- School of engineering\n- School of management</item>
+	</array><array name="locations">
+		<item>@array/location_bsk</item>
+		<item>@array/location_rotundan</item>
+		<item>@array/location_kauren</item>
+		<item>@array/location_kna_a</item>
+		<item>@array/location_kna_b</item>
+		<item>@array/location_kna_c</item>
+		<item>@array/location_kna_d</item>
+		<item>@array/location_kna_e</item>
+		<item>@array/location_kna_f</item>
+		<item>@array/location_kna_g</item>
+		<item>@array/location_kna_h</item>
+		<item>@array/location_kna_j</item>
+		<item>@array/location_khn_a</item>
+		<item>@array/location_khn_b</item>
+		<item>@array/location_kauren</item>
+		<item>@array/location_softcenter</item>
+		<item>@array/location_kna_er_atm</item>
+		<item>@array/location_kna_seb_atm</item>
+		<item>@array/location_kna_handelsbanken_atm</item>
+		<item>@array/location_kna_swedbank_atm</item>
+		<item>@array/location_khn_nordea_atm</item>
+		<item>@array/location_khn_sparbanken_atm</item>
+	</array><array name="location_khn_b">
+		<item>@drawable/marker_b</item>
+		<item>56164483</item>
+		<item>14865961</item>
+		<item>B-building</item>
+		<item>- School of planning and media design</item>
+	</array><array name="location_kauren">
+		<item>@drawable/marker_kauren</item>
+		<item>56168346</item>
+		<item>14863255</item>
+		<item>.kauren</item>
+		<item>Student pub</item>
+	</array><array name="location_softcenter">
+		<item>@drawable/marker_softcenter</item>
+		<item>56198910</item>
+		<item>15289450</item>
+		<item>Soft Center</item>
+		<item>- Old premises of campus Ronneby</item>
+	</array><array name="location_kna_handelsbanken_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56162030</item>
+	    <item>15584964</item>
+	    <item>ATM</item>
+	    <item>Handelsbanken\nRonnebygatan 47\n371 33 Karlskrona</item>
+	</array><array name="location_khn_nordea_atm">
+	    <item>@drawable/marker_atm</item>
+	    <item>56171169</item>
+	    <item>14864180</item>
+	    <item>ATM</item>
+	    <item>Nordea\nKungsgatan 44\n374 36 Karlshamn</item>
+	</array><array name="location_khn_a">
+		<item>@drawable/marker_a</item>
+		<item>56163721</item>
+		<item>14866589</item>
+		<item>A-building</item>
+		<item>- School of planning and media design\n- School of computer science and communication (logistics)\n- Library</item>
+	</array></file><file path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\main\res\values-en\strings.xml" qualifiers="en"><string name="settings">Settings</string><string name="contacts">Contacts</string><string name="article_button_text">Open article (web)</string><string name="no_location_support">Unfortunately we can\'t determine if the person is in his office at the moment, however our code monkeys are trying to figure out a future solution to this.</string><string name="schedules_message">In order to use the schedule section of this app, you can choose between two methods. The first one assumes you know the course code of the schedule you would like to add. The other method assumes you don\'t know the course code or the id for the schedule and have to make a search for these values on http://schema.bth.se.\n\nMethod one (known course code):\n1: In the field \"Schedule id\", type the course code for the course you would like to add, then tap the button \"Search for course\".\n2: Wait until the text in the field where you wrote the course code changes to an 8-digit number (this can take longer or shorter time depending on what type of connection to the Internet is available through your device).\n3: Type a descriptive name for the schedule in the Name-field and set a time interval that you would like to monitor.\n4: Tap the button \"Save\".\n\nMethod two (unknown course code):\nIn order to be able to use this alternative you need to acquire the ID of the schedule, taken from http://schema.bth.se.\nYou need to know the course code or the course name that you would like to subscribe to, in order to find it on the schedule-page.\n\nDo the following:\n1: Browse to http://schema.bth.se\n2: Search for and look at the schedule for course you would like to subscribe to.\n3: In the address field in the browser, look for wv_obj1=[8 numbers]. This is the ID you need to enter in the ID-field of the app. Only numbers are allowed and they shall be eight to the number. You can enter whatever you want in the \"Name\"-field; we recommend that it describes the schedule in one way or another.</string><string name="settings_refresh">Force refresh</string><string name="settings_about">About the app</string><string name="schedules_add_schedule">Add schedule</string><string name="schedules_add_blank_id">The ID field must not be empty!</string><string name="schedules_settings">Edit schedules</string><string name="institution">Institution</string><string-array name="calendarfeedtitles">
+		<item>Student union</item>
+		<item>Student pub .kauren</item>
+		<item>Student pub Rotundan</item>
+		<item>Sexistenz</item>
+		<item>SIS</item>
+	</string-array><string name="fetch_news">Fetching latest news</string><string name="name">Name</string><string name="schedules_help">Help</string><string name="app_name_dev">BSU-dev</string><string name="schedule_name">Name (to describe the schedule)</string><string name="schedules_search_course_code">Course code</string><string name="schedules_search_button">Search for course</string><string name="schedule_end">End date</string><string name="room">Room</string><string name="map_my_location">My location</string><string name="week">Week</string><string name="room_requested">Requested room:</string><string name="about_title">Blekinge student union app</string><string name="phone">Phone number</string><string name="cellphone">Cell phone number</string><string name="fetch_contacts">Fetching contact list</string><string name="no_data">No data to display. In order to add a schedule, tap the menu-button and then select \'Edit schedules\' and follow the instructions on that view. Also, read the help!</string><string name="schedules_title">Schedule help</string><string name="calendar">Calendar</string><string name="location">Location</string><string name="fetch_schedules">Fetching schedules list</string><string name="homepage">Homepage</string><string name="schedules_settings_no_data">Add a schedule by pressing the menu button and select \'Add schedule\'.</string><string name="mail">E-mail</string><string-array name="newsfeedtitles">
+		<item>Student union</item>
+		<item>Sexistenz</item>
+		<item>SIS</item>
+		<item>.smoersex</item>
+	</string-array><string name="fetch_calendar">Fetching current events</string><string name="room_image_error">Something went horribly wrong when trying to load ANY image for what you requested. Be sure to notify the app-author of this problem. (Or try again later.)</string><string name="employment">Employment</string><string name="vice_president">Vice president</string><string name="news">News</string><string name="schedule_save">Save</string><string name="settings_cal">Calendar feed subscriptions</string><string name="future">Future......</string><string name="schedules_add_only_integers">The ID field must only contain numbers! (Did you forget to press the Search-button?)</string><string name="empty_schedule">You have to add a schedule first!</string><string name="by">By</string><string name="schedules_ok">Schedule added</string><string name="end_before_start">End date can not be before start date!</string><string name="settings_news">News feed subscriptions</string><string name="schedule_id">Course code (ie. FY1404) or\nschedule id (8 numbers)</string><string name="schedules_add_blank_name">The Name-field must not be empty!</string><string name="room_info_download_progress">Fetching premise info</string><string name="acronym">Acronym</string><string name="chairman">Chairman</string><string name="app_name">Blekinge student union</string><string name="schedule_start">Start date</string><string name="about">
+		Blekinge student union Android application\n\n
+
+		The purpose of the Android app is to provide an information channel to the operation of Blekinge student union. This in hope of raising awareness about the organisation foremost among students, but is freely available for anyone to use.\n\n
+
+		What you can do:\n
+		* View news (as well as the full stories behind them) and events from a number of sections that are part of Blekinge student union.\n
+		* Un/Subscribe different feeds.\n
+		* Un/Subscribe different schedules of courses you attend to (or others if you\'re just curious).\n
+		* Get in touch with the presiding body of the student union. (There are even tappable phone numbers, e-mail addresses and URL:s!)\n\n
+
+		Notice: This application fetches feeds and articles from several places around the internet. We recommend that you use as fast a connection as possible to the internet to minimize the download times.\n\n
+
+		Want to get involved in this project? Head over to
+		http://sis.bthstudent.se/skunkworks/android_bsk/
+	</string><string name="not_specified">[None provided]</string><string name="schedules">Schedules</string><string name="map">Map</string></file></source><source path="C:\Users\IamSoGay\Downloads\bsk.git\app\build\generated\res\rs\debug"/><source path="C:\Users\IamSoGay\Downloads\bsk.git\app\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\IamSoGay\Downloads\bsk.git\app\src\debug\res"/></dataSet><mergedItems/></merger>

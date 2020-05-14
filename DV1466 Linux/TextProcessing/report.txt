@@ -1,0 +1,871 @@
+1a  6  mkdir /etc/pm/power.d/00-brightness
+1a  7  mkdir /etc/pm/power.d/
+1a  8  vim /etc/pm/power.d/00-brightness
+1a  9  systemctl enable --now upower
+1a 10  systemctl enable --now mariadb
+1a 11  time
+1a 12  pacs batt
+1b cat histcopy.txt | sed '6,12!d'
+2a 1791  cat histcopy.txt | grep "^[6-12]"
+2a 1792  cat histcopy.txt | grep "^[6-9]"
+2a 1793  cat histcopy.txt | egrep "^[6-10]"
+2a 1794  cat histcopy.txt | sed '6,12!d'
+2a 1795  cat histcopy.txt | tail -n 7
+2a 1796  cat histcopy.txt
+2a 1797  history 7
+2b cat histcopy.txt | tail -n 7
+3a  1024  ls .git
+3a  1104  pulseaudio
+3a  1106  find . -type l -print | xargs ls -ld | awk '{print $10}'\
+3a  1108  find . -type l -print | xargs ls -ld
+3a  1114  find . -mtime +10 -size +50000c -exec ls -l {} \;\
+3a  1116  find . -mtime +10 -size +5000000c -exec ls -l {} \;\
+3a  1118  find . -mtime -10 -size +5000000c -exec ls -l {} \;\
+3a  1189  ls file.txt
+3a  1379  ls -a
+3a  1404  ls | wc 
+3a  1405  ls | wc -w
+3a  1406  ls -d | wc -w
+3a  1407  ls ./doesntQuiteFit/mixed 
+3a  1408  ls ./doesntQuiteFit/mixed | wc -w
+3a  1410  ls -d ./doesntQuiteFit/mixed/mixed | wc -w\
+3a  1411  ls -d ./doesntQuiteFit/mixed/mixed/ | wc -w\
+3a  1412  ls  ./doesntQuiteFit/mixed/mixed/  \
+3a  1413  ls -d ./doesntQuiteFit/mixed/mixed/  \
+3a  1414  ls -d ./doesntQuiteFit/mixed/mixed/*/  | wc 0w\
+3a  1421  ls ./doesntQuiteFit/mixed/mixed
+3a  1422  ls -d ./doesntQuiteFit/mixed/mixed/*/  | wc -w\
+3a  1423  ls ./doesntQuiteFit/mixed/ | wc -wl
+3a  1424  ls -d ./doesntQuiteFit/mixed/mixed | wc -w
+3a  1425  ls -d ./doesntQuiteFit/mixed/mixed 
+3a  1426  ls  ./doesntQuiteFit/mixed/*
+3a  1427  ls  ./doesntQuiteFit/mixed/* | wc -l
+3a  1428  ls -l  ./doesntQuiteFit/mixed/* | wc -l
+3a  1429  ls -l  ./doesntQuiteFit/mixed/* 
+3a  1430  ls   ./doesntQuiteFit/mixed/* 
+3a  1432  ls   ./doesntQuiteFit/mixed/
+3a  1434  ls   ./doesntQuiteFit/mixed/ | wc -w
+3a  1435  ls   ./doesntQuiteFit/mixed/ 
+3a  1436  ls   ./doesntQuiteFit/mixed
+3a  1437  ls -l
+3a  1438  ls 
+3a  1439  ls -d ./doesntQuiteFit/mixed/mixed/*/ | wc -l
+3a  1440  ls -d ./doesntQuiteFit/mixed/mixed/*/ | wc -w
+3a  1441  ls -d ./doesntQuiteFit/mixed/mixed/*/ 
+3a  1446  ls -p | grep "/" | wc -l
+3a  1447  ls -p | grep "/" 
+3a  1448  ls  | grep "/" 
+3a  1542  find ./elsewhere/lockheed -maxdepth 1 -type f  -ls 
+3a  1543  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls 
+3a  1544  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk 'print{$7}\
+3a  1546  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk 'print{$7}'
+3a  1547  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk 'print{ $7 }'
+3a  1548  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk '{print{ $7 }}'
+3a  1549  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk '{print $7 }'
+3a  1550  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk '{sum += $1} END {print sum}'
+3a  1551  find ./doesntQuiteFit/lockheed -maxdepth 1 -type f  -ls | awk '{sum += $7} END {print sum}'
+3a  1552  find ./doesntQuiteFit/lockheed   -ls | awk '{sum += $7} END {print sum}'
+3a  1553  find ./doesntQuiteFit/lockheed -ls
+3a  1554  find ./doesntQuiteFit/lockheed  -type f  -ls | awk '{sum += $7} END {print sum}'
+3a  1594  history ls
+3a  1598  ls
+3a  1603  pulseaudio -k
+3a  1604  pulseaudio 
+3a  1633  grep blah <(ls -l)
+3a  1634  grep file <(ls -l)
+3a  1727  history | grep ls
+3b cat histcopy.txt | grep ls
+4a  1  sudo pkill X
+4a  2  cat /var/log/Xorg.0.log
+4a  3  cat /var/log/Xorg.0.log | grep EE
+4a  4  install compton
+4a  5  compton -b -c --backend glx --vsync opengl-swc
+4a  6  mkdir /etc/pm/power.d/00-brightness
+4a  7  mkdir /etc/pm/power.d/
+4a  8  vim /etc/pm/power.d/00-brightness
+4b cat histcopy.txt | head -n 8
+5a  459299
+5a  237275
+5a  459301
+5a  11650
+5a  237274
+5b  cat netcopy.txt | awk '{print $7,$8}'| grep root | awk '{print $2}'| grep -v "^0" | uniq 
+6a 09
+6a 10
+6a 11
+6a 12
+6b  cat pscopy.txt  | awk '{print $9}' | grep "^[0-9]" | cut -d ':' -f1 | uniq 
+7a  .
+7b  cat dircopy.txt | tail -n +2 | awk '{print $2,$9}' | sort -nr | head -n 1 | awk '{print $2}'
+8a  tcp        0      60 bed.net:40828           lb1.openmailbox.org:imaps ESTABLISHED freak      402941    
+8b  cat netcopy.txt | tail -n +3 | sort -nrk3 | head -n 1 
+8c  actually faked some data in the SEND-Q column to be able to test this
+9a 1
+9a 2
+9a 4
+9a 6
+9a 7
+9a 8
+9a 9
+9a 10
+9a 11
+9a 12
+9a 13
+9a 14
+9a 15
+9a 16
+9a 17
+9a 19
+9a 20
+9a 21
+9a 22
+9a 23
+9a 25
+9a 26
+9a 27
+9a 28
+9a 29
+9a 31
+9a 32
+9a 33
+9a 37
+9a 38
+9a 39
+9a 40
+9a 41
+9a 42
+9a 43
+9a 44
+9a 45
+9a 46
+9a 47
+9a 48
+9a 50
+9a 88
+9a 90
+9a 134
+9a 137
+9a 164
+9a 195
+9a 196
+9a 197
+9a 198
+9a 199
+9a 200
+9a 201
+9a 202
+9a 210
+9a 211
+9a 213
+9a 235
+9a 237
+9a 240
+9a 241
+9a 243
+9a 244
+9a 245
+9a 263
+9a 264
+9a 287
+9a 304
+9a 336
+9a 337
+9a 338
+9a 339
+9a 340
+9a 345
+9a 348
+9a 349
+9a 352
+9a 407
+9a 408
+9a 411
+9a 424
+9a 425
+9a 426
+9a 454
+9a 472
+9a 479
+9a 487
+9a 522
+9a 625
+9a 1442
+9a 1564
+9a 1872
+9a 2062
+9a 2135
+9a 2255
+9a 2325
+9a 2326
+9a 2898
+9a 8522
+9a 9926
+9a 11082
+9a 11083
+9a 12052
+9a 15053
+9a 17113
+9a 17337
+9a 18349
+9a 18351
+9a 18379
+9a 19395
+9a 20411
+9a 20416
+9a 20437
+9a 20441
+9a 22150
+9a 23628
+9a 24356
+9a 25494
+9a 25882
+9a 26802
+9a 26879
+9a 27031
+9a 27040
+9a 27050
+9a 27063
+9a 27781
+9a 27811
+9a 27845
+9a 27849
+9a 27904
+9a 27908
+9a 28599
+9a 28600
+9a 28611
+10a .Xauthority
+10b cat dircopy.txt | tail -n +2 | sort -nrk2 | tail -n 1 | awk '{print $9}'
+10c  if the directory listing have multiple records with the same.
+11a <
+11a >
+11a -
+11a !
+11a //'
+11a .
+11a ./*
+11a '
+11a '^/'\
+11a '/'
+11a '/'\
+11a '/\//
+11a '\
+11a "
+11a "/"
+11a )
+11a {
+11a {}
+11a }
+11a }'
+11a }}'
+11a $
+11a $!
+11a $?
+11a $$
+11a *
+11a */
+11a \
+11a &
+11a +
+11a +=
+11a 0
+11a "^0"
+11a 0"
+11a 0""
+11a 0w\
+11a 1
+11a '1'
+11a $1
+11a $!1
+11a $1,
+11a $1}
+11a $1}'
+11a $1}\
+11a 1\
+11a -10
+11a $1==0
+11a $10}'\
+11a +10
+11a %10.0f
+11a %10.2f\n",
+11a $11
+11a 1,1
+11a 1+1
+11a 12
+11a 1234
+11a 1235
+11a $1,$2,gsub(/,"")}'\
+11a $1,$2,gsub(/word/,"/")}'\
+11a $1,$2,gsub(/word/,"")}'\
+11a $1=5
+11a 157
+11a 18
+11a //192.168.0.252/Openshare/
+11a 192.168.0.254
+11a 19597
+11a "1a
+11a \1/g'\
+11a 1/g'\
+11a $1,gsub("/","/")}'\
+11a $1,gsub(/word/,"/")}'\
+11a 1-N\
+11a 2
+11a $2
+11a $2}'
+11a +2
+11a 2017_cw1_9512295099_0.tgz
+11a '20,25!d'
+11a 2+2
+11a '23,25!d'
+11a '23,25!D'
+11a '2*6'
+11a 2*6
+11a 2+6
+11a "2a
+11a 3
+11a -3
+11a $3,
+11a '3*3'
+11a "3*3"
+11a 3*3
+11a 3+3
+11a "3*4"
+11a "3*5"
+11a "3*6"
+11a 376
+11a 4
+11a $4}'
+11a 5
+11a -5%
+11a '^5'
+11a "^5"\
+11a +5000000c
+11a +50000c
+11a "5*2"
+11a 5*3'
+11a "5*5"
+11a 5+5
+11a 6
+11a '^6'
+11a '^6*'
+11a "^6"
+11a "^6"\
+11a "^[6-10]"
+11a '^[6-12]
+11a "^[6-12]"
+11a 6,12
+11a '6,12!d'
+11a '6,12!d')"
+11a '6,12\!d'
+11a '6,12d'
+11a "6*5"
+11a "^[6-9]"
+11a 7
+11a -7')
+11a $7
+11a $7}
+11a 7)"
+11a 755
+11a $7,$8}'
+11a 7/g'
+11a 7)/(history)\
+11a 7)/history\
+11a 8
+11a $8}'
+11a 8}'
+11a -a
+11a (a
+11a a,
+11a a)
+11a a),
+11a -A
+11a {a[$1]++
+11a adcd
+11a adcnfd
+11a adcns
+11a add
+11a a[i],
+11a -alne
+11a android-7.1-pine-a64-tv-v0.3.10-r66.img.gz
+11a arr)
+11a arr[a]}'
+11a artback.dynu.net
+11a aux
+11a avg"}
+11a awk
+11a -b
+11a -B
+11a b2
+11a --backend
+11a ~/.bash_history
+11a .bashrc
+11a batt
+11a 'BEGIN{{a[$1]++
+11a 'BEGIN{FS=":"
+11a 'BEGIN{x{a[$1]++
+11a b[i],
+11a b[i]/a[i])}
+11a blah
+11a block
+11a bs
+11a bsh
+11a bth.se
+11a -c
+11a -c21-24
+11a -c7-8
+11a -c8
+11a caps:shift
+11a caps:shift1
+11a cat
+11a "cat
+11a changeinput
+11a "changeinput
+11a changeinput)
+11a chief
+11a cifs
+11a -classpath
+11a clipboard
+11a clipboard\
+11a Code/DV1466/TextProcessing/
+11a ./Code/foodDB/jooq
+11a Code/foodDB/jooq
+11a Code/Schoolwork/DV1466/webspider
+11a Code/treasurehunt/sandbox
+11a Code/unix2
+11a Code/webspider
+11a commit
+11a commit"
+11a compton
+11a .config
+11a .config/autorandr
+11a /.config/autorandr/postswitch
+11a "continent
+11a contre\
+11a count
+11a count++
+11a '{///count($0)"\t"$0}'
+11a '{//count($0)"\t"$0}'
+11a cow
+11a cow\
+11a cow1
+11a -cp
+11a curler
+11a current
+11a d
+11a -d
+11a default
+11a @DEFAULT_SINK@
+11a $DEFAULTSINK
+11a dnsmasq
+11a dnsmasqw
+11a ./doesntQuiteFit
+11a ./doesntQuiteFit/
+11a ./doesntQuiteFit/lockheed
+11a ./doesntQuiteFit/mixed
+11a ./doesntQuiteFit/mixed/
+11a ./doesntQuiteFit/mixed/*
+11a ./doesntQuiteFit/mixed/celestialmotion/ballofrock/mars
+11a /doesntQuiteFit/mixed/mixed
+11a ./doesntQuiteFit/mixed/mixed
+11a ./doesntQuiteFit/mixed/mixed/
+11a ./doesntQuiteFit/mixed/mixed/*
+11a ./doesntQuiteFit/mixed/mixed/*/
+11a domain.txt
+11a -e
+11a echo
+11a "echo
+11a $EDITOR
+11a $EDITOR=vim
+11a $EDITOR='vim'
+11a EDITOR='vim'
+11a EE
+11a eho
+11a ./elsewhere/lockheed
+11a -empty
+11a enable
+11a END
+11a etcehr
+11a /etc/fuse.conf
+11a /etc/group
+11a etcher
+11a /etc/hosts
+11a /etc/hosts2
+11a /etc/pm/power.d/
+11a /etc/pm/power.d/00-brightness
+11a /etc/resolv.conf
+11a -exec
+11a f
+11a -f
+11a f\
+11a -F
+11a -F,
+11a -F\"
+11a $F[1]'
+11a -f8
+11a file
+11a file.txt
+11a $(find
+11a firefox
+11a "*firstclue"
+11a "*firstclue*"
+11a "*firstclue*")
+11a "*firstclue*"\
+11a "firstclue"
+11a freak
+11a fuse
+11a -/g'
+11a //g'
+11a -G
+11a gc
+11a git
+11a .git
+11a git@bitbucket.org:janneDev/recipeclient.git
+11a glx
+11a "*god*"
+11a go-mtpfs
+11a go-mtpfs-git
+11a grep
+11a gsub("/","/")}'
+11a gsub("/","/"),$1}'
+11a gsub("/","/"),$1}'\
+11a gvfs-mtp
+11a -h
+11a "h"
+11a "*hapiness*"
+11a "hdmi_sound_toggle.sh"
+11a "hdmi_sound_toggle.sh"\
+11a hdmi_sound_toggle.sh
+11a headphones
+11a headphones/__init__.py
+11a HEAdphones/__init__.py
+11a headphones.py
+11a Headphones.py
+11a hero
+11a histcopy.txt
+11a history
+11a .history
+11a $(history
+11a .hosts
+11a href="\(.*\)">.*</a>:\1:'
+11a http
+11a '^http'
+11a '^http'\
+11a http://www.mechani.se/static/Teaching/dv1445/
+11a -HUP
+11a -i
+11a i,
+11a -I
+11a in
+11a index
+11a init
+11a "initial
+11a -Iq
+11a iwl
+11a "*.java"
+11a jooq
+11a jooq-3.9.5.jar
+11a jooq-3.9.5.jar:jooq-meta-3.9.5.jar:jooq-codegen-3.9.5.jar:mysql.jar:./org.jooq.util.GenerationTool
+11a jooq-codegen-2.6.4.jar
+11a jooq-codegen-3.9.5.jar
+11a /jooq-config.xml
+11a ./jooq-config.xml
+11a .jooq-config.xml
+11a jooq-config.xml
+11a jooq.jar:jooq-codegen.jar:mysql.jar
+11a jooq.jar:jooq-codegen.jar:mysql.jar:
+11a jooq.jar::jooq-codegen.jar:mysql.jar:./org.jooq.util.GenerationTool
+11a jooq.jar:jooq-codegen.jar:mysql.jar:./org.jooq.util.GenerationTool
+11a jooq.jar:jooq-meta.jar:jooq-codegen.jar:mysql.jar:
+11a jooq.jar:jooq-meta.jar:jooq-codegen.jar:mysql.jar:./org.jooq.util.GenerationTool
+11a jooq.jar:jooq-meta.jar:jooq-codegen.jar:mysql.jar:.org.jooq.util.GenerationTool
+11a jooq-meta-3.9.4.jar
+11a jooq-meta-3.9.5.jar
+11a -k
+11a -k\
+11a kauth
+11a kconfigwidgets
+11a kiconthemes
+11a kio
+11a kpmcore
+11a kwallet
+11a l
+11a -l
+11a -l)
+11a -l\
+11a -ld
+11a "*leathal*"
+11a "*leathalweapon*"
+11a length($0)"\t"$0}'
+11a "*lethalweapon*"
+11a "*lethalweapon*")
+11a libva
+11a linux-pine64-0.6.2.tar.xz
+11a list
+11a list-clients
+11a list-sink-inputs
+11a list-sinks
+11a list-timers
+11a list.txt
+11a load-module
+11a ls
+11a <(ls
+11a -ls
+11a -m
+11a man
+11a mariadb
+11a markdown-reader
+11a "*mars*"
+11a "*mars*")
+11a master
+11a -maxdepth
+11a mechani
+11a mechani.se
+11a /mnt
+11a /mnt/nas
+11a module-switch-on-connect
+11a module-switch-on-connect\
+11a "*moon")
+11a "*moon")\
+11a "*moon"\
+11a "*moon$"\
+11a "*moon*"\
+11a "moon"\
+11a "moon$"\
+11a mount
+11a move-sink-input
+11a -mtime
+11a mtp
+11a mtpfs
+11a mv
+11a mysql-connector-java-5.1.43-bin.jar
+11a mysql.jar
+11a -n
+11a '\n'
+11a -N\
+11a -name
+11a netcopy.txt
+11a netcoy.txt
+11a NetworkManager
+11a -not
+11a notmuch
+11a --now
+11a NR!=1
+11a 'NR>1{arr[$1]++}END{for
+11a -o
+11a -o\
+11a ./oesntQuiteFit
+11a opengl-swc
+11a -option
+11a .org.jooq.util.GenerationToo/jooq-config.xml
+11a ./org.jooq.util.GenerationTool
+11a .org.jooq.util.GenerationTool
+11a origin
+11a -p
+11a pactl
+11a partitionmanager
+11a phone.txt
+11a pkill
+11a polkil-qt5
+11a polkit-qt5
+11a pow
+11a print
+11a -print
+11a 'print
+11a '{print
+11a '{print{
+11a 'print{
+11a {print
+11a 'print{$7}'
+11a 'print{$7}\
+11a printf("%s
+11a push
+11a -q
+11a -Q
+11a -r
+11a RECIPEDB
+11a redshift
+11a remote
+11a report.txt
+11a restart
+11a -rf
+11a rfkill
+11a root
+11a "root"
+11a root@artback.dynu.net
+11a -s
+11a 's/
+11a 's/[^\/]/
+11a 's#-##'
+11a 's/([^\/])/\1/g'\
+11a 's/([^\/])/1/g'\
+11a 's/[^\/]/\1/g'\
+11a 's/[^\/]/1/g'\
+11a "s/\('\([^/]\+\)'\)/\1\n\2/g"\
+11a "s/\('\([^/]\+\)'\)/\1\nparam2=\2/g"\
+11a 's/6,12\!d'
+11a 's:<a
+11a 's#</a></li>##'
+11a sandbox
+11a sandbox/doesntQuiteFit/mixed/mixed
+11a 's/\(bth.se\)/\1
+11a 'scale=2
+11a scalpel-git
+11a 's/)[[:digit:]]\{3\}/1-/g'
+11a 's/^[[:digit:]]\{3\}/(&-)/g'
+11a 's/^[[:digit:]]\{3\}/(&)/g'
+11a 's/)[[:digit:]]\{3\}/(&-)/g'
+11a 's/)[[:digit:]]\{3\}/&-/g'
+11a 's/^[[:digit:]]\{3\}/(&)/g'-e
+11a 's/\($domain\)/\1
+11a 's/\($domain\)/\1/g'
+11a 's/\($domain\)/\/g'
+11a 's/\($domain\)/\*/g'
+11a 's/\($domain\)/\&/g'
+11a sed
+11a -selection
+11a set
+11a set-default-sink
+11a set-sink-volume
+11a Seul\
+11a 's/?.*//g'
+11a 's/([^\/])//g'\
+11a 's/[^\/]//g'\
+11a 's/[^\/]/&/g'\
+11a "s/\('[^/]'\)//g"\
+11a "s/\('\([^/]\+\)'\)//g"\
+11a '$SHELL'
+11a "$SHELL"
+11a $SHELL
+11a 's/history\
+11a short
+11a 's/.*href="\([^"]*\).*/\1/p'
+11a 's/.*href=*/\1/p'
+11a 's/.*href=*\1/p'
+11a 's/*href=*/\1/p'
+11a 's/.*href=*/p'
+11a 's/index://'
+11a 's/index:/&/'
+11a 's/index:\
+11a 's/index//'
+11a 's/index/'
+11a 's/index://d'
+11a 's/index//d'
+11a 's/index\://d'
+11a sink-inputs
+11a sinks
+11a -size
+11a 's/\(mechani.se\)/\1
+11a 's/\(mechani.se\)\1
+11a 's/\(mechani.se\)/\1-/g'
+11a sort
+11a speed-test
+11a startUpClean
+11a su
+11a "su
+11a $sudo
+11a '{sum
+11a sum}'
+11a 's/www//'
+11a 's/www.//'
+11a 's/\(www.*....\)/\1
+11a 's/\(www.*.*\)/\1
+11a 's/\(www.*.com\)/\1
+11a 's/www.//d'
+11a 's/www\.//d'
+11a 's/\(www.*.se\)/\1
+11a 's/www/w/'
+11a -t
+11a tail
+11a tem
+11a temp
+11a temp.txt
+11a test
+11a .test
+11a test23
+11a -tf
+11a total
+11a tous.avi
+11a tran
+11a trans
+11a transmission-remote-gui-bin
+11a transmisson
+11a transmisson-remote-gtk
+11a tv
+11a -tWae
+11a -Twae
+11a -type
+11a typora
+11a -u
+11a umount
+11a unblock
+11a upower
+11a url_file
+11a user=admin,uid=1000,gid=10,password=MtvYPpc9zaaTwUZ,workgroup=WORKGROUP,ip=192.168.0.252,vers=1.0
+11a user=admin,uid=1000,gid=10,password=MtvYPpc9zaaTwUZ,workgroup=WORKGROUP,ip=$server,vers=1.0
+11a usermod
+11a /usr/local/bin/hdmi.sh
+11a /usr/local/sbin/nas
+11a -v
+11a val
+11a /var/log/Xorg.0.log
+11a varname
+11a $varname
+11a vim
+11a --vsync
+11a -w
+11a -w\
+11a wc
+11a "*weapon*"
+11a $(where
+11a wifi
+11a -wl
+11a www.bth.se
+11a www.duckduckgo.com
+11a www.mechani.se
+11a www.mechani.se/rtos/public/index.html
+11a www.mechani.se/unix/private/index.html
+11a www.mechani.se/unix/public/index.html
+11a X
+11a $x2
+11a xbindkeys
+11a .xbindkeys
+11a .xbindkeysrc
+11a xev
+11a xmodmap
+11a ~/.Xmodmap
+11a xorg-xmodmap
+11a xrandr
+11a -xvf
+11a -xz
+11a ./.zsh
+11a .zshrc
+11b cat histcopy.txt | cut -d " " -f 2- | tr '|;' '\n' | cut -d " " -f 3-| tr ' ' '\n' | awk 'NF'| sort | uniq
+11c  first cut removes the line numbers in history. tr replaces | and ; with a newline  
+11c  then i remove the command from each line. 
+11c  awk 'NF' removes all lines that are empty or only containing blanks or tabs. uniq make sure all lines are unique
+12a /bin/sh
+12a /bin/zsh
+12a /sbin/init
+12a /usr/bin/dbus-daemon
+12a /usr/bin/dnsmasq
+12a /usr/bin/NetworkManager
+12a /usr/bin/ntpd
+12a /usr/bin/preload
+12a /usr/bin/python
+12a /usr/bin/wpa_supplicant
+12a /usr/lib/at-spi2-registryd
+12a /usr/lib/at-spi-bus-launcher
+12a /usr/lib/dconf/dconf-service
+12a /usr/lib/electron/electron
+12a /usr/lib/firefox/firefox
+12a /usr/lib/GConf/gconfd-2
+12a /usr/lib/geoclue2/geoclue
+12a /usr/lib/polkit-1/polkitd
+12a /usr/lib/systemd/systemd
+12a /usr/lib/systemd/systemd-journald
+12a /usr/lib/systemd/systemd-logind
+12a /usr/lib/systemd/systemd-udevd
+12a /usr/lib/thunderbird/thunderbird
+12a /usr/lib/upower/upowerd
+12a /usr/lib/xorg-server/Xorg
+12b cat pscopy.txt | awk '{print $11}' | grep  "^/" |sort | uniq

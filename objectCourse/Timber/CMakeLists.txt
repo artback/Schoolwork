@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.3)
+project(Timber)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+set(SOURCE_FILES
+    main.cpp
+    Register.cpp
+    Register.h
+    RuleTimber.cpp
+    RuleTimber.h
+    Timber.cpp
+    Timber.h
+    WainScoting.cpp
+    WainScoting.h)
+
+add_executable(Timber ${SOURCE_FILES})

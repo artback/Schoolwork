@@ -1,0 +1,21 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode     
+tcp        0      33 0.0.0.0:domain          0.0.0.0:*               LISTEN      root       459299    
+tcp        0      0 localhost.localdomain:ipp 0.0.0.0:*               LISTEN      root       237275    
+tcp        0      52 localhost.localdomain:19455 0.0.0.0:*               LISTEN      freak      404849    
+tcp        0      0 localhost.localdomain:42657 0.0.0.0:*               LISTEN      freak      446052    
+tcp        0      60 bed.net:40828           lb1.openmailbox.org:imaps ESTABLISHED freak      402941    
+tcp        1      6 localhost.localdomain:56914 localhost.localdomain:42657 CLOSE_WAIT  freak      450470    
+tcp        0      0 bed.net:44856           ec2-50-112-201-212.us-west-2.compute.amazonaws.com:https ESTABLISHED freak      462089    
+tcp        0      0 bed.net:43898           ec2-176-34-155-20.eu-west-1.compute.amazonaws.com:https ESTABLISHED freak      461875    
+tcp        0      0 bed.net:50540           ec2-54-229-110-205.eu-west-1.compute.amazonaws.com:https ESTABLISHED freak      461009    
+tcp        0      8 bed.net:52710           ec2-34-201-28-63.compute-1.amazonaws.com:https ESTABLISHED freak      446605    
+tcp        0      0 bed.net:36018           ams16s30-in-f10.1e100.net:https ESTABLISHED freak      461033    
+tcp        0      6 bed.net:40826           lb1.openmailbox.org:imaps CLOSE_WAIT  freak      402103    
+tcp        0      0 bed.net:43806           104.20.56.118:https     ESTABLISHED freak      460360    
+tcp        0      5 bed.net:47358           waw02s08-in-f3.1e100.net:https ESTABLISHED freak      462108    
+tcp        0      0 bed.net:59904           ua-83-226-95-113.cust.bredbandsbolaget.se:xmltec-xmlmail TIME_WAIT   root       0         
+tcp        0      2 bed.net:54952           ua-83-226-95-113.cust.bredbandsbolaget.se:xmltec-xmlmail ESTABLISHED freak      408664    
+tcp6       0      0 [::]:domain             [::]:*                  LISTEN      root       459301    
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN      root       11650     
+tcp6       0      32 localhost.localdomain:ipp [::]:*                  LISTEN      root       237274    

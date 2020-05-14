@@ -1,0 +1,157 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0 201452  7208 ?        Ss   Nov05   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    Nov05   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        S<   Nov05   0:00 [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    Nov05   0:00 [ksoftirqd/0]
+root         8  0.0  0.0      0     0 ?        S    Nov05   0:02 [rcu_preempt]
+root         9  0.0  0.0      0     0 ?        S    Nov05   0:00 [rcu_sched]
+root        10  0.0  0.0      0     0 ?        S    Nov05   0:00 [rcu_bh]
+root        11  0.0  0.0      0     0 ?        S    Nov05   0:00 [migration/0]
+root        12  0.0  0.0      0     0 ?        S    Nov05   0:00 [watchdog/0]
+root        13  0.0  0.0      0     0 ?        S    Nov05   0:00 [cpuhp/0]
+root        14  0.0  0.0      0     0 ?        S    Nov05   0:00 [cpuhp/1]
+root        15  0.0  0.0      0     0 ?        S    Nov05   0:00 [watchdog/1]
+root        16  0.0  0.0      0     0 ?        S    Nov05   0:00 [migration/1]
+root        17  0.0  0.0      0     0 ?        S    Nov05   0:00 [ksoftirqd/1]
+root        19  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kworker/1:0H]
+root        20  0.0  0.0      0     0 ?        S    Nov05   0:00 [cpuhp/2]
+root        21  0.0  0.0      0     0 ?        S    Nov05   0:00 [watchdog/2]
+root        22  0.0  0.0      0     0 ?        S    Nov05   0:00 [migration/2]
+root        23  0.0  0.0      0     0 ?        S    Nov05   0:00 [ksoftirqd/2]
+root        25  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kworker/2:0H]
+root        26  0.0  0.0      0     0 ?        S    Nov05   0:00 [cpuhp/3]
+root        27  0.0  0.0      0     0 ?        S    Nov05   0:00 [watchdog/3]
+root        28  0.0  0.0      0     0 ?        S    Nov05   0:00 [migration/3]
+root        29  0.0  0.0      0     0 ?        S    Nov05   0:00 [ksoftirqd/3]
+root        31  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kworker/3:0H]
+root        32  0.0  0.0      0     0 ?        S    Nov05   0:00 [kdevtmpfs]
+root        33  0.0  0.0      0     0 ?        S<   Nov05   0:00 [netns]
+root        37  0.0  0.0      0     0 ?        S    Nov05   0:00 [khungtaskd]
+root        38  0.0  0.0      0     0 ?        S    Nov05   0:00 [oom_reaper]
+root        39  0.0  0.0      0     0 ?        S<   Nov05   0:00 [writeback]
+root        40  0.0  0.0      0     0 ?        S    Nov05   0:00 [kcompactd0]
+root        41  0.0  0.0      0     0 ?        SN   Nov05   0:00 [ksmd]
+root        42  0.0  0.0      0     0 ?        SN   Nov05   0:02 [khugepaged]
+root        43  0.0  0.0      0     0 ?        S<   Nov05   0:00 [crypto]
+root        44  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kintegrityd]
+root        45  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kblockd]
+root        46  0.0  0.0      0     0 ?        S<   Nov05   0:00 [edac-poller]
+root        47  0.0  0.0      0     0 ?        S<   Nov05   0:00 [devfreq_wq]
+root        48  0.0  0.0      0     0 ?        S<   Nov05   0:00 [watchdogd]
+root        50  0.0  0.0      0     0 ?        S    Nov05   0:00 [kswapd0]
+root        88  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kthrotld]
+root        90  0.0  0.0      0     0 ?        S<   Nov05   0:00 [ipv6_addrconf]
+root       134  0.0  0.0      0     0 ?        S<   Nov05   0:00 [nvkm-disp]
+root       137  0.0  0.0      0     0 ?        S<   Nov05   0:00 [ttm_swap]
+root       164  0.0  0.0      0     0 ?        S<   Nov05   0:00 [ata_sff]
+root       195  0.0  0.0      0     0 ?        S    Nov05   0:00 [scsi_eh_0]
+root       196  0.0  0.0      0     0 ?        S<   Nov05   0:00 [scsi_tmf_0]
+root       197  0.0  0.0      0     0 ?        S    Nov05   0:00 [scsi_eh_1]
+root       198  0.0  0.0      0     0 ?        S<   Nov05   0:00 [scsi_tmf_1]
+root       199  0.0  0.0      0     0 ?        S    Nov05   0:00 [scsi_eh_2]
+root       200  0.0  0.0      0     0 ?        S<   Nov05   0:00 [scsi_tmf_2]
+root       201  0.0  0.0      0     0 ?        S    Nov05   0:00 [scsi_eh_3]
+root       202  0.0  0.0      0     0 ?        S<   Nov05   0:00 [scsi_tmf_3]
+root       210  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kworker/2:1H]
+root       211  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kworker/1:1H]
+root       213  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kworker/0:1H]
+root       235  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kworker/3:1H]
+root       237  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kdmflush]
+root       240  0.0  0.0      0     0 ?        S<   Nov05   0:00 [bioset]
+root       241  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kcryptd_io]
+root       243  0.0  0.0      0     0 ?        S<   Nov05   0:00 [kcryptd]
+root       244  0.0  0.0      0     0 ?        S    Nov05   0:00 [dmcrypt_write]
+root       245  0.0  0.0      0     0 ?        S<   Nov05   0:00 [bioset]
+root       263  0.0  0.0      0     0 ?        S    Nov05   0:00 [jbd2/dm-0-8]
+root       264  0.0  0.0      0     0 ?        S<   Nov05   0:00 [ext4-rsv-conver]
+root       287  0.0  0.0  80656  8796 ?        Ss   Nov05   0:01 /usr/lib/systemd/systemd-journald
+root       304  0.0  0.0  38828  6044 ?        Ss   Nov05   0:01 /usr/lib/systemd/systemd-udevd
+root       336  0.0  0.0      0     0 ?        S<   Nov05   0:00 [asus_wireless_w]
+root       337  0.0  0.0      0     0 ?        S    Nov05   0:00 [i915/signal:0]
+root       338  0.0  0.0      0     0 ?        S    Nov05   0:00 [i915/signal:1]
+root       339  0.0  0.0      0     0 ?        S    Nov05   0:00 [i915/signal:2]
+root       340  0.0  0.0      0     0 ?        S    Nov05   0:00 [i915/signal:4]
+root       345  0.0  0.0      0     0 ?        S<   Nov05   0:00 [acpi_thermal_pm]
+root       348  0.0  0.0      0     0 ?        S<   Nov05   0:00 [cfg80211]
+root       349  0.0  0.0      0     0 ?        S    Nov05   0:30 [irq/49-iwlwifi]
+root       352  0.0  0.0      0     0 ?        S<   Nov05   0:00 [led_workqueue]
+root       407  0.0  0.0  39196  4956 ?        Ss   Nov05   0:00 /usr/lib/systemd/systemd-logind
+root       408  0.0  0.0  44444  7200 ?        Ss   Nov05   0:00 /usr/bin/wpa_supplicant -u
+dbus       411  0.0  0.0  34736  4452 ?        Ss   Nov05   0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       424  0.0  0.1  28656 16596 ?        SNs  Nov05   0:03 /usr/bin/preload --foreground --verbose 1
+root       425  0.0  0.0 313384  9332 ?        Ssl  Nov05   0:00 /usr/lib/upower/upowerd
+root       426  0.0  0.1 550136 20240 ?        Ssl  Nov05   0:04 /usr/bin/NetworkManager --no-daemon
+root       454  0.0  0.0  93228  4536 ?        Ss   Nov05   0:00 login -- freak
+freak      472  0.0  0.0  55464  6588 ?        Ss   Nov05   0:00 /usr/lib/systemd/systemd --user
+freak      479  0.0  0.0 102108  1808 ?        S    Nov05   0:00 (sd-pam)
+freak      487  0.0  0.0  16992  4240 ?        Ss   Nov05   0:00 bash /home/freak/.config/scripts/lightson+.sh
+freak      503  0.0  0.0  15832  3444 tty1     Ss+  Nov05   0:00 /bin/sh /usr/bin/startx -- -keeptty -nolisten tcp
+polkitd    522  0.0  0.1 523296 18588 ?        Ssl  Nov05   0:01 /usr/lib/polkit-1/polkitd --no-debug
+freak      602  0.0  0.0  16024  1048 tty1     S+   Nov05   0:00 xinit /home/freak/.xinitrc -- /usr/bin/X :0 -keeptty -nolisten tcp vt1 -auth /tmp/serverauth.uklYB8ewzm
+freak      603  0.6  1.0 432476 122068 tty1    Sl   Nov05   6:15 /usr/lib/xorg-server/Xorg :0 -keeptty -nolisten tcp vt1 -auth /tmp/serverauth.uklYB8ewzm
+root       606  0.0  0.0   4272   720 tty1     S    Nov05   0:00 xf86-video-intel-backlight-helper intel_backlight
+freak      610  0.0  0.1 239152 21516 tty1     Sl   Nov05   0:04 awesome
+freak      614  0.0  0.0      0     0 tty1     Z    Nov05   0:00 [xbindkeys] <defunct>
+root       615  0.0  0.0      0     0 tty1     Z    Nov05   0:00 [sudo] <defunct>
+freak      616  0.0  0.0 282216  5812 tty1     Sl   Nov05   0:02 redshift
+freak      617  0.0  0.0      0     0 tty1     Z    Nov05   0:00 [python] <defunct>
+freak      618  0.0  0.0      0     0 tty1     Z    Nov05   0:00 [unclutter] <defunct>
+freak      619  0.0  0.1  95944 21308 tty1     S    Nov05   0:07 urxvtd
+freak      620  0.0  0.1 416216 14852 tty1     Sl   Nov05   0:00 dunst
+root       625  0.0  0.2 385364 24268 ?        Ssl  Nov05   0:01 /usr/lib/geoclue2/geoclue -t 5
+root      1442  0.0  0.0  31060  2228 ?        Ss   Nov05   0:00 ldm -d -u freak
+freak     1564  0.0  0.0  34064  4152 ?        Ss   Nov05   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+freak     1596  0.0  0.0  27820  2220 tty1     S    Nov05   0:12 unclutter --timeout 1 --fork
+freak     1872  0.0  0.0  73560  5408 ?        S    Nov05   0:00 xbindkeys
+freak     2062  0.0  2.2 2074560 274552 ?      Ssl  Nov05   0:43 /usr/lib/thunderbird/thunderbird
+freak     2135  0.0  0.0 344748  5792 ?        Ssl  Nov05   0:00 /usr/lib/at-spi-bus-launcher
+freak     2255  0.0  0.0  66252  5636 ?        S    Nov05   0:00 /usr/lib/GConf/gconfd-2
+root      2325  0.0  0.0      0     0 ?        S<   Nov05   0:00 [cifsiod]
+root      2326  0.0  0.0      0     0 ?        S<   Nov05   0:00 [cifsoplockd]
+freak     2898  0.0  0.4 601672 56776 ?        Ssl  Nov05   0:05 keepassxc
+freak     8522  9.7 13.1 3975492 1571696 ?     Ssl  Nov05  82:56 /usr/lib/firefox/firefox
+root      9926  0.0  0.0      0     0 ?        S    09:09   0:00 [cifsd]
+freak    10817  0.0  0.2 108788 24652 pts/0    Ss   09:16   0:00 /usr/bin/python -O /usr/bin/ranger
+freak    10995  0.0  0.0  46332  6556 pts/0    S    09:17   0:00 /bin/zsh
+freak    10999  0.0  0.0  43840  4308 pts/1    Ss+  09:17   0:00 /bin/zsh
+freak    11082  0.0  0.0  15832  3020 ?        S    09:17   0:00 /bin/sh -c set -- '/home/freak/Code/DV1466/TextProcessing/ins.pdf'; mupdf -- "$@"
+freak    11083  0.0  0.2 185452 34508 ?        S    09:17   0:01 mupdf -- /home/freak/Code/DV1466/TextProcessing/ins.pdf
+freak    12051  0.0  0.3 1448936 45368 pts/0   Sl+  09:26   0:01 vim report.txt
+freak    12052  0.0  0.4 2472184 50148 ?       Ssl  09:26   0:01 /usr/bin/python /home/freak/.vim/bundle/YouCompleteMe/python/ycm/../../third_party/ycmd/ycmd --port=38339 --options_file=/tmp/tmpgiaq01yp --log=info --idle_suicide_seconds=1800 --stdout=/tmp/ycmd_38339_stdout_a4r3vf0g.log --stderr=/tmp/ycmd_38339_stderr_a54peug_.log
+freak    12117  0.0  0.1 107212 23108 pts/2    Ss   09:26   0:00 /usr/bin/python -O /usr/bin/ranger
+freak    12123  0.0  0.0  43776  5996 pts/2    S    09:26   0:00 /bin/zsh
+freak    12127  0.0  0.0  43840  4272 pts/3    Ss+  09:26   0:00 /bin/zsh
+freak    12136  0.0  0.0  18348  4156 pts/2    S    09:27   0:00 bash
+freak    15053  0.0  0.0 185620  5116 ?        Sl   10:13   0:00 /usr/lib/dconf/dconf-service
+root     17113  0.0  0.0      0     0 ?        S    10:58   0:00 [irq/48-mei_me]
+ntp      17337  0.0  0.0  96816  4232 ?        Ssl  10:58   0:00 /usr/bin/ntpd -g -u ntp:ntp
+freak    18349  0.0  0.0  33824  3452 ?        S    11:00   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+freak    18351  0.0  0.0 221772  6500 ?        Sl   11:00   0:00 /usr/lib/at-spi2-registryd --use-gnome-session
+freak    18379  1.0  0.1 945108 14612 ?        Sl   11:01   0:58 pulseaudio
+root     19395  0.0  0.0      0     0 ?        S    11:13   0:00 [kworker/u8:1]
+freak    20411  0.2  1.1 1596632 140136 ?      Ssl  11:22   0:09 /usr/lib/electron/electron /usr/bin/standardnotes-desktop
+freak    20416  0.0  0.3 524536 43920 ?        S    11:22   0:00 /usr/lib/electron/electron --type=zygote --no-sandbox
+freak    20437  0.0  0.8 641076 97740 ?        Sl   11:22   0:01 /usr/lib/electron/electron --type=gpu-process --no-sandbox --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,23,71 --gpu-vendor-id=0x10de --gpu-device-id=0x1341 --gpu-driver-vendor --gpu-driver-version --gpu-driver-date --gpu-secondary-vendor-ids=0x8086 --gpu-secondary-device-ids=0x0a16 --service-request-channel-token=49A7F02875B87B573DCA58A123DB289A --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+freak    20441  0.1  0.8 1235648 98716 ?       Sl   11:22   0:04 /usr/lib/electron/electron --type=renderer --no-sandbox --primordial-pipe-token=CBC7F7A2F0ACE93AF47713865F8C4C07 --lang=en-US --app-path=/opt/standardnotes-desktop/app --node-integration=true --hidden-page --enable-pinch --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --disable-accelerated-video-decode --servic
+root     22150  0.0  0.0      0     0 ?        S    11:33   0:00 [kworker/3:2]
+root     23628  0.0  0.0      0     0 ?        S<   11:46   0:00 [kworker/u9:1]
+root     24356  0.0  0.0      0     0 ?        S    11:52   0:00 [kworker/2:2]
+root     25494  0.0  0.0      0     0 ?        S<   12:00   0:00 [kworker/u9:2]
+root     25882  0.0  0.0      0     0 ?        S<   12:06   0:00 [kworker/u9:3]
+root     26802  0.0  0.0      0     0 ?        S    12:09   0:00 [kworker/u8:0]
+root     26879  0.0  0.0      0     0 ?        S    12:10   0:00 [kworker/0:2]
+dnsmasq  27031  0.0  0.0  53244  8732 ?        Ss   12:14   0:00 /usr/bin/dnsmasq -k --enable-dbus --user=dnsmasq --pid-file
+root     27040  0.0  0.0      0     0 ?        S    12:14   0:00 [kworker/2:0]
+root     27050  0.0  0.0      0     0 ?        S    12:15   0:00 [kworker/1:1]
+root     27063  0.0  0.0      0     0 ?        S    12:16   0:00 [kworker/3:0]
+root     27781  0.0  0.0      0     0 ?        S    12:19   0:00 [kworker/0:1]
+root     27811  0.0  0.0      0     0 ?        S<   12:21   0:00 [kworker/u9:4]
+root     27845  0.0  0.0      0     0 ?        S    12:23   0:00 [kworker/1:0]
+root     27849  0.0  0.0      0     0 ?        S    12:23   0:00 [kworker/u8:2]
+root     27904  0.0  0.0      0     0 ?        S    12:26   0:00 [kworker/0:0]
+root     27908  0.0  0.0      0     0 ?        S<   12:27   0:00 [kworker/u9:0]
+freak    28599  0.0  0.0   5940   780 ?        S    12:28   0:00 sleep 160
+root     28600  0.0  0.0      0     0 ?        S    12:28   0:00 [kworker/2:1]
+root     28611  0.0  0.0      0     0 ?        S    12:29   0:00 [kworker/3:1]
+freak    28620  0.0  0.0  35104  3284 pts/2    R+   12:30   0:00 ps aux
